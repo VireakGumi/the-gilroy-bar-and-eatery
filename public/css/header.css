@@ -1,0 +1,78 @@
+
+        .custom-dark-bg {
+            background-color: #051F20;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+
+        .custom-gold-text {
+            color: #CB9E43 !important;
+            font-size: 2rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .custom-gold-text:hover {
+            color: #D2AE3C !important;
+        }
+
+        .custom-logo-script {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: 500;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media (max-width: 992px) {
+
+            .custom-dark-bg {
+                padding: 0 30px;
+            }
+
+            .custom-gold-text {
+                font-size: 1.75rem;
+            }
+
+            .custom-logo-script {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .custom-dark-bg {
+                padding: 0 20px;
+            }
+
+            .custom-gold-text {
+                font-size: 1.5rem;
+            }
+
+            .custom-logo-script {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .custom-dark-bg {
+                padding: 0 15px;
+            }
+
+            .custom-gold-text {
+                font-size: 2rem;
+            }
+
+            .custom-logo-script {
+                font-size: 3rem;
+            }
+        }
