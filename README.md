@@ -29,7 +29,7 @@
 
 ### 1. Clone or Extract the Project
 ```bash
-git clone https://github.com/yourusername/the-gilroy-bar-and-eatery.git
+git clone https://github.com/VireakGumi/the-gilroy-bar-and-eatery.git
 cd the-gilroy-bar-and-eatery
 composer install
 
