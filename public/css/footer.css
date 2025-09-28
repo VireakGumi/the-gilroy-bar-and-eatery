@@ -1,13 +1,11 @@
 .custom-footer-dark-bg {
     background: #000;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    /* padding: 60px 20px; */
 }
 
 .custom-dark-green-bg {
     background-color: #051F20;
-    color: #8EB69B;
+    color: #fff;
 }
 
 .custom-footer-logo-script {
@@ -16,7 +14,6 @@
     font-weight: 500;
     font-style: italic;
     line-height: 0.8;
-    /* text-align: center; */
     margin-bottom: 20px;
 }
 
@@ -26,18 +23,17 @@
 
 .custom-gold-text-faint {
     color: #DABA59 !important;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    font-size: 1.1rem;
 }
 
 .custom-light-text {
-    color: #8EB69B;
-    font-size: 0.9rem;
+    color: #fff;
+    font-size: 1rem;
 }
 
 .custom-btn-gold {
     background-color: #CB9E43;
-    color: #0B2B26;
+    color: #fff;
     border: none;
     font-weight: 600;
     padding: 8px 20px;
@@ -51,12 +47,12 @@
 
 .custom-link-list li {
     margin-bottom: 5px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .custom-link-list a,
 .custom-link-list li {
-    color: #8EB69B;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -80,14 +76,16 @@
 }
 
 .custom-hours-list {
-    font-size: 0.9rem;
-    padding-right: 50px;
+    font-size: 1rem;
+    padding-right: 20px;
 }
+
 .custom-hours-list div span {
     display: inline-block;
     margin-right: 30px;
 }
-.quick-link{
+
+.quick-link {
     padding-left: 70px;
 }
 
@@ -115,7 +113,6 @@
 }
 
 @media (max-width: 991.98px) {
-
     .col-md-6,
     .col-lg-3,
     .col-lg-2,
@@ -163,7 +160,6 @@
 
     .custom-hours-list div span {
         margin-right: 0;
-
     }
 
     .custom-hours-list .hour {
@@ -173,9 +169,4 @@
         padding: 5px 20px;
         width: 100%;
     }
-
-
-
-
-
 }
