@@ -1,0 +1,32 @@
+/* Import header and footer CSS */
+@import 'header.css';
+@import 'footer.css';
+@import 'dining.css';
+/* @import 'dining.css'; */
+
+/* You can also add global styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Button */
+
+/* Custom Gold Theme for Bootstrap Buttons */
+.btn-gold {
+    color: #D2AE3C;             /* text color */
+    background-color: transparent; /* transparent background */
+    border: 2px solid #D2AE3C;  /* gold border */
+    border-radius: 50px;        /* pill shape */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #D2AE3C;  /* gold background on hover */
+    color: #fff;                /* white text on hover */
+    box-shadow: 0 4px 12px rgba(210, 174, 60, 0.4); /* subtle glow */
+}
