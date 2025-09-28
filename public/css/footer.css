@@ -114,10 +114,6 @@
     text-decoration: none;
 }
 
-.custom-copyright-link:hover {
-    color: #DAF1DE;
-}
-
 @media (max-width: 991.98px) {
 
     .col-md-6,

@@ -1,0 +1,279 @@
+
+        :root {
+            --primary-color: #b08d57;
+            --dark-color: #051F20;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --gray-color: #6c757d;
+            --header-gold: #CB9E43;
+            --green-bg: #0a2a2a;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .private-events-header {
+                padding: 0 20px;
+            }
+
+            .private-events-header .custom-gold-text {
+                font-size: 1.5rem;
+            }
+
+            .private-events-header .custom-logo-script {
+                font-size: 2rem;
+                position: static;
+                transform: none;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .private-events-header {
+                padding: 0 15px;
+                flex-direction: column;
+                min-height: auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .private-events-header .custom-gold-text {
+                font-size: 1.8rem;
+            }
+
+            .private-events-header .custom-logo-script {
+                font-size: 2.2rem;
+                order: -1;
+            }
+
+            .col-lg-5 {
+                padding-left: 0;
+            }
+
+            #center-phone {
+                display: flex;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .private-events-page {
+            background: #000;
+        }
+
+        .private-events-page .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 30px;
+            font-size: 1.1rem;
+        }
+
+        .private-events-page .btn-primary:hover {
+            background-color: #9a7a4a;
+            border-color: #9a7a4a;
+            transform: translateY(-2px);
+        }
+
+        .private-events-page .btn-outline-light {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            margin: 5px 0;
+            width: 100%;
+            max-width: 400px;
+            transition: all 0.3s ease;
+        }
+
+        .private-events-page .btn-outline-not-light {
+            color: #9a7a4a;
+            font-weight: bold;
+        }
+
+        .private-events-page .btn-outline-light:hover {
+            background-color: #9a7a4a;
+            transform: translateY(-2px);
+        }
+
+        .private-events-page .section-title {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            color: white;
+        }
+
+        .private-events-page .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .event-space-section {
+            padding: 80px 0;
+            color: white;
+        }
+
+        .event-space-section.black-bg {
+            background-color: #000;
+        }
+
+        .event-space-section.green-bg {
+            background-color: var(--green-bg);
+        }
+
+        .event-space-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .event-space-section p {
+            color: #e0e0e0;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .event-space-section .space-features {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        .event-space-section .space-features li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+            color: #e0e0e0;
+        }
+
+        .event-space-section .space-features li:before {
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .event-space-section img {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .event-space-section img:hover {
+            transform: scale(1.02);
+        }
+
+        .private-events-page .space-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .private-events-page .space-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .private-events-page .hero-section .lead {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .private-events-page .space-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .private-events-page .space-card .card-body {
+            padding: 25px;
+        }
+
+        .private-events-page .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://stellarestaurantbar.com.au/wp-content/uploads/2023/11/1-1024x680.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 0 100px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .last-section {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 0 100px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: #000;
+            border-bottom: 2px solid #CB9E43;
+        }
+
+        .hero-buttons {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .private-events-page .btn-outline-light,
+            .private-events-page .btn-outline-not-light {
+                width: auto;
+                min-width: 250px;
+            }
+        }
+        #corporate {
+            background: linear-gradient(rgba(5, 31, 32, 0.9), rgba(5, 31, 32, 0.9)), var(--green-bg);
+            color: white;
+            padding: 80px 0;
+        }
+
+        #corporate .section-title {
+            color: white;
+        }
+
+        #corporate p {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+        }

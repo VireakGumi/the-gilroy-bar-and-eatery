@@ -10,6 +10,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/private_events.css') }}">
+
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,11 +22,11 @@
             <i class="far fa-calendar-plus"></i>
         </a>
 
-        <a class="custom-gold-text custom-logo-script" href="#">G</a>
+        <a class="custom-gold-text custom-logo-script" href="/">G</a>
 
-        <a href="#" class="custom-gold-text">
-            <i class="fas fa-bars"></i>
-        </a>
+<a href="{{ route('private-events') }}" class="custom-gold-text">
+    <i class="fas fa-bars"></i>
+</a>
     </nav>
 
 </body>
