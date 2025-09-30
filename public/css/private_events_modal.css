@@ -1,0 +1,295 @@
+#enquiryModal {
+    margin-top: 0;
+    z-index: 9999 !important;
+}
+
+#enquiryModal .modal-dialog {
+    margin: 0;
+    max-width: 60%;
+    height: 100vh;
+    margin: auto;
+}
+
+.private-events-page .modal-content {
+    border-radius: 0;
+    border: none;
+    background: var(--green-bg, #0a2a2a);
+    min-height: 100vh;
+    position: relative;
+}
+
+.private-events-page .modal-header {
+    border-bottom: 1px solid rgba(203, 158, 67, 0.3);
+    padding: 30px 40px 20px;
+    text-align: center;
+    position: relative;
+    background: rgba(10, 42, 42, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.private-events-page .modal-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--header-gold, #CB9E43);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.private-events-page .modal-body {
+    padding: 30px 40px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.private-events-page .modal-content .modal-header .btn-close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 1.8rem;
+    opacity: 0.8;
+    --bs-btn-close-color: #CB9E43;
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23CB9E43'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+    background-size: 1.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.private-events-page .modal-content .modal-header .btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+.private-events-page .modal-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.modal-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(203, 158, 67, 0.5) 50%, transparent 100%);
+    margin: 25px 0;
+    border: none;
+}
+
+.private-events-page .form-control,
+.private-events-page .form-select {
+    border-radius: 0;
+    padding: 15px 20px;
+    border: 1px solid rgba(203, 158, 67, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.private-events-page .form-control:focus,
+.private-events-page .form-select:focus {
+    border-color: var(--header-gold, #CB9E43);
+    box-shadow: 0 0 0 2px rgba(203, 158, 67, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.private-events-page .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+/* Form row grouping */
+.form-row-group {
+    margin: 20px 0;
+}
+
+.private-events-page .submit-btn {
+    background: transparent;
+    border: 2px solid var(--header-gold, #CB9E43);
+    color: var(--header-gold, #CB9E43);
+    padding: 18px 40px;
+    font-weight: 600;
+    border-radius: 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.4s ease;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px auto 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.private-events-page .submit-btn:hover {
+    background: var(--header-gold, #CB9E43);
+    color: var(--green-bg, #0a2a2a);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(203, 158, 67, 0.3);
+}
+
+.private-events-page .submit-btn:active {
+    transform: translateY(-1px);
+}
+
+.private-events-page .form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23CB9E43' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 14px;
+    cursor: pointer;
+}
+
+.private-events-page input[type="date"] {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+
+.private-events-page input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+    filter: invert(1) brightness(2);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.private-events-page input[type="date"]:invalid {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.private-events-page input[type="number"] {
+    color: #fff;
+}
+
+.private-events-page input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+    filter: invert(1) brightness(2);
+}
+
+.private-events-page textarea.form-control {
+    resize: vertical;
+    min-height: 140px;
+    line-height: 1.6;
+}
+
+/* Form labels for better UX */
+.form-label {
+    color: var(--header-gold, #CB9E43);
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+    #enquiryModal .modal-dialog {
+        margin: 0;
+    }
+    
+    .private-events-page .modal-header,
+    .private-events-page .modal-body {
+        padding: 20px 25px;
+    }
+
+    .private-events-page .modal-title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .private-events-page .modal-content .modal-header .btn-close {
+        right: 15px;
+        top: 15px;
+        width: 2rem;
+        height: 2rem;
+        background-size: 1.5rem;
+    }
+
+    .private-events-page .form-control,
+    .private-events-page .form-select {
+        padding: 12px 15px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .form-row-group .row {
+        margin: 0 -8px;
+    }
+
+    .form-row-group .col-md-6 {
+        padding: 0 8px;
+        margin-bottom: 15px;
+    }
+
+    .private-events-page .submit-btn {
+        padding: 16px 30px;
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .modal-divider {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .private-events-page .modal-header,
+    .private-events-page .modal-body {
+        padding: 15px 20px;
+    }
+
+    .private-events-page .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .private-events-page .modal-intro {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* Form row spacing */
+.form-row-group .row {
+    margin: 0 -15px;
+}
+
+.form-row-group .col-md-6 {
+    padding: 0 15px;
+}
+
+/* Animation for modal entrance */
+.modal.fade .modal-content {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Ensure modal is above navbar */
+.modal-backdrop {
+    z-index: 9998;
+}
+
+.modal {
+    z-index: 9999;
+}
