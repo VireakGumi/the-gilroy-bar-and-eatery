@@ -1,86 +1,130 @@
 @extends('layouts.app')
 
-@section('title', 'Dining Areas')
+@section('title', 'Menu')
 
 @section('content')
-<section class="dining-page bg-dark text-light py-10">
-    <div class="container text-center">
+    <div class="container-fluid bg-dark text-light py-5">
 
-        <!-- Section Title -->
-        <h2 class="section-title">Rooftop Tercase</h2>
+        <!-- SECTION TITLE -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-uppercase" style="letter-spacing: 3px; color:#D8C7A3;">Our Menus</h2>
+            <p class="mx-auto text-secondary" style="max-width:600px;">
+                Our delicious Italian-inspired fare comes complete with the classics you expect, and some dishes that will
+                surprise and delight.
+            </p>
+        </div>
 
-        <!-- Scrollable Image Gallery -->
-        <div class="position-relative mb-5">
-            <div class="d-flex overflow-auto gap-3 px-2 terraceCarousel" id="terraceCarousel" style="scroll-behavior: smooth;">
-                <div class="flex-shrink-0" style="width: 25%;">
-                    <img src="{{ asset('images/dining_1.jpg') }}" alt="Terrace 1" class="img-fluid rounded">
-                </div>
-                <div class="flex-shrink-0" style="width: 25%;">
-                    <img src="{{ asset('images/dining_2.jpg') }}" alt="Terrace 2" class="img-fluid rounded">
-                </div>
-                <div class="flex-shrink-0" style="width: 25%;">
-                    <img src="{{ asset('images/dining_3.jpg') }}" alt="Terrace 3" class="img-fluid rounded">
-                </div>
-                <div class="flex-shrink-0" style="width: 25%;">
-                    <img src="{{ asset('images/dining_4.jpg') }}" alt="Terrace 4" class="img-fluid rounded">
-                </div>
-                <div class="flex-shrink-0" style="width: 25%;">
-                    <img src="{{ asset('images/dining_5.jpg') }}" alt="Terrace 5" class="img-fluid rounded">
-                </div>
-                <div class="flex-shrink-0" style="width: 25%;">
-                    <img src="{{ asset('images/dining_6.jpg') }}" alt="Terrace 5" class="img-fluid rounded">
-                </div>
-                <div class="flex-shrink-0" style="width: 25%;">
-                    <img src="{{ asset('images/dining_7.jpg') }}" alt="Terrace 5" class="img-fluid rounded">
-                </div>
+        <div class="row g-0">
+            <!-- LEFT SECTION -->
+            <div class="col-md-6 px-5 py-4">
+                <nav class="nav flex-column">
+                    <a href="#" class="d-block text-decoration-none text-reset"
+                        style="color:#D8C7A3; margin-bottom:10px; font-size:1rem; letter-spacing:1px; cursor:pointer;">
+                        DOWNSTAIRS MENU
+                    </a>
+
+                    <a href="#" class="d-block text-decoration-none text-reset"
+                        style="color:#D8C7A3; margin-bottom:10px; font-size:1rem; letter-spacing:1px; cursor:pointer;">
+                        SET MENU $65PP
+                    </a>
+
+                    <a href="#" class="d-block text-decoration-none text-reset"
+                        style="color:#D8C7A3; margin-bottom:10px; font-size:1rem; letter-spacing:1px; cursor:pointer;">
+                        SET MENU $85PP
+                    </a>
+
+                    <a href="#" class="d-block text-decoration-none text-reset"
+                        style="color:#D8C7A3; margin-bottom:10px; font-size:1rem; letter-spacing:1px; cursor:pointer;">
+                        SET MENU $109PP
+                    </a>
+
+                    <a href="#" class="d-block text-decoration-none text-reset"
+                        style="color:#D8C7A3; margin-bottom:10px; font-size:1rem; letter-spacing:1px; cursor:pointer;">
+                        CANAPES MENU
+                    </a>
+
+                    <a href="#" class="d-block text-decoration-none text-reset"
+                        style="color:#D8C7A3; margin-bottom:10px; font-size:1rem; letter-spacing:1px; cursor:pointer;">
+                        COCKTAIL LOUNGE MENU
+                    </a>
+
+                    <a href="#" class="d-block text-decoration-none text-reset"
+                        style="color:#D8C7A3; margin-bottom:10px; font-size:1rem; letter-spacing:1px; cursor:pointer;">
+                        ROOFTOP MENU
+                    </a>
+                </nav>
             </div>
 
-            <!-- Carousel Buttons -->
-            <button onclick="scrollCarouselRight()" class="btn btn-gold position-absolute top-50 end-0 translate-middle-y">›</button>
-            <button onclick="scrollCarouselLeft()" class="btn btn-gold position-absolute top-50 start-0 translate-middle-y">‹</button>
+            <!-- RIGHT SECTION - MAIN SLIDESHOW -->
+            <div class="col-md-6 p-3">
+                <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style="cursor:pointer;">
+                    <div class="carousel-inner rounded overflow-hidden">
+                        <div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="https://via.placeholder.com/800x500?text=Main+Slide+1" class="d-block w-100"
+                                style="height:400px; object-fit:cover;">
+                        </div>
+                        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="https://via.placeholder.com/800x500?text=Main+Slide+2" class="d-block w-100"
+                                style="height:400px; object-fit:cover;">
+                        </div>
+                        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="https://via.placeholder.com/800x500?text=Main+Slide+3" class="d-block w-100"
+                                style="height:400px; object-fit:cover;">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
         </div>
-
-        <!-- Description -->
-        <div class="dining-description mb-5">
-            <p class="lead">
-                Our elegant open-air rooftop terrace, adorned with a vertical garden and lush greenery, offers a stunning bar and the ideal setting for your celebration. With a retractable roof to manage Melbourne’s unpredictable weather and overhead heaters for cooler evenings, comfort is assured. Customisable canape menus and cocktail-style service with small bites and refreshing beverages complete the experience.
-            </p>
-            <p class="lead">
-                Standing Cocktail Event: Accommodates up to 100 guests
-            </p>
-            <p class="fw-bold text-gold">
-                Rooftop seating is available on a walk-in basis only.
-            </p>
-        </div>
-
-        <!-- Enquire Button -->
-        <a href="#" class="btn btn-gold px-5 py-2 mb-5" style="border-radius: 50px; ">Enquire Now</a>
-
-        <!-- Other Dining Areas -->
-        <div class="other-dining">
-            <a href="#" class="text-gold">Cocktail Dining Area</a>
-            <a href="#" class="text-gold">Ground Floor Area</a>
-            <a href="#" class="text-gold">Private Dining Room</a>
-        </div>
-
-
     </div>
-</section>
-@endsection
-@section('js')
 
-<script>
-    const carousel = document.getElementById('terraceCarousel');
+    <!-- MODAL WITH SECOND SLIDESHOW -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black border-0 position-relative">
+                <!-- CLOSE BUTTON -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
 
-    function scrollCarouselLeft() {
-        const itemWidth = carousel.querySelector('.flex-shrink-0').offsetWidth + 12; // 12 = gap
-        carousel.scrollBy({ left: -itemWidth, behavior: 'smooth' });
-    }
+                <div class="modal-body p-0">
+                    <div id="modalCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/1600x900?text=Modal+Slide+1" class="d-block w-100"
+                                    style="height:100vh; object-fit:cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1600x900?text=Modal+Slide+2" class="d-block w-100"
+                                    style="height:100vh; object-fit:cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1600x900?text=Modal+Slide+3" class="d-block w-100"
+                                    style="height:100vh; object-fit:cover;">
+                            </div>
+                        </div>
 
-    function scrollCarouselRight() {
-        const itemWidth = carousel.querySelector('.flex-shrink-0').offsetWidth + 12;
-        carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
-    }
+                        <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 @endsection
