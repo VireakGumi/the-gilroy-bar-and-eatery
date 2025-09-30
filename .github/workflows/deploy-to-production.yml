@@ -1,4 +1,4 @@
-name: Composer Install & Laravel Optimize
+name: Deploy Laravel to Server
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  composer_install_and_optimize:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,5 +27,19 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --no-interaction --prefer-dist
 
-      - name: Optimize Laravel
-        run: php artisan optimize
+      - name: Deploy to Server via SSH
+        uses: appleboy/ssh-action@v0.1.9
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          script: |
+            cd /www/wwwroot/dev-gilroy-repo
+            git pull origin main
+            composer install --no-interaction --prefer-dist --optimize-autoloader
+            php artisan migrate --force
+            php artisan optimize
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
