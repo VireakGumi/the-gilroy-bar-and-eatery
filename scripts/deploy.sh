@@ -13,9 +13,9 @@ if [[ -z "$ENVIRONMENT" ]]; then
   exit 1
 fi
 
-APP_DIR="/var/www/api/ibf-product-engine"
-BASE_IMAGE_NAME="ghcr.io/institue-of-banking-and-finance/ibf-product-engine"
-GITHUB_USER="${GITHUB_USER:-institue-of-banking-and-finance}"
+APP_DIR="/www/wwwroot/dev-gilroy-repo"
+BASE_IMAGE_NAME="ghcr.io/vireakgumi/the-gilroy-bar-and-eatery"
+GITHUB_USER="${GITHUB_USER:-VireakGumi}"
 GHCR_TOKEN="${GHCR_TOKEN:-}"
 
 # Because production and staging use the same file names

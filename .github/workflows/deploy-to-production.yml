@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: ghcr.io/VireakGumi/the-gilroy-bar-and-eatery
+  IMAGE_NAME: ghcr.io/vireakgumi/the-gilroy-bar-and-eatery:prod-latest
   REGISTRY: ghcr.io
 
 jobs:
