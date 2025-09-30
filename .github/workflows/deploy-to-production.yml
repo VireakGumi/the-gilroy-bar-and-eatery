@@ -46,3 +46,4 @@ jobs:
             ${{ env.IMAGE_NAME }}:prod-${{ github.sha }}
           cache-from: type=registry,ref=${{ env.IMAGE_NAME }}:buildcache-prod
           cache-to: type=registry,ref=${{ env.IMAGE_NAME }}:buildcache-prod,mode=max
+          platforms: linux/amd64,linux/arm64
