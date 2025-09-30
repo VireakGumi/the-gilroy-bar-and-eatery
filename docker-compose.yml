@@ -25,33 +25,7 @@ services:
     depends_on:
       - app
     networks: [ app-net ]
-
-  queue-worker:
-    image: ghcr.io/vireakgumi/the-gilroy-bar-and-eatery:prod-latest
-    container_name: gilroy-queue
-    restart: unless-stopped
-    command: php artisan queue:work --queue=emails,default --sleep=3 --tries=3 --timeout=90
-    env_file: .env
-    working_dir: /www/wwwroot/dev-gilroy-repo
-    depends_on: [ app, redis ]
-    volumes:
-      - storage_data:/www/wwwroot/dev-gilroy-repo/storage
-      - ./.env:/www/wwwroot/dev-gilroy-repo/.env:ro
-    networks: [ app-net ]
-
-  scheduler:
-    image: ghcr.io/vireakgumi/the-gilroy-bar-and-eatery:prod-latest
-    container_name: gilroy-scheduler
-    restart: unless-stopped
-    command: php artisan schedule:work
-    env_file: .env
-    working_dir: /www/wwwroot/dev-gilroy-repo
-    depends_on: [ app ]
-    volumes:
-      - storage_data:/www/wwwroot/dev-gilroy-repo/storage
-      - ./.env:/www/wwwroot/dev-gilroy-repo/.env:ro
-    networks: [ app-net ]
-
+    
   redis:
     image: redis:7-alpine
     container_name: gilroy-redis
