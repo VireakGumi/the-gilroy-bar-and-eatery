@@ -2,14 +2,14 @@ version: "3.9"
 
 services:
   app:
-    image: ghcr.io/VireakGumi/the-gilroy-bar-and-eatery:prod-latest
+    image: ghcr.io/vireakgumi/the-gilroy-bar-and-eatery:prod-latest
     container_name: gilroy-app
     env_file: .env
-    working_dir: /var/www
+    working_dir: /www/wwwroot/dev-gilroy-repo
     restart: unless-stopped
     volumes:
-      - storage_data:/var/www/storage
-      - ./.env:/var/www/.env:ro
+      - storage_data:/www/wwwroot/dev-gilroy-repo/storage
+      - ./.env:/www/wwwroot/dev-gilroy-repo/.env:ro
     networks: [ app-net ]
 
   web:
@@ -18,38 +18,38 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
-      - "443:443"   # If SSL is handled by AWS LB/CloudFront, you can remove SSL here later
+      - "443:443"
     volumes:
-      - storage_data:/var/www/storage:ro
+      - storage_data:/www/wwwroot/dev-gilroy-repo/storage:ro
       - ./docker-engine/nginx/app.conf:/etc/nginx/conf.d/default.conf:ro
     depends_on:
       - app
     networks: [ app-net ]
 
   queue-worker:
-    image: ghcr.io/VireakGumi/the-gilroy-bar-and-eatery:prod-latest
+    image: ghcr.io/vireakgumi/the-gilroy-bar-and-eatery:prod-latest
     container_name: gilroy-queue
     restart: unless-stopped
     command: php artisan queue:work --queue=emails,default --sleep=3 --tries=3 --timeout=90
     env_file: .env
-    working_dir: /var/www
+    working_dir: /www/wwwroot/dev-gilroy-repo
     depends_on: [ app, redis ]
     volumes:
-      - storage_data:/var/www/storage
-      - ./.env:/var/www/.env:ro
+      - storage_data:/www/wwwroot/dev-gilroy-repo/storage
+      - ./.env:/www/wwwroot/dev-gilroy-repo/.env:ro
     networks: [ app-net ]
 
   scheduler:
-    image: ghcr.io/VireakGumi/the-gilroy-bar-and-eatery:prod-latest
+    image: ghcr.io/vireakgumi/the-gilroy-bar-and-eatery:prod-latest
     container_name: gilroy-scheduler
     restart: unless-stopped
     command: php artisan schedule:work
     env_file: .env
-    working_dir: /var/www
+    working_dir: /www/wwwroot/dev-gilroy-repo
     depends_on: [ app ]
     volumes:
-      - storage_data:/var/www/storage
-      - ./.env:/var/www/.env:ro
+      - storage_data:/www/wwwroot/dev-gilroy-repo/storage
+      - ./.env:/www/wwwroot/dev-gilroy-repo/.env:ro
     networks: [ app-net ]
 
   redis:
