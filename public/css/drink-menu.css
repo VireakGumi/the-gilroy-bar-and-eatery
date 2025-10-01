@@ -1,0 +1,20 @@
+.menu-link {
+    color: #D8C7A3;
+    text-decoration: none;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+.menu-link:hover {
+    color: #fff;
+}
+.img-slide {
+    height: 100vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .img-slide {
+        height: 50vh;
+    }
+}
