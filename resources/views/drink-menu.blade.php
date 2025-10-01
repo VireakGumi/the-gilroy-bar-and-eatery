@@ -4,19 +4,43 @@
 
 @section('content')
 
-<div class="container-fluid bg-dark text-light py-5">
-    <div class="row g-0 align-items-center">
+<style>
+    body {
+        background-color: #212529;
+    }
+    .img-slide {
+        object-fit: cover;
+        height: 850px;
+        cursor: pointer;
+    }
+
+    .menu-link {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        color: #D8C7A3;
+        text-decoration: none;
+    }
+
+    .menu-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="container bg-dark text-light py-5 mb-5 mt-5" style="max-width: 1250px;">
+    <div class="row g-5 align-items-center">
         <!-- LEFT SECTION -->
-        <div class="col-lg-6 col-md-12 p-5">
-            <h2 class="fw-bold mb-3 text-uppercase" style="letter-spacing: 3px; color: #D8C7A3;">
+        <div class="col-lg-6 col-md-12 px-4 text-center text-lg-start">
+            <h1 class="fw-bold mb-3 text-uppercase" style="letter-spacing: 3px; color: #D8C7A3;">
                 Our Drinks
-            </h2>
-            <p class="mb-4">
-                From classic cocktails to refreshing mocktails, fine wines, and craft beers — 
+            </h1>
+            <p class="mb-5 mt-3">
+                From classic cocktails to refreshing mocktails, fine wines, and craft beers —
                 discover the perfect drink to match your mood.
             </p>
 
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
                 <a href="#" class="menu-link">Cocktails</a>
                 <a href="#" class="menu-link">Mocktails</a>
                 <a href="#" class="menu-link">Craft Beers</a>
@@ -30,16 +54,13 @@
             <div id="drinkCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/mocktails.jpg') }}"
-                             class="d-block w-100 img-slide" alt="Mocktail">
+                        <img src="{{ asset('images/mocktails.jpg') }}" class="d-block w-100 img-slide" alt="Mocktail">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/beer.jpg') }}"
-                             class="d-block w-100 img-slide" alt="Beer">
+                        <img src="{{ asset('images/beer.jpg') }}" class="d-block w-100 img-slide" alt="Beer">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/wines-champagnes.jpg')}}"
-                             class="d-block w-100 img-slide" alt="Wine">
+                        <img src="{{ asset('images/wines-champagnes.jpg')}}" class="d-block w-100 img-slide" alt="Wine">
                     </div>
                 </div>
 
@@ -54,18 +75,20 @@
         </div>
     </div>
 </div>
+
 <!-- MODAL VIEWER -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen">
         <div class="modal-content bg-dark border-0">
             <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                    data-bs-dismiss="modal" aria-label="Close"></button>
+                data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-body d-flex justify-content-center align-items-center">
                 <img id="modalImage" src="" class="img-fluid" alt="Full view">
             </div>
         </div>
     </div>
 </div>
+
 @endsection
 
 @section('js')
