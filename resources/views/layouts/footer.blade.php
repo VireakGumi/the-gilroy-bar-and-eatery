@@ -11,7 +11,7 @@
             <div class="col-lg-3 custom-margin-left quick-link">
                 <h5 class="custom-gold-text-faint fw-bold mb-3">QUICK LINKS</h5>
                 <ul class="list-unstyled custom-link-list quick-list">
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="/menu">Menu</a></li>
                     <li><a href="#">Private Events</a></li>
                     <li><a href="#">What's On</a></li>
                     <li><a href="#">Gift Cards</a></li>
@@ -69,7 +69,7 @@
     <div class="custom-dark-green-bg py-3 w-100">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
             <div class="mb-2 mb-md-0 text-light size-10" style="display: flex;flex-direction:column">
-                &copy; 2024 Stella Restaurant & Bar. All rights reserved | <a href="#" class="custom-link-gold-subtle">Privacy Policy</a>
+                &copy; 2025 The Gilroy Bar and Eatery. All rights reserved | <a href="#" class="custom-link-gold-subtle">Privacy Policy</a>
             </div>
             <div class="text-light size-10">
                 Proudly Powered by Bove Marketing
