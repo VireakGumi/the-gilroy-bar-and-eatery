@@ -12,10 +12,10 @@
                 <h5 class="custom-gold-text-faint fw-bold mb-3">QUICK LINKS</h5>
                 <ul class="list-unstyled custom-link-list quick-list">
                     <li><a href="#">Menu</a></li>
-                    <li><a href="#">Private Events</a></li>
+                    <li><a href="/private-events">Private Events</a></li>
                     <li><a href="#">What's On</a></li>
                     <li><a href="#">Gift Cards</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="/about-us">About Us</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                 </ul>
