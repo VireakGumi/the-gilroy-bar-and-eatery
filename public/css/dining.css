@@ -33,3 +33,45 @@
 .text-gold:hover {
     color: #fff; /* optional: lighter gold/white on hover */
 }
+
+/* Default (desktop) - 4 slides visible */
+.terraceCarousel .flex-shrink-0 {
+    flex: 0 0 auto;   /* don't shrink */
+    width: 25%;
+}
+
+/* Tablet (portrait/landscape) - show 2 slides */
+@media (max-width: 992px) {
+    .terraceCarousel {
+        scroll-snap-type: x mandatory;
+    }
+    .terraceCarousel .flex-shrink-0 {
+        flex: 0 0 50%;          /* exactly 2 per view */
+        scroll-snap-align: start;
+    }
+}
+
+/* Mobile - show 1 slide only */
+@media (max-width: 768px) {
+    .terraceCarousel {
+        scroll-snap-type: x mandatory;   /* enable snap scrolling */
+    }
+
+    .terraceCarousel .flex-shrink-0 {
+        flex: 0 0 100%;                  /* exactly 1 full slide */
+        scroll-snap-align: start;        /* snap to each image */
+    }
+
+    /* Adjust text and buttons for mobile */
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .dining-description p {
+        font-size: 1rem;
+    }
+    .other-dining {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
