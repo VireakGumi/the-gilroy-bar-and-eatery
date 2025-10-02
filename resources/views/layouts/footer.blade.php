@@ -22,10 +22,10 @@
 
                 <h5 class="custom-gold-text-faint fw-bold mt-4 mb-3">OUR SPACES</h5>
                 <ul class="list-unstyled custom-link-list">
-                    <li><a href="#">Rooftop Terrace</a></li>
-                    <li><a href="#">Cocktail Dining</a></li>
-                    <li><a href="#">Ground Floor</a></li>
-                    <li><a href="#">Private Dining</a></li>
+                    <li><a href="/rooftop-terrace">Rooftop Terrace</a></li>
+                    <li><a href="/cocktail-dining-area">Cocktail Dining</a></li>
+                    <li><a href="/ground-floor-area">Ground Floor</a></li>
+                    <li><a href="/private-dining">Private Dining</a></li>
                 </ul>
             </div>
 
