@@ -56,8 +56,6 @@
                         </div>
                     </div>
                 </form>
-
-                <!-- Button -->
                 <button type="button" class="btn submit-btn">Send</button>
             </div>
 
@@ -68,7 +66,7 @@
     document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".date-picker").forEach(el => {
             el.addEventListener("click", function() {
-                this.showPicker && this.showPicker(); // only works in Chrome/Edge
+                this.showPicker && this.showPicker(); 
             });
         });
     });

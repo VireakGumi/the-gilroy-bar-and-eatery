@@ -1,17 +1,10 @@
-:root {
-    --primary-color: #051F20;
-    --accent-color: #CB9E43;
-    --light-color: #D2AE3C;
-    --dark-color: #051F20;
-    --gold-color: #DABA59;
-    --black-color: #000;
-}
+
 .hero-section {
     position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: var(--accent-color);
+    color: #CB9E43;
     overflow: hidden;
 }
 
@@ -25,7 +18,7 @@
     height: 45vh; 
     display: flex;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: #051F20;
 }
 
 .slideshow-container {
@@ -72,7 +65,7 @@
     font-family: 'Cormorant Garamond', serif; 
     font-size: 5rem; 
     font-style: italic;
-    color: var(--gold-color); 
+    color: #DABA59; 
     line-height: 1;
     margin-bottom: 0.5rem;
 }
@@ -81,11 +74,11 @@
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2px;
-    color: var(--light-color); 
+    color: #D2AE3C; 
 }
 
 .btn-stella {
-    background-color: var(--gold-color);
+    background-color: #DABA59;
     border: none;
     color: #fff !important;
     padding: 12px 30px;
@@ -95,12 +88,12 @@
 }
 
 .btn-stella:hover {
-    background-color: var(--light-color);
+    background-color: #D2AE3C;
     transform: translateY(-2px);
 }
 
 .availability-link {
-    color: var(--gold-color);
+    color: #DABA59;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -113,7 +106,7 @@
 }
 
 .section-title {
-    color: var(--accent-color); 
+    color: #CB9E43; 
     font-weight: 700;
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -127,7 +120,7 @@
     padding: 5rem 0;
 }
 .home-btn-link {
-    color: var(--gold-color);
+    color: #DABA59;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
@@ -141,12 +134,12 @@
 }
 
 .home-btn-link:hover {
-    color: var(--gold-color);
+    color: #DABA59;
 }
 
 .instagram-section {
     padding: 5rem 0;
-    background-color: var(--primary-color);
+    background-color: #051F20;
 }
 
 .instagram-link-wrapper {
