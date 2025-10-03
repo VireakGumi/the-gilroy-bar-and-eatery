@@ -1,5 +1,5 @@
 <footer class="custom-footer-dark-bg text-light d-flex flex-column align-items-center">
-    
+
     {{-- Removed redundant `row` class from `container` --}}
     <div class="container py-5">
         <div class="row g-4"> {{-- Added `g-4` for consistent gutter --}}
@@ -14,7 +14,7 @@
             {{-- Column 2: Quick Links & Our Spaces --}}
             {{-- We combine these two existing divs into one parent div with col-lg-3 and col-md-6 for tablet/mobile stacking --}}
             {{-- The original code had: <div class="col-lg-3 custom-margin-left quick-link"> which is not correct for Bootstrap columns. --}}
-            <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3">QUICK LINKS</h5>
                 <ul class="list-unstyled custom-link-list quick-list">
                     <li><a href="#">Menu</a></li>
@@ -34,7 +34,7 @@
                     <li><a href="/private-dining">Private Dining</a></li>
                 </ul>
             </div>
-            
+
             {{-- Column 3: Opening Hours --}}
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3 ">OPENING HOURS</h5>
@@ -77,7 +77,7 @@
     <div class="custom-dark-green-bg py-3 w-100">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
             <div class="mb-2 mb-md-0 text-light size-10" style="display: flex;flex-direction:column">
-                &copy; 2024 Stella Restaurant & Bar. All rights reserved <a href="#" class="custom-link-gold-subtle">Privacy Policy</a>
+                &copy; 2025 The Gilroy Bar and Eatery. All rights reserved <a href="#" class="custom-link-gold-subtle">Privacy Policy</a>
             </div>
             <div class="text-light size-10">
                 Proudly Powered by Bove Marketing
