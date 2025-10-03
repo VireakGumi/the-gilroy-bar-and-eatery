@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function Home()
+    public function home()
     {
          $slides = [
             "https://stellarestaurantbar.com.au/wp-content/uploads/2024/07/054A5756-HDR-scaled.jpg",

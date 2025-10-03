@@ -1,10 +1,7 @@
 @extends('layouts.app')
-
 @section('title', 'Home')
-
 @section('content')
     <div class="main-content">
-
         <section class="hero-section">
             <div class="hero-slideshow">
                 <div class="slideshow-container">
@@ -74,7 +71,6 @@
                 </div>
             </a>
         </section>
-
     </div>
 @endsection
 
