@@ -45,19 +45,20 @@
     color: #0B2B26;
 }
 
-.custom-link-list li {
+.custom-link-list li, .custom-link-list li button {
     margin-bottom: 5px;
     font-size: 1rem;
 }
 
 .custom-link-list a,
+.custom-link-list li ,
 .custom-link-list li {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.custom-link-list a:hover {
+.custom-link-list a:hover , .custom-link-list li:hover {
     color: #DABA59;
 }
 
