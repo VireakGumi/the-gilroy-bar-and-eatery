@@ -5,6 +5,7 @@ use App\Http\Controllers\PrivateEventsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\VenueController;
+use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\DrinkController;
 
 // Route::get('/', function () {
@@ -20,6 +21,7 @@ Route::get('/cocktail-dining-area', [VenueController::class, 'cocktailDiningArea
 Route::get('/private-dining', [VenueController::class, 'pravateDining'])->name('private-dining');
 Route::get('/rooftop-terrace', [VenueController::class, 'rooftopTerrace'])->name('rooftop-terrace');
 Route::get('/menu', [MenuController::class, 'index'])->name('menu');
+Route::get('/navigation', [NavigationController::class, 'navigation'])->name('navigation');
 Route::get('/private-events', [PrivateEventsController::class, 'privateEvents'])->name('private-events');
 Route::get('/drink-menu', [DrinkController::class, 'drinkMenu'])->name('drink-menu');
 Route::get('/', [HomeController::class, 'home'])->name('home');
