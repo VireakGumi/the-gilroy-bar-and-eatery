@@ -3,9 +3,9 @@
         <i class="far fa-calendar-plus"></i>
     </a>
 
-    <a class="custom-gold-text custom-logo-script" href="#">G</a>
+    <a class="custom-gold-text custom-logo-script" href="/">G</a>
 
     <a href="#" class="custom-gold-text">
         <i class="fas fa-bars"></i>
     </a>
-</nav>
+</nav

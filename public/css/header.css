@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
         .custom-dark-bg {
             background-color: #051F20;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

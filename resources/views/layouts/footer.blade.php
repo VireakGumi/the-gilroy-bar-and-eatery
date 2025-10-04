@@ -1,34 +1,31 @@
-<footer class="custom-footer-dark-bg text-light pt-5 d-flex flex-column align-items-center">
-    <div class="container pb-4 ">
-        <div class="row">
-
+<footer class="custom-footer-dark-bg text-light d-flex flex-column align-items-center">
+    <div class="container py-5">
+        <div class="row g-4"> 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="custom-footer-logo-script custom-gold-text mb-3">G</div>
                 <p class="custom-light-text mb-4">Four levels of extraordinary restaurant and bar. Our Italian-inspired menu includes classics and delightful surprises.</p>
                 <button class="btn custom-btn-gold" type="button">Subscribe to Gilroy</button>
             </div>
-
-            <div class="col-lg-3 custom-margin-left quick-link">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3">QUICK LINKS</h5>
                 <ul class="list-unstyled custom-link-list quick-list">
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Private Events</a></li>
-                    <li><a href="#">What's On</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/private-events">Private Events</a></li>
+                    <li><a href="/drink-menu">Drink Munu</a></li>
                     <li><a href="#">Gift Cards</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="/about-us">About Us</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                 </ul>
 
                 <h5 class="custom-gold-text-faint fw-bold mt-4 mb-3">OUR SPACES</h5>
                 <ul class="list-unstyled custom-link-list">
-                    <li><a href="#">Rooftop Terrace</a></li>
-                    <li><a href="#">Cocktail Dining</a></li>
-                    <li><a href="#">Ground Floor</a></li>
-                    <li><a href="#">Private Dining</a></li>
+                    <li><a href="/rooftop-terrace">Rooftop Terrace</a></li>
+                    <li><a href="/cocktail-dining-area">Cocktail Dining</a></li>
+                    <li><a href="/ground-floor-area">Ground Floor</a></li>
+                    <li><a href="/private-dining">Private Dining</a></li>
                 </ul>
             </div>
-
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3 ">OPENING HOURS</h5>
                 <div class="custom-hours-list custom-light-text">
@@ -69,7 +66,7 @@
     <div class="custom-dark-green-bg py-3 w-100">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
             <div class="mb-2 mb-md-0 text-light size-10" style="display: flex;flex-direction:column">
-                &copy; 2024 Stella Restaurant & Bar. All rights reserved | <a href="#" class="custom-link-gold-subtle">Privacy Policy</a>
+                &copy; 2025 The Gilroy Bar and Eatery. All rights reserved <a href="#" class="custom-link-gold-subtle">Privacy Policy</a>
             </div>
             <div class="text-light size-10">
                 Proudly Powered by Bove Marketing

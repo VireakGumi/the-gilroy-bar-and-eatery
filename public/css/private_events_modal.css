@@ -1,0 +1,138 @@
+#enquiryModal {
+  z-index: 9999;
+}
+
+#enquiryModal .modal-dialog {
+  max-width: 60%;
+  margin: auto;
+}
+
+.private-events-page .modal-content {
+  background: #0a2a2a;
+  border: none;
+  border-radius: 0;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.private-events-page .modal-header {
+  background: rgba(10, 42, 42, 0.95);
+  border-bottom: 1px solid rgba(203, 158, 67, 0.3);
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.private-events-page .modal-title {
+  font-family: 'Playfair Display', serif;
+  color: #CB9E43;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.private-events-page .btn-close {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: invert(61%) sepia(52%) saturate(400%) hue-rotate(5deg) brightness(95%) contrast(90%);
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.private-events-page .btn-close:hover {
+  opacity: 1;
+}
+
+.private-events-page .modal-body {
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.private-events-page .modal-intro {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.modal-divider {
+  height: 1px;
+  margin: 20px 0;
+  border: none;
+  background: linear-gradient(90deg, transparent, rgba(203,158,67,0.6), transparent);
+}
+
+.private-events-page .form-control,
+.private-events-page .form-select {
+  background: #0a2a2a;
+  border: 1px solid rgba(203, 158, 67, 0.4);
+  color: #fff;
+  padding: 12px 15px;
+  font-size: 1rem;
+}
+
+.private-events-page .form-control:focus,
+.private-events-page .form-select:focus {
+  border-color: #CB9E43;
+  box-shadow: 0 0 5px rgba(203,158,67,0.4);
+}
+
+.private-events-page input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(2);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.private-events-page .form-control::placeholder,
+.private-events-page .form-select::placeholder,
+.private-events-page textarea::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.private-events-page .submit-btn {
+  border: 2px solid #CB9E43;
+  color: #CB9E43;
+  padding: 14px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: transparent;
+  transition: 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.private-events-page .submit-btn:hover {
+  background: #CB9E43;
+  color: #0a2a2a;
+}
+
+@media (max-width: 992px) {
+  #enquiryModal .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #enquiryModal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+  .private-events-page .modal-title {
+    font-size: 1.5rem;
+  }
+  .private-events-page .modal-body {
+    padding: 15px;
+  }
+  .private-events-page .submit-btn {
+    width: 100%;
+  }
+}
