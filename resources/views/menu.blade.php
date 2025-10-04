@@ -6,7 +6,7 @@
 
 <style>
     body {
-        background-color: #212529;
+        background-color: #051F20;
     }
     .img-slide {
         object-fit: cover;
@@ -28,7 +28,7 @@
     }
 </style>
 
-<div class="container bg-dark text-light py-5 mb-5 mt-5" style="max-width: 1250px;">
+<div class="container text-light py-5 mb-5 mt-5" style="max-width: 1250px;">
     <div class="row g-5 align-items-center">
         <!-- LEFT SECTION -->
         <div class="col-lg-6 col-md-12 px-4 text-center text-lg-start">

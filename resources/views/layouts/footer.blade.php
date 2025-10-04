@@ -1,25 +1,17 @@
 <footer class="custom-footer-dark-bg text-light d-flex flex-column align-items-center">
-
-    {{-- Removed redundant `row` class from `container` --}}
     <div class="container py-5">
-        <div class="row g-4"> {{-- Added `g-4` for consistent gutter --}}
-
-            {{-- Column 1: Logo & Description (Full width on mobile/tablet for Image 3 & 2 stacking) --}}
+        <div class="row g-4"> 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="custom-footer-logo-script custom-gold-text mb-3">G</div>
                 <p class="custom-light-text mb-4">Four levels of extraordinary restaurant and bar. Our Italian-inspired menu includes classics and delightful surprises.</p>
                 <button class="btn custom-btn-gold" type="button">Subscribe to Gilroy</button>
             </div>
-
-            {{-- Column 2: Quick Links & Our Spaces --}}
-            {{-- We combine these two existing divs into one parent div with col-lg-3 and col-md-6 for tablet/mobile stacking --}}
-            {{-- The original code had: <div class="col-lg-3 custom-margin-left quick-link"> which is not correct for Bootstrap columns. --}}
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3">QUICK LINKS</h5>
                 <ul class="list-unstyled custom-link-list quick-list">
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="/menu">Menu</a></li>
                     <li><a href="/private-events">Private Events</a></li>
-                    <li><a href="#">What's On</a></li>
+                    <li><a href="/drink-menu">Drink Munu</a></li>
                     <li><a href="#">Gift Cards</a></li>
                     <li><a href="/about-us">About Us</a></li>
                     <li><a href="#">Careers</a></li>
@@ -34,8 +26,6 @@
                     <li><a href="/private-dining">Private Dining</a></li>
                 </ul>
             </div>
-
-            {{-- Column 3: Opening Hours --}}
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3 ">OPENING HOURS</h5>
                 <div class="custom-hours-list custom-light-text">
@@ -49,7 +39,6 @@
                 </div>
             </div>
 
-            {{-- Column 4: Contact Info & Surcharges --}}
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3">CONTACT INFO</h5>
                 <ul class="list-unstyled custom-link-list">

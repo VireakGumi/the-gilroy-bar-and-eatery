@@ -3,7 +3,7 @@
     letter-spacing: 2px;
     font-weight: 600;
     text-transform: uppercase; /* optional, if you want uppercase */
-    margin-bottom: 1.5rem;     /* equivalent to Bootstrap mb-6 (~24px) */
+    margin-bottom: 1.5rem;     
 }
 
 .terraceCarousel::-webkit-scrollbar {
