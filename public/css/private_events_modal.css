@@ -8,7 +8,7 @@
 }
 
 .private-events-page .modal-content {
-  background: #0a2a2a;
+  background: #051F20;
   border: none;
   border-radius: 0;
   min-height: 100vh;
@@ -97,7 +97,7 @@
   opacity: 1;
 }
 
-.private-events-page .submit-btn {
+.private-events-page .modal-submit-btn {
   border: 2px solid #CB9E43;
   color: #CB9E43;
   padding: 14px 30px;
@@ -108,9 +108,10 @@
   transition: 0.3s;
   display: inline-block;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
-.private-events-page .submit-btn:hover {
+.private-events-page .modal-submit-btn:hover {
   background: #CB9E43;
   color: #0a2a2a;
 }
@@ -132,7 +133,7 @@
   .private-events-page .modal-body {
     padding: 15px;
   }
-  .private-events-page .submit-btn {
+  .private-events-page .modal-submit-btn{
     width: 100%;
   }
 }

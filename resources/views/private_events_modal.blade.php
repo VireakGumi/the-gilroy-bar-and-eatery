@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </form>
-                <button type="button" class="btn submit-btn">Send</button>
+                <button type="button" class="btn modal-submit-btn">Send</button>
             </div>
 
         </div>

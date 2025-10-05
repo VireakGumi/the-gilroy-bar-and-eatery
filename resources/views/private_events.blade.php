@@ -7,7 +7,7 @@
 
         {{-- Hero Section --}}
         <section class="d-flex align-items-center text-light"
-            style="background-color:#0a2a2a ; min-height:100vh; padding-top:80px; padding-bottom:80px;">
+            style="background-color:#051F20 ; min-height:100vh; padding-top:80px; padding-bottom:80px;">
             <div class="container text-center">
                 <h1 class="display-4 fw-bold">PRIVATE EVENTS</h1>
                 <p class="lead mb-4">

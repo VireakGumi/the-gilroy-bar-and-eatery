@@ -3,12 +3,12 @@
 @section('title', 'About Us')
 
 @section('content')
-    <div class="py-1" style="background-color: #012C23;">
+    <div class="py-1" style="background-color: #051F20;">
         <div class="container">
 
             <div class="row align-items-center mb-5" style="margin-top: 60px; border-radius:10px;">
                 <div class="col-lg-6 text-light order-lg-last text-center text-lg-start ps-lg-5">
-                    <h3 class="fw-bold text-uppercase mb-4" style="color: #d4a373; font-size: 2.5rem;">
+                    <h3 class="fw-bold text-uppercase mb-4" style="color: #DABA59; font-size: 2.5rem;">
                         About Us
                     </h3>
                     <p class="fs-5 lh-lg mb-4">
