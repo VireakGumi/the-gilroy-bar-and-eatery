@@ -3,7 +3,7 @@ html {
 }
         .custom-dark-bg {
             background-color: #051F20;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* stronger shadow */
             min-height: 80px;
             display: flex;
             align-items: center;
@@ -36,8 +36,8 @@ html {
         }
 
         #menu-ham {
-            background: none;   
-            border: none;     
+            background: none;
+            border: none;
         }
 
         @media (max-width: 992px) {
