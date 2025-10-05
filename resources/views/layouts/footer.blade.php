@@ -13,7 +13,7 @@
                     <li><a href="/menu">Menu</a></li>
                     <li><a href="/private-events">Private Events</a></li>
                     <li><a href="/drink-menu">Drink Munu</a></li>
-                    <li style="display: inline;">
+                    <li>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal"
                             style="background: none; border: none; color: inherit; padding: 0; cursor: pointer;">
                             Contact

@@ -2,21 +2,21 @@
 @section('title', 'Gilroy Bar & Eatery')
 @section('content')
     <div class="main-content">
-        <section class="hero-section">
-            <div class="hero-slideshow">
-                <div class="slideshow-container">
+        <section class="home-hero-section">
+            <div class="home-hero-slideshow">
+                <div class="home-slideshow-container">
                     @foreach ($slides as $index => $slide)
-                        <div class="slide {{ $index === 0 ? 'active' : '' }}">
+                        <div class="home-slide {{ $index === 0 ? 'active' : '' }}">
                             <img src="{{ $slide }}" alt="Gilroy Restaurant Interior">
                         </div>
                     @endforeach
-                    <div class="slide-overlay"></div>
+                    <div class="home-slide-overlay"></div>
                 </div>
             </div>
 
-            <div class="hero-content">
+            <div class="home-hero-content">
                 <div class="container text-center">
-                    <h1 class="hero-logo mt-5">Gilroy</h1>
+                    <h1 class="home-hero-logo mt-5">Gilroy</h1>
                     <h2 class="book-title text-uppercase mb-4 mt-5">BOOK YOUR DESIRED SPACE</h2>
                     <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
                         <a href="#booking" class="btn btn-stella btn-lg text-uppercase">GROUND FLOOR</a>
