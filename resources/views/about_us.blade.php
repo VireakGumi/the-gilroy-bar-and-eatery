@@ -3,7 +3,7 @@
 @section('title', 'About Us')
 
 @section('content')
-    <div class="py-1" style="background-color: #012C23;">
+    <div class="py-1" style="background-color: #051F20;">
         <div class="container">
 
             <div class="row align-items-center mb-5" style="margin-top: 60px; border-radius:10px;">
