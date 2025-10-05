@@ -3,7 +3,7 @@
 @section('title', 'Prinvate Dining')
 
 @section('content')
-<section class="dining-page bg-dark text-light py-10">
+<section class="dining-page text-light py-10" style="background: #051F20">
     <div class="container text-center">
 
         <!-- Section Title -->

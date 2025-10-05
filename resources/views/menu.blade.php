@@ -6,7 +6,7 @@
 
 <style>
     body {
-        background-color: #212529;
+        background-color: #051F20;
     }
     .img-slide {
         object-fit: cover;
@@ -19,7 +19,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 10px;
-        color: #D8C7A3;
+        color: #DABA59;
         text-decoration: none;
     }
 
@@ -28,11 +28,11 @@
     }
 </style>
 
-<div class="container bg-dark text-light py-5 mb-5 mt-5" style="max-width: 1250px;">
+<div class="container text-light py-5 mb-5 mt-5" style="max-width: 1250px;">
     <div class="row g-5 align-items-center">
         <!-- LEFT SECTION -->
         <div class="col-lg-6 col-md-12 px-4 text-center text-lg-start">
-            <h1 class="fw-bold mb-3 text-uppercase" style="letter-spacing: 3px; color: #D8C7A3;">
+            <h1 class="fw-bold mb-3 text-uppercase" style="letter-spacing: 3px; color: #DABA59;">
                 Our Menu
             </h1>
             <p class="mb-5 mt-3">
