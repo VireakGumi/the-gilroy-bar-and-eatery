@@ -34,13 +34,10 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('fontawesome-free/js/all.min.js') }}"></script>
-    {{-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-     --}}
     <!-- Font Awesome JS -->
+    <script src="{{ asset('fontawesome-free/js/all.min.js') }}"></script>
 
     <!-- JS Content -->
-
     @yield('js')
 </body>
 
