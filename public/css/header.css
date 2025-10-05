@@ -35,6 +35,11 @@ html {
             transform: translateX(-50%);
         }
 
+        #menu-ham {
+            background: none;   
+            border: none;     
+        }
+
         @media (max-width: 992px) {
 
             .custom-dark-bg {
@@ -78,3 +83,78 @@ html {
                 font-size: 3rem;
             }
         }
+.menu-overlay {
+  position: fixed;
+  inset: 0;                  /* top/right/bottom/left = 0 */
+  background-color: rgba(0,0,0,0.95);
+  display: flex;             /* always flex, not none */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99999;
+  text-align: center;
+  opacity: 0;                /* hidden initially */
+  pointer-events: none;      /* prevent clicks when hidden */
+  transition: opacity 0.4s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;                /* fade in */
+  pointer-events: auto;      /* allow clicks when active */
+}
+
+/* Menu layout */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Section titles */
+.menu-section h3 {
+  color: #e6b927;
+  letter-spacing: 6px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Menu items */
+.menu-section ul {
+  list-style: none;
+}
+
+.menu-section li {
+  font-size: 22px;
+  color: white;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-section a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-section li:hover {
+  /* color: #e6b927; */
+  transform: translateY(-5px);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #c6a675;
+}
