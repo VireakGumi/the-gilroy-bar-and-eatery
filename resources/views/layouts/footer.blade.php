@@ -52,15 +52,15 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="custom-gold-text-faint fw-bold mb-3">CONTACT INFO</h5>
                 <ul class="list-unstyled custom-link-list">
-                    <li><i class="bi bi-geo-alt-fill me-2"></i> 427 Chapel St, South Yarra 3141</li>
-                    <li><i class="bi bi-p-square-fill me-2"></i> Public Parking - Jam Factory</li>
+                    <li><i class="fas fa-map-marker-alt me-2"></i> 427 Chapel St, South Yarra 3141</li>
+                    <li><i class="fas fa-parking me-2"></i> Public Parking - Jam Factory</li>
                     <li><a href="mailto:info@stellarestaurantbar.com.au" class="custom-link-gold-subtle"><i
-                                class="bi bi-envelope-fill me-2"></i> info@stellarestaurantbar.com.au</a></li>
-                    <li><i class="bi bi-telephone-fill me-2"></i> 03 8820 0028</li>
+                                class="fas fa-envelope me-2"></i> info@stellarestaurantbar.com.au</a></li>
+                    <li><i class="fas fa-phone me-2"></i> 03 8820 0028</li>
                 </ul>
                 <div class="social-icons mt-3">
-                    <a href="#" class="btn custom-social-btn me-2"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="btn custom-social-btn"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn custom-social-btn me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="btn custom-social-btn"><i class="fab fa-instagram"></i></a>
                 </div>
 
                 <h5 class="custom-gold-text-faint fw-bold mt-4 mb-3">SURCHARGES</h5>
