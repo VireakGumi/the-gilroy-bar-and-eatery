@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Fonts & Icons -->
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +8,6 @@
     <title>@yield('title', 'Gilroy Bar')</title>
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap"
         rel="stylesheet">
@@ -17,7 +16,9 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="{{ asset('fontawesome-free/css/all.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @yield('style')
 </head>
 
 <body>
@@ -34,14 +35,11 @@
     @include('layouts.footer')
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    {{-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-     --}}
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <!-- Font Awesome JS -->
     <script src="{{ asset('fontawesome-free/js/all.min.js') }}"></script>
 
     <!-- JS Content -->
-
     @yield('js')
 </body>
 

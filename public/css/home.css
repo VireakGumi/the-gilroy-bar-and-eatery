@@ -15,7 +15,7 @@
 }
 
 .home-hero-content {
-    height: 45vh; 
+    height: 45vh;
     display: flex;
     align-items: center;
     background-color: #051F20;
@@ -62,10 +62,10 @@
 }
 
 .home-hero-logo {
-    font-family: 'Cormorant Garamond', serif; 
-    font-size: 5rem; 
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
     font-style: italic;
-    color: #DABA59; 
+    color: #DABA59;
     line-height: 1;
     margin-bottom: 0.5rem;
 }
@@ -74,7 +74,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #D2AE3C; 
+    color: #D2AE3C;
 }
 
 .btn-stella {
@@ -106,7 +106,7 @@
 }
 
 .section-title {
-    color: #CB9E43; 
+    color: #CB9E43;
     font-weight: 700;
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -148,7 +148,7 @@
 }
 .instagram-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
 }
 
@@ -159,8 +159,8 @@
 
 .instagram-item img {
     width: 100%;
-    height: 100%; 
-    aspect-ratio: 1 / 1; 
+    height: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     transition: transform 0.5s;
     display: block;
@@ -173,32 +173,32 @@
 @media (max-width: 991.98px) {
     .col-md-6,
     .col-lg-3 {
-        text-align: left !important; 
+        text-align: left !important;
     }
     .custom-link-list {
         padding-left: 0;
-        display: block; 
-        text-align: left; 
+        display: block;
+        text-align: left;
     }
     .custom-link-list li {
-        text-align: left; 
+        text-align: left;
     }
     .custom-hours-list div {
-        justify-content: space-between !important; 
+        justify-content: space-between !important;
         text-align: left !important;
     }
 
     .home-buttons .home-btn-link {
-        width: 50% !important; 
+        width: 50% !important;
         padding-top: 15px !important;
         padding-bottom: 15px !important;
     }
-    
+
     .home-buttons a:nth-last-child(-n+2) {
-        border-bottom: none !important; 
+        border-bottom: none !important;
     }
     .d-flex.flex-wrap a {
-        width: 30%; 
+        width: 30%;
         font-size: 1rem;
         padding: 10px;
     }
@@ -222,28 +222,28 @@
     }
     .home-hero-content {
         height: auto;
-        padding: 1.5rem 0; 
+        padding: 1.5rem 0;
     }
     .home-hero-logo {
         font-size: 3rem;
-        margin-top: 0; 
+        margin-top: 0;
     }
     .book-title {
         font-size: 0.9rem;
-        margin-bottom: 1rem; 
+        margin-bottom: 1rem;
     }
 
     .section-title{
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
-    
+
     .section-dark .col-lg-10 p {
-        font-size: 0.9rem !important; 
+        font-size: 0.9rem !important;
         line-height: 1.5;
     }
-    
+
     .d-flex.flex-wrap a {
-        width: 80%; 
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 0.5rem;
@@ -252,22 +252,22 @@
         margin-bottom: 0;
     }
     .instagram-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 0; 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
     }
     .home-buttons {
-        margin-top: 1rem !important; 
+        margin-top: 1rem !important;
         margin-bottom: 1rem !important;
     }
-    
+
     .home-buttons .home-btn-link {
-        display: block; 
-        width: 80% !important; 
+        display: block;
+        width: 80% !important;
         margin-left: auto;
         margin-right: auto;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .home-buttons .col-12 {
         padding-left: 0;
