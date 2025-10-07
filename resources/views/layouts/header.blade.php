@@ -34,8 +34,8 @@
                 <li><a href="/drink-menu">DRINK MENU</a></li>
                 <li><a href="/private-events">PRIVATE EVENTS</a></li>
                 <li><a href="/about-us">ABOUT US</a></li>
-                <li><a href="#">CONTACT US</a></li>
-                <li><a href="#">CAREER</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">CONTACT US</a></li>
+                <li><a href="/career">CAREER</a></li>
             </ul>
         </div>
     </div>

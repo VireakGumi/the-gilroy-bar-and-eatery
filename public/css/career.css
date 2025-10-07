@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #DABA59;
+    --dark-color: #051F20;
+    --light-color: #D2AE3C;
+    --text-color: #051F20;
+    --gray-color: #6c757d;
+    --header-gold: #D2AE3C;
+    --green-bg: #051F20;
+}
+
+.career-main-content {
+    background-color: var(--green-bg);
+}
+
+.career-hero-section {
+    background: linear-gradient(rgba(5, 31, 32, 0.7), rgba(5, 31, 32, 0.7)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.career-hero-logo {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--header-gold);
+    margin-bottom: 1rem;
+}
+
+.career-section-title {
+    color: var(--header-gold);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.career-section-title:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    bottom: -10px;
+    left: 20%;
+}
+
+.career-section-dark {
+    background-color: var(--green-bg);
+    color: white;
+}
+
+.career-section-light h4 {
+    background-color: var(--green-bg);
+    color: #DABA59;
+}
+.career-section-light p {
+    color: #fff;
+}
+
+.btn-stella {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-stella:hover {
+    background-color: var(--light-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.career-card {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    border: none;
+    border: 1px solid #DABA59;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+}
+
+.career-card-header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 20px;
+}
+
+.career-card-body {
+    padding: 25px;
+    background: #051F20;
+}
+
+.career-benefits-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.career-benefits-list li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.career-benefits-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.career-testimonial-card {
+    background: #051F20;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.career-testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.career-testimonial-author {
+    font-weight: 600;
+    color: #fff;
+}
+
+.career-testimonial-role {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    #career-apply-modal .modal-dialog {
+        margin: 1rem;
+        max-width: calc(100% - 2rem);
+    }
+    
+    #career-apply-modal .modal-header {
+        padding: 1.5rem;
+    }
+    
+    #career-apply-modal .modal-title {
+        font-size: 1.5rem;
+    }
+    
+    #career-apply-modal .career-application-form {
+        padding: 1.5rem;
+    }
+    
+    #career-apply-modal .btn-stella {
+        width: 100%;
+        min-width: auto;
+    }
+}
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
