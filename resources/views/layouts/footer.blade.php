@@ -21,7 +21,7 @@
                     </li>
 
                     <li><a href="/about-us">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="/career">Careers</a></li>
                 </ul>
 
                 <h5 class="custom-gold-text-faint fw-bold mt-4 mb-3">OUR SPACES</h5>
