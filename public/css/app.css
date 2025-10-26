@@ -21,10 +21,14 @@ body {
 
 /* Custom Gold Theme for Bootstrap Buttons */
 .btn-gold {
-    color: #D2AE3C;             /* text color */
-    background-color: transparent; /* transparent background */
-    border: 2px solid #D2AE3C;  /* gold border */
-    border-radius: 50px;        /* pill shape */
+    color: #D2AE3C;
+    /* text color */
+    background-color: transparent;
+    /* transparent background */
+    border: 2px solid #D2AE3C;
+    /* gold border */
+    border-radius: 50px;
+    /* pill shape */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -32,7 +36,23 @@ body {
 }
 
 .btn-gold:hover {
-    background-color: #D2AE3C;  /* gold background on hover */
-    color: #fff;                /* white text on hover */
-    box-shadow: 0 4px 12px rgba(210, 174, 60, 0.4); /* subtle glow */
+    background-color: #D2AE3C;
+    /* gold background on hover */
+    color: #fff;
+    /* white text on hover */
+    box-shadow: 0 4px 12px rgba(210, 174, 60, 0.4);
+    /* subtle glow */
+}
+
+:root {
+    --mg-bg: #f8f7f5;
+    --mg-text-color: #383838;
+    --mg-heading-font: 'Playfair Display', serif;
+    --mg-link-spacing: 0.5rem;
+    --mg-fixed-padding: 20px;
+    --logo-size-lg: 1.8rem;
+    --logo-size-sm: 1.5rem;
+    --family-size-lg: 0.6rem;
+    --family-size-sm: 0.5rem;
+    --logo-line-length: 20px;
 }
