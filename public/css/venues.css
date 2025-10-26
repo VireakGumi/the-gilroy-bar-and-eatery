@@ -1,0 +1,69 @@
+.venues-section {
+    background-color: #fbf9f4;
+}
+
+.venue-img {
+    width: 80%;
+    height: 470px;
+    object-fit: cover;
+}
+
+.custom-accordion-btn {
+    background-color: #fbf9f4 !important;
+    color: #000 !important;
+    font-family: 'columbiasans-light', serif;
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    box-shadow: none;
+    justify-content: space-between;
+}
+
+.custom-accordion-btn::after {
+    content: '+';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    transform: none !important;
+    background-image: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '−';
+    color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Book Button */
+.custom-book-btn {
+    font-family: 'MTT Milano', sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 0;
+    padding: 8px 20px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.custom-book-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.venue-row {
+  row-gap: 3rem; /* vertical gap */
+  column-gap: 4rem; /* horizontal gap */
+}
+
+@media (max-width: 768px) {
+    .venue-img {
+        height: 300px;
+    }
+}

@@ -25,6 +25,6 @@ class HomeController extends Controller
             "https://stellarestaurantbar.com.au/wp-content/uploads/sb-instagram-feed-images/528654692_18019288826736492_4344750693245790134_nfull.webp",
         ];
 
-        return view('home', compact('slides', 'instagramImages'));
+        return view('old.home', compact('slides', 'instagramImages'));
     }
 }

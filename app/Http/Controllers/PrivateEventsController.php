@@ -48,6 +48,6 @@ class PrivateEventsController extends Controller
                 'features' => ['Exclusive seating for 10 guests'],
             ],
         ];
-        return view('private_events', compact('spaces'));
+        return view('old.private_events', compact('spaces'));
     }
 }

@@ -85,7 +85,7 @@
                 Proudly Powered by Bove Marketing
             </div>
         </div>
-    </div> 
-    @include('private_events_modal')
+    </div>
+    {{-- @include('private_events_modal') --}}
 
 </footer>

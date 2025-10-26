@@ -17,6 +17,7 @@ Route::get('/about-us', function () {
 })->name('about-us');
 
 
+// old
 Route::get('/ground-floor-area', [VenueController::class, 'groundFloorArea'])->name('ground-floor-area');
 Route::get('/cocktail-dining-area', [VenueController::class, 'cocktailDiningArea'])->name('cocktail-dining-area');
 Route::get('/private-dining', [VenueController::class, 'pravateDining'])->name('private-dining');
@@ -27,3 +28,8 @@ Route::get('/private-events', [PrivateEventsController::class, 'privateEvents'])
 Route::get('/drink-menu', [DrinkController::class, 'drinkMenu'])->name('drink-menu');
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/career', [CareerController::class, 'career'])->name('career');
+
+// new
+Route::get('/venues', [VenueController::class, 'index'])->name('venues');
+
+

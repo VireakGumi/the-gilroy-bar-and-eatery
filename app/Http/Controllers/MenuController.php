@@ -13,7 +13,6 @@ class MenuController extends Controller
             'Set Menu $85pp' => 'storage/pdf/menu/gilroy_Menu_A5_Set-Menu-85PP.pdf',
             'Set Menu $109pp' => 'storage/pdf/menu/gilroy_Menu_A5_Set-Menu-109PP.pdf',
             'Canapes Menu' => 'storage/pdf/menu/gilroy_Menu_A5_Canapes_Aug25.pdf',
-            'Downstairs Menu' => 'storage/pdf/menu/gilroy_A5_Dessert_Aug25.pdf',
             'Cocktail Lounge Menu' => 'storage/pdf/menu/gilroy_Cocktail-lounge-A4_Aug25_v2.pdf',
             'Rooftop Menu' => 'storage/pdf/menu/gilroy_Main-Menu_A3_Roof-Top_Feb25.pdf',
             'Cigar Menu' => 'storage/pdf/menu/gilroy_Cigar-Menu.pdf',
@@ -36,6 +35,6 @@ class MenuController extends Controller
             'images/menu/TIV4643.jpg',
             'images/menu/TIV4652.jpg',
         ];
-        return view('menu', compact('pdfMenu', 'imagesMenu'));
+        return view('old.menu', compact('pdfMenu', 'imagesMenu'));
     }
 }
