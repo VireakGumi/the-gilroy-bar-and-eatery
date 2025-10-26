@@ -103,31 +103,6 @@
 .mg-links li {
     margin-bottom: var(--mg-link-spacing);
 }
-.mg-link {
-    font-family: var(--mg-heading-font);
-    font-size: 1.15rem;
-    text-decoration: none;
-    color: var(--mg-text-color);
-    position: relative;
-    transition: color 0.3s, opacity 0.3s;
-}
-.mg-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    background-color: var(--mg-text-color);
-    width: 0; 
-    transition: width 0.3s ease-in-out; 
-}
-.mg-link:hover::after {
-    width: 100%; 
-}
-.mg-link:hover {
-    color: var(--mg-text-color);
-    opacity: 0.7;
-}
 .mg-copyright-text {
     font-size: 0.85rem;
 }

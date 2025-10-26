@@ -1,23 +1,37 @@
-/* ==================== GLOBAL STYLES ==================== */
-:root {
-    --font-serif: 'Times New Roman', Times, serif;
-    --color-dark: #1a1a1a;
-    --color-light: #f7f5f2;
-    --color-border: #e8e6e3;
-}
-
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-    line-height: 1.6;
-}
-
 /* ==================== TYPOGRAPHY ==================== */
-h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo--main,
+.serif-font {
     font-family: var(--font-serif);
     font-weight: 300;
     letter-spacing: 0.5px;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-outline-dark,
+.btn-outline-light {
+    border-radius: 0;
+    border-width: 1px;
+    font-size: .75rem;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--color-dark);
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--color-dark);
 }
 
 /* ==================== HEADER ==================== */
@@ -25,51 +39,6 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     background-color: var(--color-light);
     border-bottom: 1px solid var(--color-border);
     padding: 1.5rem 0;
-}
-
-.logo--main {
-    font-size: 1.8rem;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    color: var(--color-dark);
-    text-decoration: none;
-}
-
-.logo-decoration {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.logo-line {
-    height: 1px;
-    width: 20px;
-    background-color: var(--color-dark);
-}
-
-.logo-text {
-    font-size: 0.6rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin: 0;
-    color: var(--color-dark);
-}
-
-/* Header Button */
-.btn-outline-dark {
-    border-radius: 0;
-    border-width: 1px;
-    font-size: 0.75rem;
-    padding: 10px 25px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-dark:hover {
-    background-color: var(--color-dark);
-    color: white;
 }
 
 /* ==================== VENUE GRID ==================== */
@@ -91,7 +60,7 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform .4s;
 }
 
 .venue-item:hover .venue-image {
@@ -102,11 +71,11 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     font-family: var(--font-serif);
     font-size: 1.25rem;
     font-weight: 300;
-    margin: 1.5rem 0 1rem 0;
+    margin: 1.5rem 0 1rem;
     color: var(--color-dark);
     text-decoration: none;
     display: block;
-    transition: color 0.3s ease;
+    transition: .3s;
 }
 
 .venue-name:hover {
@@ -116,7 +85,7 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
 .venue-links {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: .5rem;
 }
 
 .custom-arrow-link {
@@ -124,35 +93,58 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     align-items: center;
     text-decoration: none;
     color: var(--color-dark);
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
+    font-size: .9rem;
+    position: relative;
+    transition: .3s;
 }
 
 .custom-arrow-link::before {
     content: "→";
     margin-right: 8px;
-    transition: margin-right 0.3s ease;
-}
-
-.custom-arrow-link:hover {
-    color: #666;
+    transition: .3s;
 }
 
 .custom-arrow-link:hover::before {
     margin-right: 12px;
 }
 
+.custom-arrow-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: var(--mg-text-color);
+    width: 0;
+    transition: .3s;
+}
+
+.custom-arrow-link:hover::after {
+    width: 40%;
+}
+
 /* ==================== MOBILE SLIDER ==================== */
-.mobile-venues-slider {
-    padding: 2rem 0;
+.mobile-venues-slider,
+.venue-slider-content {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.venue-slider-content::-webkit-scrollbar {
+    display: none;
 }
 
 .venue-slide {
     flex: 0 0 75%;
-    padding: 0 0.5rem;
+    max-width: 75%;
+    padding: 0 .5rem;
 }
 
-/* ==================== ABOUT BANNER ==================== */
+/* ==================== BANNERS ==================== */
 .about-banner {
     position: relative;
     height: 70vh;
@@ -166,28 +158,17 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     object-fit: cover;
 }
 
-.about-content {
-    padding: 4rem 0;
-    background-color: var(--color-light);
-}
-
-.about-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-}
-
-/* ==================== CHEF BANNER ==================== */
-.chef-banner {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('https://www.datocms-assets.com/127859/1719298925-margaret-hero.png?auto=format&w=1440');
+.chef-banner,
+.private-events {
     background-size: cover;
     background-position: center;
-    padding: 6rem 0;
-    color: white;
+    color: #fff;
     text-align: center;
+    padding: 6rem 0;
+}
+
+.chef-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('https://www.datocms-assets.com/127859/1719298925-margaret-hero.png?auto=format&w=1440');
 }
 
 .chef-banner h3 {
@@ -197,85 +178,8 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     margin-bottom: 2rem;
 }
 
-/* ==================== WHAT'S ON SECTION ==================== */
-
-
-.section-title {
-    font-family: var(--font-serif);
-    font-weight: 300;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    padding: 0 45px;
-}
-.events-table th, 
-.events-table td {
-    padding: 1.5rem 20px; 
-    border-bottom: 1px solid var(--color-border-light);
-    vertical-align: middle;
-}
-
-.events-table th {
-    font-size: 0.75rem;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-bottom: 0.5rem; 
-    border-bottom: 1px solid var(--color-dark);
-}
-
-.expand-toggle {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.5rem;
-    line-height: 1;
-    transition: transform 0.3s ease;
-}
-.event-row-expandable.active .expand-toggle {
-    transform: rotate(45deg); 
-    display: flex;
-}
-
-.event-row-expandable.active {
-    border-bottom: none !important; 
-}
-
-.event-details-row {
-    visibility: collapse; 
-    max-height: 0;
-    opacity: 0;
-    border-bottom: 1px solid var(--color-dark) !important; 
-    transition: max-height 0.4s ease-out, opacity 0.3s ease, visibility 0.4s;
-}
-
-.event-details-row td > div {
-    padding: 0 0 0 0; 
-    transition: padding 0.4s ease-out;
-    background-color: inherit; 
-}
-
-.event-details-row.active {
-    visibility: visible;
-    max-height: 500px; 
-    opacity: 1;
-}
-
-.event-details-row.active td > div {
-    padding: 1.5rem; 
-}
-
-
-
-/* ==================== PRIVATE EVENTS ==================== */
 .private-events {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://www.datocms-assets.com/127859/1719298925-margaret-hero.png?auto=format&w=1440');
-    background-size: cover;
-    background-position: center;
-    padding: 6rem 0;
-    color: white;
-    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://www.datocms-assets.com/127859/1719298925-margaret-hero.png?auto=format&w=1440');
 }
 
 .private-events h2 {
@@ -288,62 +192,152 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
 .private-events p {
     max-width: 500px;
     margin: 0 auto 2rem;
-    font-size: 0.95rem;
+    font-size: .95rem;
     line-height: 1.6;
 }
 
-.btn-outline-light {
-    border-radius: 0;
-    border-width: 1px;
-    font-size: 0.75rem;
-    padding: 10px 25px;
-    letter-spacing: 1px;
+/* ==================== WHAT'S ON ==================== */
+.section-title {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    padding: 0 40px;
+}
+
+.events-table th,
+.events-table td {
+    padding: 1.5rem 20px;
+    border-bottom: 1px solid var(--color-border-light);
+    vertical-align: middle;
+}
+
+.events-table th {
+    font-size: .75rem;
+    font-weight: normal;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--color-dark);
 }
 
-.btn-outline-light:hover {
-    background-color: white;
+.expand-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: .3s;
+}
+
+.event-row-expandable.active .expand-toggle {
+    transform: rotate(45deg);
+}
+
+.event-details-row {
+    visibility: collapse;
+    max-height: 0;
+    opacity: 0;
+    border-bottom: 1px solid var(--color-dark);
+    transition: max-height .4s ease-out, opacity .3s, visibility .4s;
+}
+
+.event-details-row td>div {
+    padding: 0;
+    transition: padding .4s;
+    background-color: inherit;
+}
+
+.event-details-row.active {
+    visibility: visible;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.event-details-row.active td>div {
+    padding: 1.5rem;
+}
+
+/* ==================== SLIDER NAV BUTTONS ==================== */
+.slider-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, .7);
+    border: 1px solid var(--color-dark);
     color: var(--color-dark);
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    outline: none;
+    display: none;
+    transition: .3s;
 }
 
-@media (max-width: 768px) {
+.slider-nav-btn:hover {
+    background-color: var(--color-dark);
+    color: #fff;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+@media(max-width:991.98px) {
+    .slider-nav-btn {
+        display: block;
+    }
+}
+
+@media(max-width:576px) {
+    .venue-slide {
+        flex: 0 0 85%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+
+    .slider-nav-btn {
+        padding: 5px 10px;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:768px) {
     .logo--main {
         font-size: 1.4rem;
         letter-spacing: 6px;
     }
-    
+
     .section-title {
         font-size: 2.5rem;
     }
-    
+
     .about-banner {
         height: 50vh;
         min-height: 400px;
     }
-    
+
     .events-table {
-        font-size: 0.9rem;
+        font-size: .9rem;
     }
-    
+
     .events-table th,
     .events-table td {
-        padding: 0.75rem 0.25rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .venue-slide {
-        flex: 0 0 85%;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 576px) {
-    .event-details-row.active td > div {
-        padding: 1.5rem;
+        padding: .75rem .25rem;
     }
 }
