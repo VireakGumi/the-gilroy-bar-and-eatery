@@ -1,5 +1,5 @@
 <footer class="mg-footer bg-light text-dark py-5">
-    <div class="container mg-max-width px-3 px-md-4">
+    <div class="container-fluid mg-max-width px-5">
         <div class="row g-4 g-md-5 mg-footer-top">
 
             <div class="col-lg-4 col-12">

@@ -198,21 +198,20 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
 }
 
 /* ==================== WHAT'S ON SECTION ==================== */
-.whats-on-section {
-    padding: 4rem 0;
-}
+
 
 .section-title {
     font-family: var(--font-serif);
     font-weight: 300;
     font-size: 3rem;
-    text-align: center;
     margin-bottom: 3rem;
+    padding: 0 45px;
 }
-
-.events-table {
-    width: 100%;
-    border-collapse: collapse;
+.events-table th, 
+.events-table td {
+    padding: 1.5rem 20px; 
+    border-bottom: 1px solid var(--color-border-light);
+    vertical-align: middle;
 }
 
 .events-table th {
@@ -220,31 +219,53 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 1rem 0.5rem;
-    border-bottom: 1px solid var(--color-dark);
-    text-align: left;
-}
-
-.events-table td {
-    padding: 1.5rem 0.5rem;
-    border-bottom: 1px solid #ddd;
-    vertical-align: top;
-}
-
-.events-table tr:last-child td {
+    padding-bottom: 0.5rem; 
     border-bottom: 1px solid var(--color-dark);
 }
 
-.table-link {
-    color: var(--color-dark);
-    text-decoration: underline;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+.expand-toggle {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+.event-row-expandable.active .expand-toggle {
+    transform: rotate(45deg); 
+    display: flex;
 }
 
-.table-link:hover {
-    color: #666;
+.event-row-expandable.active {
+    border-bottom: none !important; 
 }
+
+.event-details-row {
+    visibility: collapse; 
+    max-height: 0;
+    opacity: 0;
+    border-bottom: 1px solid var(--color-dark) !important; 
+    transition: max-height 0.4s ease-out, opacity 0.3s ease, visibility 0.4s;
+}
+
+.event-details-row td > div {
+    padding: 0 0 0 0; 
+    transition: padding 0.4s ease-out;
+    background-color: inherit; 
+}
+
+.event-details-row.active {
+    visibility: visible;
+    max-height: 500px; 
+    opacity: 1;
+}
+
+.event-details-row.active td > div {
+    padding: 1.5rem; 
+}
+
+
 
 /* ==================== PRIVATE EVENTS ==================== */
 .private-events {
@@ -286,7 +307,6 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
     color: var(--color-dark);
 }
 
-/* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
     .logo--main {
         font-size: 1.4rem;
@@ -321,24 +341,9 @@ h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
         font-size: 2rem;
     }
 }
-/* ==================== INSTAGRAM SECTION ==================== */
-.instagram-section {
-    padding: 4rem 0;
-}
 
-.instagram-image-container {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 1;
-}
-
-.instagram-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.instagram-image-container:hover .instagram-image {
-    transform: scale(1.05);
+@media (min-width: 576px) {
+    .event-details-row.active td > div {
+        padding: 1.5rem;
+    }
 }
