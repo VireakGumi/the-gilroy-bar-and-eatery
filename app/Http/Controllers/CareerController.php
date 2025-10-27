@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class CareerController extends Controller
 {
- public function career() 
+ public function career()
     {
         $data = [
             'benefits' => [

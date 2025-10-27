@@ -9,11 +9,12 @@
 @import 'career.css';
 @import 'career_modal.css';
 /* @import 'home_components/mobile-slider.css'; */
+@import 'venues.css';
 /* @import 'dining.css'; */
 
 /* You can also add global styles here */
 body {
-    font-family: Arial, sans-serif;
+    font-family: MessinaSans, sans-serif;
     margin: 0;
     padding: 0;
 }
