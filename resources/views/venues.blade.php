@@ -19,7 +19,7 @@
 
         <div class="container-fluid py-5" style="background-color:#fbf9f4;">
             <div class="d-flex justify-content-center">
-                <div class="row w-100 g-5" style="max-width: 1600px;">
+                <div class="row w-100 g-5" style="max-width: 1700px;">
                     @foreach ($details as $key => $detail)
                         @php
                             // Detect if this is the only item or the last odd one

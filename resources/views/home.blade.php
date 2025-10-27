@@ -12,6 +12,7 @@
     @include('home_components.chef-banner')
     @include('home_components.whats-on-section')
     @include('home_components.private-events')
+    @include('home_components.venues')
 @endsection
 
 @section('js')

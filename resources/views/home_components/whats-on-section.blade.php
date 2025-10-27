@@ -22,7 +22,7 @@ function getVenueImage($location, $venues) {
 @endphp
 
 <section class="whats-on-section py-5 w-full bg-white">
-    <h2 class="section-title text-4xl lg:text-5xl mb-8 text-center w-full">What's On</h2>
+    <h2 class="section-title text-4xl lg:text-5xl mb-8 w-full">What's On</h2>
 
     <!-- Desktop Table (LG and up) -->
     <table class="table events-table w-full border-collapse d-none d-lg-table text-left">
