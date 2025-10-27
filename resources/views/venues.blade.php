@@ -33,10 +33,10 @@
 
                             <!-- Content -->
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0 text-capitalize" style="font-family:'columbiasans-light', serif;">
+                                <h4 class="mb-0 text-capitalize venue-link" style="font-family:'columbiasans-light', serif;">
                                     {{ $key }}</h4>
                                 <a href="/venues/{{ $key }}"
-                                    class="text-decoration-none small fw-semibold text-dark">View Venue</a>
+                                    class=" small fw-semibold text-dark venue-link">View Venue</a>
                             </div>
 
                             <p class="text-muted" style="font-family:'columbiasans-light', serif;">
@@ -58,8 +58,8 @@
                                         data-bs-parent="#venueAccordion_{{ $loop->index }}">
                                         <div class="accordion-body px-0 pt-2">
                                             <ul class="list-unstyled small text-muted mb-0">
-                                                @foreach ($detail['view_detail'] as $info)
-                                                    <li>{{ $info }}</li>
+                                                @foreach ($detail['view_detail'] as $name => $info)
+                                                    <li><a class="m-0" href="{{ $info }}" style="font-size: 12px">{{ $name }}</a></li>
                                                 @endforeach
                                             </ul>
                                         </div>
@@ -67,8 +67,8 @@
                                 </div>
 
                                 <div class="accordion-item border-0 border-bottom mt-2">
-                                    <h2 class="accordion-header" id="headingMenu_{{ $loop->index }}">
-                                        <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                    <h2 class="accordion-header m-0" id="headingMenu_{{ $loop->index }}">
+                                        <button class="accordion-button collapsed custom-accordion-btn mb-0" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseMenu_{{ $loop->index }}"
                                             aria-expanded="false" aria-controls="collapseMenu_{{ $loop->index }}">
                                             VIEW MENU
@@ -77,12 +77,12 @@
                                     <div id="collapseMenu_{{ $loop->index }}" class="accordion-collapse collapse" style="background-color:#fbf9f4;"
                                         aria-labelledby="headingMenu_{{ $loop->index }}"
                                         data-bs-parent="#venueAccordion_{{ $loop->index }}">
-                                        <div class="accordion-body px-0 pt-2">
-                                            <ul class="list-unstyled small text-muted mb-0">
-                                                @foreach ($detail['view_menu'] as $menu)
-                                                    <li>
-                                                        <a href="{{ asset($menu) }}" target="_blank"
-                                                            class="text-decoration-none text-muted">
+                                        <div class="accordion-body px-0">
+                                            <ul class="list-unstyled small text-muted m-0">
+                                                @foreach ($detail['view_menu'] as $menu => $info)
+                                                    <li class="m-0">
+                                                        <a href="{{ asset($info) }}" target="_blank"
+                                                            class="m-0"  style="font-size: 12px">
                                                             {{ basename($menu) }}
                                                         </a>
                                                     </li>

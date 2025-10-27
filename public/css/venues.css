@@ -20,6 +20,12 @@
     justify-content: space-between;
 }
 
+/* Make accordion underline darker */
+.accordion-item.border-bottom {
+    border-bottom: 1.5px solid #000 !important;
+    /* darker underline */
+}
+
 .custom-accordion-btn::after {
     content: '+';
     font-size: 18px;
@@ -39,27 +45,72 @@
     outline: none !important;
 }
 
+.accordion-body a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.accordion-body a:hover {
+    color: #555;
+    /* darker hover for elegance */
+    text-decoration: underline;
+}
+
 /* Book Button */
 .custom-book-btn {
     font-family: 'MTT Milano', sans-serif;
     font-size: 14px;
-    color: #000;
-    background: transparent;
+    color: #000 !important;
+    background: transparent !important;
     border: 1px solid #000;
     border-radius: 0;
-    padding: 8px 20px;
-    transition: all 0.2s ease-in-out;
+    padding: 8px 8px;
+    transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
 
-.custom-book-btn:hover {
-    background: #000;
-    color: #fff;
+.custom-book-btn:hover,
+.custom-book-btn:focus,
+.custom-book-btn:active {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
 }
 
 .venue-row {
-  row-gap: 3rem; /* vertical gap */
-  column-gap: 4rem; /* horizontal gap */
+    row-gap: 3rem;
+    /* vertical gap */
+    column-gap: 4rem;
+    /* horizontal gap */
+}
+
+.venue-link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.venue-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    /* distance from text */
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    /* your theme color */
+    transition: width 0.3s ease;
+}
+
+.venue-link:hover {
+    /* color: #960000; */
+}
+
+.venue-link:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 768px) {

@@ -1,280 +1,344 @@
-
-.home-hero-section {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #CB9E43;
-    overflow: hidden;
+/* ==================== GLOBAL STYLES ==================== */
+:root {
+    --font-serif: 'Times New Roman', Times, serif;
+    --color-dark: #1a1a1a;
+    --color-light: #f7f5f2;
+    --color-border: #e8e6e3;
 }
 
-.home-hero-slideshow {
-    height: 60vh;
-    position: relative;
-    overflow: hidden;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    line-height: 1.6;
 }
 
-.home-hero-content {
-    height: 45vh;
-    display: flex;
-    align-items: center;
-    background-color: #051F20;
+/* ==================== TYPOGRAPHY ==================== */
+h1, h2, h3, h4, h5, h6, .logo--main, .serif-font {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
-.home-slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+/* ==================== HEADER ==================== */
+.masthead {
+    background-color: var(--color-light);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1.5rem 0;
 }
 
-.home-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+.logo--main {
+    font-size: 1.8rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+.logo-decoration {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
 }
 
-.home-slide.active {
-    opacity: 1;
+.logo-line {
+    height: 1px;
+    width: 20px;
+    background-color: var(--color-dark);
 }
 
-.home-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.home-slide-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 17, 11, 0.3), rgba(0, 17, 11, 0.3));
-    z-index: 1;
-}
-
-.home-hero-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 5rem;
-    font-style: italic;
-    color: #DABA59;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-}
-
-.book-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: #D2AE3C;
-}
-
-.btn-stella {
-    background-color: #DABA59;
-    border: none;
-    color: #fff !important;
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 50px;
-    transition: all 0.3s;
-}
-
-.btn-stella:hover {
-    background-color: #D2AE3C;
-    transform: translateY(-2px);
-}
-
-.availability-link {
-    color: #DABA59;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    display: inline-block;
-}
-
-.availability-link:hover {
-    color: #c1925a;
-}
-
-.section-title {
-    color: #CB9E43;
-    font-weight: 700;
-    margin-bottom: 2rem;
+.logo-text {
+    font-size: 0.6rem;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    margin: 0;
+    color: var(--color-dark);
+}
+
+/* Header Button */
+.btn-outline-dark {
+    border-radius: 0;
+    border-width: 1px;
+    font-size: 0.75rem;
+    padding: 10px 25px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
-.section-dark {
-    background-color: var(--dark-color);
+.btn-outline-dark:hover {
+    background-color: var(--color-dark);
     color: white;
-    padding: 5rem 0;
-}
-.home-btn-link {
-    color: #DABA59;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    transition: background-color 0.3s;
-    align-items: start;
 }
 
-.home-btn-link:last-child {
-    border-right: none;
+/* ==================== VENUE GRID ==================== */
+.venue-grid-section {
+    padding: 4rem 0;
 }
 
-.home-btn-link:hover {
-    color: #DABA59;
+.venue-item {
+    margin-bottom: 3rem;
 }
 
-.instagram-section {
-    padding: 5rem 0;
-    background-color: #051F20;
-}
-
-.instagram-link-wrapper {
-    text-decoration: none;
-    display: block;
-}
-.instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
-}
-
-.instagram-item {
-    overflow: hidden;
+.venue-image-container {
     position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
 }
 
-.instagram-item img {
+.venue-image {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1 / 1;
     object-fit: cover;
-    transition: transform 0.5s;
-    display: block;
+    transition: transform 0.4s ease;
 }
 
-.instagram-item:hover img {
+.venue-item:hover .venue-image {
     transform: scale(1.05);
 }
 
-@media (max-width: 991.98px) {
-    .col-md-6,
-    .col-lg-3 {
-        text-align: left !important;
-    }
-    .custom-link-list {
-        padding-left: 0;
-        display: block;
-        text-align: left;
-    }
-    .custom-link-list li {
-        text-align: left;
-    }
-    .custom-hours-list div {
-        justify-content: space-between !important;
-        text-align: left !important;
-    }
-
-    .home-buttons .home-btn-link {
-        width: 50% !important;
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-    }
-
-    .home-buttons a:nth-last-child(-n+2) {
-        border-bottom: none !important;
-    }
-    .d-flex.flex-wrap a {
-        width: 30%;
-        font-size: 1rem;
-        padding: 10px;
-    }
-    .d-flex.flex-wrap a:last-child {
-        margin-bottom: 0;
-    }
+.venue-name {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 1.5rem 0 1rem 0;
+    color: var(--color-dark);
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
 }
 
-@media (max-width: 575.98px) {
-    .row > div,
-    .col-md-6,
-    .col-lg-3 {
-        text-align: center !important;
-    }
-    .text-md-start, .text-md-end {
-        text-align: center !important;
-    }
+.venue-name:hover {
+    color: #666;
+}
 
-    .home-hero-slideshow {
+.venue-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.custom-arrow-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.custom-arrow-link::before {
+    content: "→";
+    margin-right: 8px;
+    transition: margin-right 0.3s ease;
+}
+
+.custom-arrow-link:hover {
+    color: #666;
+}
+
+.custom-arrow-link:hover::before {
+    margin-right: 12px;
+}
+
+/* ==================== MOBILE SLIDER ==================== */
+.mobile-venues-slider {
+    padding: 2rem 0;
+}
+
+.venue-slide {
+    flex: 0 0 75%;
+    padding: 0 0.5rem;
+}
+
+/* ==================== ABOUT BANNER ==================== */
+.about-banner {
+    position: relative;
+    height: 70vh;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.about-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content {
+    padding: 4rem 0;
+    background-color: var(--color-light);
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* ==================== CHEF BANNER ==================== */
+.chef-banner {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://www.datocms-assets.com/127859/1719298925-margaret-hero.png?auto=format&w=1440');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    color: white;
+    text-align: center;
+}
+
+.chef-banner h3 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* ==================== WHAT'S ON SECTION ==================== */
+.whats-on-section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.events-table th {
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid var(--color-dark);
+    text-align: left;
+}
+
+.events-table td {
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.events-table tr:last-child td {
+    border-bottom: 1px solid var(--color-dark);
+}
+
+.table-link {
+    color: var(--color-dark);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.table-link:hover {
+    color: #666;
+}
+
+/* ==================== PRIVATE EVENTS ==================== */
+.private-events {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://www.datocms-assets.com/127859/1719298925-margaret-hero.png?auto=format&w=1440');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    color: white;
+    text-align: center;
+}
+
+.private-events h2 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.private-events p {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.btn-outline-light {
+    border-radius: 0;
+    border-width: 1px;
+    font-size: 0.75rem;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--color-dark);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .logo--main {
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-banner {
         height: 50vh;
+        min-height: 400px;
     }
-    .home-hero-content {
-        height: auto;
-        padding: 1.5rem 0;
-    }
-    .home-hero-logo {
-        font-size: 3rem;
-        margin-top: 0;
-    }
-    .book-title {
+    
+    .events-table {
         font-size: 0.9rem;
-        margin-bottom: 1rem;
     }
-
-    .section-title{
-        font-size: 1.5rem;
-    }
-
-    .section-dark .col-lg-10 p {
-        font-size: 0.9rem !important;
-        line-height: 1.5;
-    }
-
-    .d-flex.flex-wrap a {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0.5rem;
-    }
-    .d-flex.flex-wrap a:last-child {
-        margin-bottom: 0;
-    }
-    .instagram-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
-    }
-    .home-buttons {
-        margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-    }
-
-    .home-buttons .home-btn-link {
-        display: block;
-        width: 80% !important;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 1rem;
-    }
-    .home-buttons .col-12 {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .home-buttons .col-12:last-child {
-        border-bottom: none !important;
+    
+    .events-table th,
+    .events-table td {
+        padding: 0.75rem 0.25rem;
     }
 }
 
+@media (max-width: 576px) {
+    .venue-slide {
+        flex: 0 0 85%;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+/* ==================== INSTAGRAM SECTION ==================== */
+.instagram-section {
+    padding: 4rem 0;
+}
+
+.instagram-image-container {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.instagram-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instagram-image-container:hover .instagram-image {
+    transform: scale(1.05);
+}

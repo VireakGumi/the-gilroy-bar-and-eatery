@@ -1,71 +1,37 @@
-<nav class="custom-dark-bg">
-    <a href="https://www.nowbookit.com/" class="custom-gold-text">
-        <i class="far fa-calendar-plus"></i>
-    </a>
+<header class="sticky-top bg-light-creamy border-bottom border-gray-200">
+  <div class="container-fluid px-4 py-3 d-flex flex-column flex-md-row align-items-center">
 
-    <a class="custom-gold-text custom-logo-script" href="/">G</a>
+    <!-- Mobile Top Row: Calendar Icon + Logo -->
+    <div class="d-flex d-md-none align-items-center justify-content-between w-100 mb-3">
+      <a href="https://www.nowbookit.com/"
+        class="btn custom-book-btn-icon d-flex align-items-center justify-content-center"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Book a Table">
+        <i class="bi bi-calendar-check"></i>
+      </a>
 
-    <button id="menu-ham" class="custom-gold-text bg-none">
-        <i class="fas fa-bars"></i>
-    </button>
-</nav>
+      <a href="/" class="mx-auto">
+        <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
+      </a>
 
-<!-- Fullscreen Overlay (hidden by default) -->
-<div class="menu-overlay" id="menu-overlay">
-    <div class="menu-content">
-        <div class="logo">
-            <img src="{{ asset('images/logo-no-bg.png') }}" alt="Site Logo" class="img-fluid" style="max-width: 180px;">
-        </div>
-
-        <div class="menu-section">
-            <h3>OUR SPACES</h3>
-            <ul>
-                <li><a href="/ground-floor-area">GROUND FLOOR AREA</a></li>
-                <li><a href="/cocktail-dining-area">COCKTAIL DINING AREA</a></li>
-                <li><a href="/rooftop-terrace">ROOFTOP TERRACE</a></li>
-                <li><a href="/private-dining">PRIVATE DINING</a></li>
-            </ul>
-        </div>
-
-        <div class="menu-section">
-            <h3>QUICK LINKS</h3>
-            <ul>
-                <li><a href="/menu">MENU</a></li>
-                <li><a href="/drink-menu">DRINK MENU</a></li>
-                <li><a href="/private-events">PRIVATE EVENTS</a></li>
-                <li><a href="/about-us">ABOUT US</a></li>
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">CONTACT US</a></li>
-                <li><a href="/career">CAREER</a></li>
-            </ul>
-        </div>
+      <!-- Empty div for balance -->
+      <div style="width: 48px;"></div>
     </div>
 
-    <div class="close-btn" id="close-btn">&times;</div>
-</div>
+    <!-- Desktop Layout -->
+    <div class="d-none d-md-flex position-absolute start-50 translate-middle-x"> 
+      <a href="/" class="d-block text-center">
+        <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
+      </a>
+    </div>
 
-<script>
- document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.getElementById('menu-ham');
-    const overlay = document.getElementById('menu-overlay');
-    const closeBtn = document.getElementById('close-btn');
+    <div class="d-none d-md-flex flex-grow-1 justify-content-end">
+      <a href="https://www.nowbookit.com/"
+          class="btn custom-book-btn text-uppercase fw-bold"
+          target="_blank" rel="noopener noreferrer">
+        BOOK A TABLE
+      </a>
+    </div>
 
-    // Open overlay
-    menuBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        overlay.classList.add('active');
-    });
-
-    // Close overlay
-    closeBtn.addEventListener('click', function() {
-        overlay.classList.remove('active');
-    });
-
-    // Optional: Close overlay when clicking outside content
-    overlay.addEventListener('click', function(e) {
-        if (e.target === overlay) {
-            overlay.classList.remove('active');
-        }
-    });
-});
-
-</script>
+  </div>
+</header>
