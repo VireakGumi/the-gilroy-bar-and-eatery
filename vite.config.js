@@ -9,5 +9,10 @@ export default defineConfig({
             refresh: true,
         }),
         tailwindcss(),
+
     ],
+    server: {
+        host: 'localhost', 
+        port: 5173,        
+    },
 });

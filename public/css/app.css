@@ -46,7 +46,7 @@ body {
 }
 
 :root {
-    --mg-bg: #f8f7f5;
+    --mg-bg: ##ff9f4;
     --mg-text-color: #383838;
     --mg-heading-font: 'Playfair Display', serif;
     --mg-link-spacing: 0.5rem;
@@ -56,4 +56,37 @@ body {
     --family-size-lg: 0.6rem;
     --family-size-sm: 0.5rem;
     --logo-line-length: 20px;
+    --font-serif: 'Times New Roman', Times, serif;
+    --color-dark: #1a1a1a;
+    --color-light: #f7f5f2;
+    --color-border: #e8e6e3;
+      --main-text-color: #000;
+  --light-creamy-bg: #fff;
+  --border-color: #000;
 }
+
+/* hover and after link  */
+.mg-link {
+    font-family: var(--mg-heading-font);
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: var(--mg-text-color);
+    position: relative;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.mg-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: var(--mg-text-color);
+    width: 0; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.mg-link:hover::after {
+    width: 100%; 
+}
+
