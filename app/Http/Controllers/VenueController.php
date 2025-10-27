@@ -8,22 +8,22 @@ class VenueController extends Controller
 {
     public function pravateDining()
     {
-        return view('old.private_dining');
+        return view('private_dining');
     }
 
     public function groundFloorArea()
     {
-        return view('old.ground_floor_area');
+        return view('ground_floor_area');
     }
 
     public function cocktailDiningArea()
     {
-        return view('old.cocktail_dining_area');
+        return view('cocktail_dining_area');
     }
 
     public function rooftopTerrace()
     {
-        return view('old.rooftop_terrace');
+        return view('rooftop_terrace');
     }
 
     public function index()

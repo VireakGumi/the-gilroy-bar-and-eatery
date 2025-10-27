@@ -35,6 +35,6 @@ class MenuController extends Controller
             'images/menu/TIV4643.jpg',
             'images/menu/TIV4652.jpg',
         ];
-        return view('old.menu', compact('pdfMenu', 'imagesMenu'));
+        return view('menu', compact('pdfMenu', 'imagesMenu'));
     }
 }

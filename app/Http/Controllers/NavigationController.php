@@ -6,6 +6,6 @@ use Illuminate\Http\Request;
 class NavigationController extends Controller
 {
     public function navigation(){
-        return view('old.navigation_menu');
+        return view('navigation_menu');
     }
 }
