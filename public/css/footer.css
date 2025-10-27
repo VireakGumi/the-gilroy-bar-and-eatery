@@ -143,3 +143,25 @@
 .mg-subscribe-btn{
     padding: 16px;
 }
+.mg-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.mg-social-link:hover {
+  background-color: #FFA500; /* your brand orange */
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.mg-social-link i {
+  font-size: 1.2rem;
+}
