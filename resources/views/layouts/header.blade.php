@@ -1,3 +1,4 @@
+
 <header class="sticky-top bg-light-creamy border-bottom border-gray-200">
   <div class="container-fluid px-4 py-3 d-flex align-items-center justify-content-between">
 
@@ -32,12 +33,12 @@
         <li><a href="/about" class="d-block py-2 text-dark text-decoration-none">About</a></li>
         <li><a href="/menu" class="d-block py-2 text-dark text-decoration-none">Menu</a></li>
         <li><a href="/contact" class="d-block py-2 text-dark text-decoration-none">Contact</a></li>
-        <!-- BOOK BUTTON for Mobile & Tablet -->
-        <li class="d-lg-none mt-4">
+        <!-- BOOK BUTTON for Mobile & Tablet - Now styled as regular link -->
+        <li class="d-lg-none">
           <a href="https://www.nowbookit.com/"
-             class="btn custom-book-btn text-uppercase fw-bold w-100 text-center"
+             class="d-block py-2 text-dark text-decoration-none custom-book-btn"
              target="_blank" rel="noopener noreferrer">
-            BOOK A TABLE
+            Book A Table
           </a>
         </li>
       </ul>

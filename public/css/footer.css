@@ -81,7 +81,7 @@
     white-space: nowrap;
 }
 .mg-css-select-menu li a:hover {
-    background-color: #e5e5e5;
+    background-color: #e5e5e5 !important;
 }
 .mg-chevron {
     position: absolute;
@@ -157,7 +157,7 @@
 }
 
 .mg-social-link:hover {
-  background-color: #FFA500; /* your brand orange */
+  background-color: gray;
   color: #fff;
   transform: translateY(-3px);
 }

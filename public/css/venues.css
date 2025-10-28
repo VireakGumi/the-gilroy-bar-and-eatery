@@ -113,8 +113,22 @@
     width: 100%;
 }
 
+.fw-normal {
+  width: 65%;
+  font-family: 'columbiasans-light', serif;
+  line-height: 1.1;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .fw-normal {
+    width: 100%;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-    .venue-img {
-        height: 300px;
-    }
+  .fw-normal {
+    width: 100%;
+  }
 }
