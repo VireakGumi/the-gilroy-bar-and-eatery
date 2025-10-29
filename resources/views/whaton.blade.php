@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About')
+@section('title', 'Whats On')
 
 @section('content')
 <div class="" style="background-color: #f1ede5 !important;">

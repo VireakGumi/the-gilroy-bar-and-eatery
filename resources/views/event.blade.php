@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Venues')
+@section('title', 'Private Events')
 
 @section('content')
 <div class="venues-section">
