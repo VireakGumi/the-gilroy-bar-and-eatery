@@ -8,6 +8,6 @@ class DrinkController extends Controller
 {
     public function drinkMenu(){
         // dd('Hello');
-        return view('drink-menu');
+        return view('old_page.drink-menu');
     }
 }

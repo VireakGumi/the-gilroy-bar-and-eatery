@@ -8,12 +8,11 @@
             style="background-color: #f1ede5; padding-top: 60px !important; padding-bottom: 20px important;">
             <p class="text-uppercase mt-3 mb-5"
                 style="font-family: 'MTT Milano', sans-serif; font-size: 15px; letter-spacing: 1px;">
-                Our Venues
+                Private Dining
             </p>
             <h2 class="fw-normal" style="font-family: 'columbiasans-light', serif; line-height: 1.1; width: 65%;">
-                A whole day could be spent in the Margaret dining precinct, from a
-                <span class="fw-semibold">morning</span> coffee and breakfast roll or a linger-longer lunch at Next Door,
-                aperitivo hour at Bar Torino followed by dinner at Gran Torino or Margaret.
+                Gathering friends and family is always a joy. Whether it's a wedding, birthday, homecoming, corporate event
+                or just because, we'll ensure you and your guests are well taken care of.
             </h2>
         </div>
 
@@ -33,10 +32,11 @@
 
                             <!-- Content -->
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="mb-0 text-capitalize venue-link" style="font-family:'columbiasans-light', serif;">
+                                <h4 class="mb-0 text-capitalize venue-link"
+                                    style="font-family:'columbiasans-light', serif;">
                                     {{ $key }}</h4>
-                                <a href="/venues/{{ $key }}"
-                                    class=" small fw-semibold text-dark venue-link">View Venue</a>
+                                <a href="{{ $detail['location']}}" target="_blank" class=" small fw-semibold text-dark venue-link">View
+                                    Venue</a>
                             </div>
 
                             <p class="text-muted" style="font-family:'columbiasans-light', serif;">
@@ -53,13 +53,15 @@
                                             VENUE DETAILS
                                         </button>
                                     </h2>
-                                    <div id="collapseDetails_{{ $loop->index }}" class="accordion-collapse collapse" style="background-color:#fbf9f4;"
+                                    <div id="collapseDetails_{{ $loop->index }}" class="accordion-collapse collapse"
+                                        style="background-color:#fbf9f4;"
                                         aria-labelledby="headingDetails_{{ $loop->index }}"
                                         data-bs-parent="#venueAccordion_{{ $loop->index }}">
                                         <div class="accordion-body px-0 pt-2">
                                             <ul class="list-unstyled small text-muted mb-0">
                                                 @foreach ($detail['view_detail'] as $name => $info)
-                                                    <li><a class="m-0" href="{{ $info }}" style="font-size: 12px">{{ $name }}</a></li>
+                                                    <li><a class="m-0" href="{{ $info }}"
+                                                            style="font-size: 12px">{{ $name }}</a></li>
                                                 @endforeach
                                             </ul>
                                         </div>
@@ -71,20 +73,17 @@
                                         <button class="accordion-button collapsed custom-accordion-btn mb-0" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseMenu_{{ $loop->index }}"
                                             aria-expanded="false" aria-controls="collapseMenu_{{ $loop->index }}">
-                                            VIEW MENU
+                                            SPACE CAPACITY
                                         </button>
                                     </h2>
-                                    <div id="collapseMenu_{{ $loop->index }}" class="accordion-collapse collapse" style="background-color:#fbf9f4;"
-                                        aria-labelledby="headingMenu_{{ $loop->index }}"
+                                    <div id="collapseMenu_{{ $loop->index }}" class="accordion-collapse collapse"
+                                        style="background-color:#fbf9f4;" aria-labelledby="headingMenu_{{ $loop->index }}"
                                         data-bs-parent="#venueAccordion_{{ $loop->index }}">
                                         <div class="accordion-body px-0">
-                                            <ul class="list-unstyled small text-muted m-0">
-                                                @foreach ($detail['view_menu'] as $menu => $info)
-                                                    <li class="m-0">
-                                                        <a href="{{ asset($info) }}" target="_blank"
-                                                            class="m-0"  style="font-size: 12px">
-                                                            {{ basename($menu) }}
-                                                        </a>
+                                            <ul class="list-unstyled m-0">
+                                                @foreach ($detail['space_capacity'] as $info)
+                                                    <li class="m-0" style="font-size: 12px">
+                                                            {{ basename($info) }}
                                                     </li>
                                                 @endforeach
                                             </ul>
@@ -95,7 +94,7 @@
 
                             <!-- Book Button -->
                             <div class="mt-4">
-                                <a href="#" class="btn custom-book-btn">BOOK A TABLE</a>
+                                <a href="/" class="btn custom-book-btn px-4 py-2">ENQUIRE</a>
                             </div>
 
                             <hr class="my-5">

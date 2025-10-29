@@ -8,7 +8,7 @@
     </button>
 
     <!-- Logo -->
-    <div class="position-absolute start-50 translate-middle-x"> 
+    <div class="position-absolute start-50 translate-middle-x">
       <a href="/" class="d-block text-center">
         <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
       </a>
@@ -31,7 +31,7 @@
       <ul class="list-unstyled mb-0 py-3">
         <li><a href="/" class="d-block py-2 text-dark text-decoration-none">Home</a></li>
         <li><a href="/about" class="d-block py-2 text-dark text-decoration-none">About</a></li>
-        <li><a href="/menu" class="d-block py-2 text-dark text-decoration-none">Menu</a></li>
+        <li><a href="/events" class="d-block py-2 text-dark text-decoration-none">Events</a></li>
         <li><a href="/contact" class="d-block py-2 text-dark text-decoration-none">Contact</a></li>
         <!-- BOOK BUTTON for Mobile & Tablet - Now styled as regular link -->
         <li class="d-lg-none">
@@ -47,7 +47,7 @@
 </header>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {    
+document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
     const slideDownMenu = document.getElementById('slideDownMenu');
     if (menuToggle && slideDownMenu) {
@@ -56,14 +56,14 @@ document.addEventListener('DOMContentLoaded', function() {
             e.stopPropagation();
             slideDownMenu.classList.toggle('active');
         });
-        
+
         const menuLinks = slideDownMenu.querySelectorAll('a');
         menuLinks.forEach(link => {
             link.addEventListener('click', function() {
                 slideDownMenu.classList.remove('active');
             });
         });
-        
+
         document.addEventListener('click', function(e) {
             if (!slideDownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
                 slideDownMenu.classList.remove('active');

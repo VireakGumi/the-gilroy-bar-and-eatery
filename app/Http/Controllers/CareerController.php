@@ -123,7 +123,7 @@ class CareerController extends Controller
             ]
         ];
 
-        return view('career', $data);
+        return view('old_page.career', $data);
     }
 
 

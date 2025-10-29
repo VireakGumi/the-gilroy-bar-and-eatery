@@ -70,9 +70,9 @@
             <p class="small mb-2 mb-md-0 mg-copyright-text">
                 Copyright © 2025 Margaret Group. All Rights Reserved.
             </p>
-            <a href="https://www.datocms-assets.com/127859/1720163448-the-margaret-family-privacy-policy.pdf"
+            <a href="{{ asset('pdf/gilroy-policy.pdf') }}"
                 target="_blank" rel="noopener noreferrer" class="mg-privacy small">
-                Privacy
+                Policy
             </a>
         </div>
     </div>

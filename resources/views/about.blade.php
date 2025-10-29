@@ -11,15 +11,15 @@
         <div class="story-columns">
             <div class="col">
                 <p>
-                    First came Margaret the restaurant. Named for chef Neil Perry’s late mother, it was a loving tribute to the woman who nurtured 
-                    and cared for the family, who brought and held everyone together. As Neil began to expand with more dining venues in the same 
-                    Double Bay neighbourhood, the Margaret way of life began to spread across the entire precinct. 
+                    First came Margaret the restaurant. Named for chef Neil Perry’s late mother, it was a loving tribute to the woman who nurtured
+                    and cared for the family, who brought and held everyone together. As Neil began to expand with more dining venues in the same
+                    Double Bay neighbourhood, the Margaret way of life began to spread across the entire precinct.
                 </p>
                 <p>
                     The Margaret Family’s four venues are distinct yet share the same ‘Care’ philosophy. It’s about caring for suppliers,
                     one another, the community, and the environment. It’s about creating memories with loved ones over the finest produce and drinks.
                     The Margaret Family is committed to delivering Australia’s best produce, sourced from suppliers Neil has developed personal
-                    relationships with over the course of his career. He’s always been passionate about promoting them along the way, which also 
+                    relationships with over the course of his career. He’s always been passionate about promoting them along the way, which also
                     provides transparency for guests about where their meal comes from. That’s what we mean by ‘Care’.
                 </p>
             </div>
@@ -28,7 +28,7 @@
                     Through the Margaret Family, Neil’s dream is to bring the neighbourhood to life through a celebration of cooking,
                     world-class hospitality and strong relationships. From a high-end modern Australian and Italian dining experience
                     to one of Sydney's best American-style cheeseburgers, this corner of Double Bay has it all.
-                    Kick off your day with lunch at Next Door, unwind with an aperitivo at Bar Torino (starting September 19), 
+                    Kick off your day with lunch at Next Door, unwind with an aperitivo at Bar Torino (starting September 19),
                     or enjoy a memorable dinner at Gran Torino or Margaret. It’s the ultimate culinary destination in the heart of Double Bay!
                 </p>
             </div>
@@ -56,20 +56,20 @@
         <div class="story-columns">
             <div class="col">
                 <p>
-                    With a career spanning four decades, Neil Perry AM has become one of Australia’s leading and most influential chefs and is a restaurant industry veteran. 
+                    With a career spanning four decades, Neil Perry AM has become one of Australia’s leading and most influential chefs and is a restaurant industry veteran.
                 </p>
                 <p>
-                    He has founded several famed Australian institutions renowned for their fresh produce and excellent service and hospitality, including the Rockpool Group 
-                    and the brands Rockpool, Rockpool Bar & Grill, Spice Temple and Rosetta. His latest venture is the Double Bay Margaret Family, which includes Margaret, 
-                    Next Door, Gran Torino and Bar Torino. Neil’s wife, Samantha, and daughters Josephine, Macy and Indy are all deeply involved in Margaret, reinforcing his 
+                    He has founded several famed Australian institutions renowned for their fresh produce and excellent service and hospitality, including the Rockpool Group
+                    and the brands Rockpool, Rockpool Bar & Grill, Spice Temple and Rosetta. His latest venture is the Double Bay Margaret Family, which includes Margaret,
+                    Next Door, Gran Torino and Bar Torino. Neil’s wife, Samantha, and daughters Josephine, Macy and Indy are all deeply involved in Margaret, reinforcing his
                     family-focused philosophy.
                 </p>
             </div>
             <div class="col">
                 <p>
-                    For more than 25 years, Neil has been Qantas’ food, beverage and service director, creating one of the best dining experiences in the sky. He has also 
-                    written 11 cookbooks, and was appointed a Member of the Order of Australia in 2013 for his “significant service to the community as a benefactor of and 
-                    a fundraiser for charities” including the Starlight Children’s Foundation, and for his services “as a chef and restaurateur”. His charity, the Hope Hospitality 
+                    For more than 25 years, Neil has been Qantas’ food, beverage and service director, creating one of the best dining experiences in the sky. He has also
+                    written 11 cookbooks, and was appointed a Member of the Order of Australia in 2013 for his “significant service to the community as a benefactor of and
+                    a fundraiser for charities” including the Starlight Children’s Foundation, and for his services “as a chef and restaurateur”. His charity, the Hope Hospitality
                     Foundation, which he began in 2020 as a response to the pandemic, has so far fed more than 600,000 people who are vulnerable.
                 </p>
             </div>
@@ -89,19 +89,19 @@
         <div class="story-columns">
             <div class="col">
                 <p>
-                    Neil Perry, Quadrant, and Rockpool Dining Group founded Hope Delivery in response to the 2020 pandemic. 
-                    The aim was to feed international students, visa holders and unemployed hospitality workers who weren’t 
+                    Neil Perry, Quadrant, and Rockpool Dining Group founded Hope Delivery in response to the 2020 pandemic.
+                    The aim was to feed international students, visa holders and unemployed hospitality workers who weren’t
                     eligible for government assistance.
                 </p>
                 <p>
-                    In 2022, it was relaunched as the Hope Hospitality Foundation, which exists to provide wholesome meals to people who are vulnerable. 
+                    In 2022, it was relaunched as the Hope Hospitality Foundation, which exists to provide wholesome meals to people who are vulnerable.
                 </p>
             </div>
             <div class="col">
                 <p>
-                    Hope uses the skills and capabilities of hospitality industry workers to create quality meals, 
-                    and all funds raised contribute to the purchase of good-quality local ingredients to support 
-                    Australian suppliers and producers. Hope also partners with frontline organisations and delivery 
+                    Hope uses the skills and capabilities of hospitality industry workers to create quality meals,
+                    and all funds raised contribute to the purchase of good-quality local ingredients to support
+                    Australian suppliers and producers. Hope also partners with frontline organisations and delivery
                     services, and currently provides 5000 meals per week across Sydney. So far, Hope has fed more than 600,000 people.
                 </p>
             </div>

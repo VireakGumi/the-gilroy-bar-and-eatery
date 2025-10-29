@@ -14,8 +14,12 @@
 /* @import 'dining.css'; */
 
 /* You can also add global styles here */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-        font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 
     margin: 0;
     padding: 0;
@@ -63,9 +67,9 @@ body {
     --color-dark: #1a1a1a;
     --color-light: #f7f5f2;
     --color-border: #e8e6e3;
-      --main-text-color: #000;
-  --light-creamy-bg: #fff;
-  --border-color: #000;
+    --main-text-color: #000;
+    --light-creamy-bg: #fff;
+    --border-color: #000;
 }
 
 /* hover and after link  */
@@ -85,11 +89,10 @@ body {
     left: 0;
     height: 1px;
     background-color: var(--mg-text-color);
-    width: 0; 
-    transition: width 0.3s ease-in-out; 
+    width: 0;
+    transition: width 0.3s ease-in-out;
 }
 
 .mg-link:hover::after {
-    width: 100%; 
+    width: 100%;
 }
-
