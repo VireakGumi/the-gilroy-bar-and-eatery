@@ -34,5 +34,8 @@ Route::get('/career', [CareerController::class, 'career'])->name('career');
 // New
 Route::get('/about', [AboutController::class, 'about'])->name('about');
 Route::get('/events', [EventController::class, 'index'])->name('events');
+Route::get('/gift_voucher', function (){
+    return view('gift_voucher');
+});
 
 
