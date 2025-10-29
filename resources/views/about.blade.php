@@ -11,25 +11,25 @@
         <div class="story-columns">
             <div class="col">
                 <p>
-                    First came Margaret the restaurant. Named for chef Neil Perry’s late mother, it was a loving tribute to the woman who nurtured
+                    First came Gilroy the restaurant. Named for chef Neil Perry’s late mother, it was a loving tribute to the woman who nurtured
                     and cared for the family, who brought and held everyone together. As Neil began to expand with more dining venues in the same
-                    Double Bay neighbourhood, the Margaret way of life began to spread across the entire precinct.
+                    Double Bay neighbourhood, the Gilroy way of life began to spread across the entire precinct.
                 </p>
                 <p>
-                    The Margaret Family’s four venues are distinct yet share the same ‘Care’ philosophy. It’s about caring for suppliers,
+                    The Gilroy Family’s four venues are distinct yet share the same ‘Care’ philosophy. It’s about caring for suppliers,
                     one another, the community, and the environment. It’s about creating memories with loved ones over the finest produce and drinks.
-                    The Margaret Family is committed to delivering Australia’s best produce, sourced from suppliers Neil has developed personal
+                    The Gilroy Family is committed to delivering Australia’s best produce, sourced from suppliers Neil has developed personal
                     relationships with over the course of his career. He’s always been passionate about promoting them along the way, which also
                     provides transparency for guests about where their meal comes from. That’s what we mean by ‘Care’.
                 </p>
             </div>
             <div class="col">
                 <p>
-                    Through the Margaret Family, Neil’s dream is to bring the neighbourhood to life through a celebration of cooking,
+                    Through the Gilroy Family, Neil’s dream is to bring the neighbourhood to life through a celebration of cooking,
                     world-class hospitality and strong relationships. From a high-end modern Australian and Italian dining experience
                     to one of Sydney's best American-style cheeseburgers, this corner of Double Bay has it all.
                     Kick off your day with lunch at Next Door, unwind with an aperitivo at Bar Torino (starting September 19),
-                    or enjoy a memorable dinner at Gran Torino or Margaret. It’s the ultimate culinary destination in the heart of Double Bay!
+                    or enjoy a memorable dinner at Gran Torino or Gilroy. It’s the ultimate culinary destination in the heart of Double Bay!
                 </p>
             </div>
         </div>
@@ -60,8 +60,8 @@
                 </p>
                 <p>
                     He has founded several famed Australian institutions renowned for their fresh produce and excellent service and hospitality, including the Rockpool Group
-                    and the brands Rockpool, Rockpool Bar & Grill, Spice Temple and Rosetta. His latest venture is the Double Bay Margaret Family, which includes Margaret,
-                    Next Door, Gran Torino and Bar Torino. Neil’s wife, Samantha, and daughters Josephine, Macy and Indy are all deeply involved in Margaret, reinforcing his
+                    and the brands Rockpool, Rockpool Bar & Grill, Spice Temple and Rosetta. His latest venture is the Double Bay Gilroy Family, which includes Gilroy,
+                    Next Door, Gran Torino and Bar Torino. Neil’s wife, Samantha, and daughters Josephine, Macy and Indy are all deeply involved in Gilroy, reinforcing his
                     family-focused philosophy.
                 </p>
             </div>

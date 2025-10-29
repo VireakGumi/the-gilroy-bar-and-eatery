@@ -10,6 +10,7 @@ use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\DrinkController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\WhatOnController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -34,8 +35,11 @@ Route::get('/career', [CareerController::class, 'career'])->name('career');
 // New
 Route::get('/about', [AboutController::class, 'about'])->name('about');
 Route::get('/events', [EventController::class, 'index'])->name('events');
+
+//gift_vouchers
 Route::get('/gift_voucher', function (){
     return view('gift_voucher');
 });
+Route::get('/what-on', [WhatOnController::class, 'index'])->name('what-on');
 
 

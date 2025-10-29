@@ -148,7 +148,7 @@ a:active {
     .d-none.d-md-flex {
         display: none !important;
     }
-    
+
     .position-absolute.start-50.translate-middle-x {
         position: static !important;
         transform: none !important;
@@ -159,29 +159,29 @@ a:active {
     .custom-logo-img {
         max-width: 180px !important;
     }
-    
+
     /* MOBILE: Full width menu */
     .slide-down-menu {
         left: 0;
         right: 0;
         width: 100%;
     }
-    
+
     /* Better mobile menu spacing */
     .slide-down-menu ul {
         padding: 1.5rem 0;
     }
-    
+
     .slide-down-menu a {
         font-size: 1.1rem;
         padding: 1rem 1.5rem !important;
     }
-    
+
     .slide-down-menu .custom-book-btn {
         font-size: 1.1rem;
         padding: 1rem 1.5rem !important;
     }
-    
+
     /* Larger hamburger icon on mobile */
     .custom-hamburger-size {
         font-size: 2.2rem;

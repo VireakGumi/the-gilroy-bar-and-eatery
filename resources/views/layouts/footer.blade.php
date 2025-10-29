@@ -5,16 +5,15 @@
                 <h5 class="mg-footer-title mb-3">Contact</h5>
 
                 <p class="mg-footer-text mb-2">
-                    <i class="fas fa-map-marker-alt me-2"></i> 427 Chapel St, South Yarra 3141
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <a href="https://share.google/edApN1GnFWOlvxEol" style="text-decoration: none; color:#000;">317 Bay Street Port Melbourne Vic </a>
                 </p>
+
                 <p class="mg-footer-text mb-2">
-                    <i class="fas fa-parking me-2"></i> Public Parking - Jam Factory
-                </p>
-                <p class="mg-footer-text mb-2">
-                    <i class="fas fa-envelope me-2"></i> info@stellarestaurantbar.com.au
+                    <i class="fas fa-envelope me-2"></i> hello@thegilroy.au
                 </p>
                 <p class="mg-footer-text mb-0">
-                    <i class="fas fa-phone-alt me-2"></i> 03 8820 0028
+                    <i class="fas fa-phone-alt me-2"></i> (03) 9810 1222
                 </p>
             </div>
 
@@ -68,11 +67,11 @@
         <div
             class="d-flex flex-column flex-md-row justify-content-between align-items-center mg-copyright-section pt-4 mt-5 border-top mg-border-light">
             <p class="small mb-2 mb-md-0 mg-copyright-text">
-                Copyright © 2025 Margaret Group. All Rights Reserved.
+                Copyright ©2025 Gilroy Bar & Eatery. All Rights Reserved.
             </p>
             <a href="{{ asset('pdf/gilroy-policy.pdf') }}"
                 target="_blank" rel="noopener noreferrer" class="mg-privacy small">
-                Policy
+                Our Policy
             </a>
         </div>
     </div>
