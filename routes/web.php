@@ -8,6 +8,7 @@ use App\Http\Controllers\MenuController;
 use App\Http\Controllers\VenueController;
 use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\DrinkController;
+use App\Http\Controllers\AboutController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -27,3 +28,6 @@ Route::get('/private-events', [PrivateEventsController::class, 'privateEvents'])
 Route::get('/drink-menu', [DrinkController::class, 'drinkMenu'])->name('drink-menu');
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/career', [CareerController::class, 'career'])->name('career');
+
+// New
+Route::get('/about', [AboutController::class, 'about'])->name('about');
