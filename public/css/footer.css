@@ -112,7 +112,7 @@
     border-bottom: 1px solid var(--mg-text-color);
     font-size: 0.85rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1200px) {
     .mg-footer-top .col-lg-4:nth-child(3) {
         display: none !important;
     }
@@ -124,6 +124,10 @@
         order: 1;
         margin-bottom: 1rem;
         font-size: 1rem;
+    }
+    .container-fluid-footer{
+        /* background: #000; */
+        padding: 0 2.5rem !important;
     }
 }
 @media (max-width: 400px) {

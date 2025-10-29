@@ -1,5 +1,5 @@
 <footer class="mg-footer bg-light text-dark py-5">
-    <div class="container-fluid mg-max-width px-4">
+    <div class="container-fluid-footer mg-max-width px-4">
         <div class="row g-4 g-md-5 mg-footer-top">
             <div class="col-lg-4 col-12">
                 <h5 class="mg-footer-title mb-3">Contact</h5>
