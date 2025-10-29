@@ -3,123 +3,123 @@
 @section('title', 'About')
 
 @section('content')
-    <div class="" style="background-color: #f1ede5 !important;">
-        @include('home_components.about-banner')
-        <div class="py-5 px-4">
-            <div class="row">
-                <div class="col-lg-8">
-                    <p class="h6 mb-4 text-uppercase fs-5" style="font-family: monospace">WHAT’S ON</p>
-                    <h2 class="h2 mb-4">
-                        From live music to sommelier talks and special events, the Margaret Family’s venues are the place to
-                        come for delicious food, delightful drops, laughter and celebration. Check back in regularly to see
-                        what’s coming up next.
-                    </h2>
-                </div>
+<div class="" style="background-color: #f1ede5 !important;">
+    @include('home_components.about-banner')
+    <div class="py-5 px-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="h6 mb-4 text-uppercase fs-5" style="font-family: monospace">WHAT’S ON</p>
+                <h2 class="h2 mb-4">
+                    From live music to sommelier talks and special events, Gilroy Bar & Eatery’s venues are the place to
+                    come for delicious food, delightful drops, laughter and celebration. Check back in regularly to see
+                    what’s coming up next.
+                </h2>
             </div>
         </div>
-        <section class="whats-on pb-5">
-            <div class="bb1 pl40 pr40 m-pl20 m-pr20">
-                <div class="whatson-grid max-1700 ma">
-                    <div class="filter-btn flex align-center gap-5 h7 small py10"><span>Event</span></div>
-                    <div class="filter-btn flex align-center gap-5 h7 small py10 m-hide"><span>Date</span></div>
-                    <div class="filter-btn flex align-center gap-5 h7 small py10 m-hide"><span>Location</span></div>
-                    <div class="filter-btn flex align-center gap-5 h7 small py10 m-hide"><span></span></div>
+    </div>
+    <section class="whats-on pb-5">
+        <div class="bb1 pl40 pr40 m-pl20 m-pr20">
+            <div class="whatson-grid max-1700 ma">
+                <div class="filter-btn flex align-center gap-5 h7 small py10"><span>Event</span></div>
+                <div class="filter-btn flex align-center gap-5 h7 small py10 m-hide"><span>Date</span></div>
+                <div class="filter-btn flex align-center gap-5 h7 small py10 m-hide"><span>Location</span></div>
+                <div class="filter-btn flex align-center gap-5 h7 small py10 m-hide"><span></span></div>
+            </div>
+        </div>
+
+        {{-- Accordion Container --}}
+        <div class="accordion" id="whatsOnAccordion">
+
+            @foreach ($events as $event)
+            @php
+            $collapseId = 'collapse-event-' . $loop->iteration;
+            $parentId = '#whatsOnAccordion';
+            $eventName = $event['name'] ?? 'Event Name';
+            $eventDate = $event['date'] ?? '-';
+            $eventLocation = $event['location'] ?? 'Venue';
+            $eventLocationSlug = $event['locationSlug'] ?? '#';
+            $eventTicketsUrl = $event['ticketsUrl'] ?? '';
+            $eventDescription = $event['description'] ?? 'Event description...';
+            $eventImageUrl =
+            $event['imageUrl'] ??
+            'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+            @endphp
+
+            {{-- Accordion Header Item --}}
+            <div class="event-list-item-wrapper">
+                <div class="bb1 event-list-item pl40 pr40 m-pl20 m-pr20" id="heading-{{ $loop->iteration }}">
+                    <div class="max-1700 ma whatson-grid sm-copy h7 sm">
+                        <button class="btn p-0 text-start text-inherit collapsed event-title" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#{{ $collapseId }}" aria-expanded="false"
+                            aria-controls="{{ $collapseId }}">
+                            <p class="h7 sm">{{ $eventName }}</p>
+                        </button>
+
+                        <p class="m-hide event-date">{{ $eventDate }}</p>
+                        <div class="m-hide"><a class="location-link"
+                                href="/venue/{{ $eventLocationSlug }}">{{ $eventLocation }}</a></div>
+
+                        <button
+                            class="flex align-center justify-center m-justify-end toggle-icon-wrapper p-0 border-0 bg-transparent"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#{{ $collapseId }}"
+                            aria-expanded="false" aria-controls="{{ $collapseId }}">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="plus--icon">
+                                <path d="M7 1V15M1 7H15" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            {{-- Accordion Container --}}
-            <div class="accordion" id="whatsOnAccordion" >
-
-                @foreach ($events as $event)
-                    @php
-                        $collapseId = 'collapse-event-' . $loop->iteration;
-                        $parentId = '#whatsOnAccordion';
-                        $eventName = $event['name'] ?? 'Event Name';
-                        $eventDate = $event['date'] ?? '-';
-                        $eventLocation = $event['location'] ?? 'Venue';
-                        $eventLocationSlug = $event['locationSlug'] ?? '#';
-                        $eventTicketsUrl = $event['ticketsUrl'] ?? '';
-                        $eventDescription = $event['description'] ?? 'Event description...';
-                        $eventImageUrl =
-                            $event['imageUrl'] ??
-                            'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
-                    @endphp
-
-                    {{-- Accordion Header Item --}}
-                    <div class="event-list-item-wrapper">
-                        <div class="bb1 event-list-item pl40 pr40 m-pl20 m-pr20" id="heading-{{ $loop->iteration }}">
-                            <div class="max-1700 ma whatson-grid sm-copy h7 sm">
-                                <button class="btn p-0 text-start text-inherit collapsed event-title" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#{{ $collapseId }}" aria-expanded="false"
-                                    aria-controls="{{ $collapseId }}">
-                                    <p class="h7 sm">{{ $eventName }}</p>
-                                </button>
-
-                                <p class="m-hide event-date">{{ $eventDate }}</p>
-                                <div class="m-hide"><a class="location-link"
-                                        href="/venue/{{ $eventLocationSlug }}">{{ $eventLocation }}</a></div>
-
-                                <button
-                                    class="flex align-center justify-center m-justify-end toggle-icon-wrapper p-0 border-0 bg-transparent"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#{{ $collapseId }}"
-                                    aria-expanded="false" aria-controls="{{ $collapseId }}">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg" class="plus--icon">
-                                        <path d="M7 1V15M1 7H15" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </button>
+            <div id="{{ $collapseId }}" class="accordion-collapse collapse" data-bs-parent="{{ $parentId }}">
+                <div class="inner overflow">
+                    <div class="max-1700 ma">
+                        <div class="mobile-info m-show m-p20">
+                            <div class="flex gap-30">
+                                <div class="flex flex-col gap-5">
+                                    <p class="small bold text-muted">DATE</p>
+                                    <p class="small">{{ $eventDate }}</p>
+                                </div>
+                                <div class="flex flex-col gap-5">
+                                    <p class="small bold text-muted">LOCATION</p>
+                                    <a href="/venue/{{ $eventLocationSlug }}"
+                                        class="small location-link">{{ $eventLocation }}</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="{{ $collapseId }}" class="accordion-collapse collapse" data-bs-parent="{{ $parentId }}" >
-                        <div class="inner overflow">
-                            <div class="max-1700 ma">
-                                <div class="mobile-info m-show m-p20">
-                                    <div class="flex gap-30">
-                                        <div class="flex flex-col gap-5">
-                                            <p class="small bold text-muted">DATE</p>
-                                            <p class="small">{{ $eventDate }}</p>
-                                        </div>
-                                        <div class="flex flex-col gap-5">
-                                            <p class="small bold text-muted">LOCATION</p>
-                                            <a href="/venue/{{ $eventLocationSlug }}"
-                                                class="small location-link">{{ $eventLocation }}</a>
-                                        </div>
+                        <div class="event-content pt30 pb40 pl40 pr40 m-pt20 m-pb20 m-pl20 m-pr20">
+                            <div class="flex gap-40 m-flex-col m-gap-20">
+                                <div class="event-image w-40 m-w-100">
+                                    <div class="image-container ratio-4-3 overflow-hidden">
+                                        <img src="{{ $eventImageUrl }}" alt="{{ $eventName }}"
+                                            class="w-100 h-100 object-fit-cover">
                                     </div>
                                 </div>
-
-                                <div class="event-content pt30 pb40 pl40 pr40 m-pt20 m-pb20 m-pl20 m-pr20">
-                                    <div class="flex gap-40 m-flex-col m-gap-20">
-                                        <div class="event-image w-40 m-w-100">
-                                            <div class="image-container ratio-4-3 overflow-hidden">
-                                                <img src="{{ $eventImageUrl }}" alt="{{ $eventName }}"
-                                                    class="w-100 h-100 object-fit-cover">
-                                            </div>
-                                        </div>
-                                        <div class="event-details w-60 m-w-100 flex flex-col">
-                                            <div class="description small text-dark mb20">
-                                                {!! nl2br(e($eventDescription)) !!}
-                                            </div>
-                                            <div class="mt-auto">
-                                                @if ($eventTicketsUrl)
-                                                    <a href="{{ $eventTicketsUrl }}" target="_blank"
-                                                        rel="noopener noreferrer" class="btn-book-now">
-                                                        Book Now
-                                                    </a>
-                                                @endif
-                                            </div>
-                                        </div>
+                                <div class="event-details w-60 m-w-100 flex flex-col">
+                                    <div class="description small text-dark mb20">
+                                        {!! nl2br(e($eventDescription)) !!}
+                                    </div>
+                                    <div class="mt-auto">
+                                        @if ($eventTicketsUrl)
+                                        <a href="{{ $eventTicketsUrl }}" target="_blank"
+                                            rel="noopener noreferrer" class="btn-book-now">
+                                            Book Now
+                                        </a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                @endforeach
+                </div>
             </div>
-        </section>
-    </div>
+            @endforeach
+        </div>
+    </section>
+</div>
 @endsection
 
 

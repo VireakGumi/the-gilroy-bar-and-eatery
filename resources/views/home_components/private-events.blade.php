@@ -6,6 +6,6 @@
             corporate event or just because, we'll create an experience just for you and your guests as only Neil
             Perry can.
         </p>
-        <a href="/private-events/" class="btn btn-outline-light">Learn More</a>
+        <a href="/events/" class="btn btn-outline-light">Learn More</a>
     </div>
 </section>

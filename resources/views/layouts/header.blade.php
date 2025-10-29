@@ -1,4 +1,3 @@
-
 <header class="sticky-top bg-light-creamy border-bottom mg-footer">
   <div class="container-fluid px-4 py-3 d-flex align-items-center justify-content-between">
 
@@ -16,9 +15,9 @@
 
     <!-- Book Button (Desktop only) -->
     <div class="d-none d-lg-flex">
-      <a href="https://www.nowbookit.com/"
-         class="btn custom-book-btn text-uppercase fw-bold"
-         target="_blank" rel="noopener noreferrer">
+      <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
+        class="btn custom-book-btn text-uppercase fw-bold"
+        target="_blank" rel="noopener noreferrer">
         BOOK A TABLE
       </a>
     </div>
@@ -33,11 +32,12 @@
         <li><a href="/about" class="d-block py-2 text-dark text-decoration-none">About</a></li>
         <li><a href="/events" class="d-block py-2 text-dark text-decoration-none">Events</a></li>
         <li><a href="/what-on" class="d-block py-2 text-dark text-decoration-none">What's On</a></li>
+        <li><a href="/gift_voucher" class="d-block py-2 text-dark text-decoration-none">Gift Vouchers</a></li>
         <!-- BOOK BUTTON for Mobile & Tablet - Now styled as regular link -->
         <li class="d-lg-none">
-          <a href="https://www.nowbookit.com/"
-             class="d-block py-2 text-dark text-decoration-none custom-book-btn"
-             target="_blank" rel="noopener noreferrer">
+          <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
+            class="d-block py-2 text-dark text-decoration-none custom-book-btn"
+            target="_blank" rel="noopener noreferrer">
             Book A Table
           </a>
         </li>
@@ -47,28 +47,28 @@
 </header>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
     const slideDownMenu = document.getElementById('slideDownMenu');
     if (menuToggle && slideDownMenu) {
-        menuToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            slideDownMenu.classList.toggle('active');
-        });
+      menuToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        slideDownMenu.classList.toggle('active');
+      });
 
-        const menuLinks = slideDownMenu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                slideDownMenu.classList.remove('active');
-            });
+      const menuLinks = slideDownMenu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          slideDownMenu.classList.remove('active');
         });
+      });
 
-        document.addEventListener('click', function(e) {
-            if (!slideDownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-                slideDownMenu.classList.remove('active');
-            }
-        });
+      document.addEventListener('click', function(e) {
+        if (!slideDownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+          slideDownMenu.classList.remove('active');
+        }
+      });
     }
-});
+  });
 </script>
