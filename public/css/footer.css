@@ -81,7 +81,7 @@
     white-space: nowrap;
 }
 .mg-css-select-menu li a:hover {
-    background-color: #e5e5e5;
+    background-color: #e5e5e5 !important;
 }
 .mg-chevron {
     position: absolute;
@@ -142,4 +142,26 @@
 }
 .mg-subscribe-btn{
     padding: 16px;
+}
+.mg-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.mg-social-link:hover {
+  background-color: gray;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.mg-social-link i {
+  font-size: 1.2rem;
 }

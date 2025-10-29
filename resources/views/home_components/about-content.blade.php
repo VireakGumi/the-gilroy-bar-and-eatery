@@ -1,4 +1,4 @@
-<div class="py-5 bg-light px-5">
+<div class="py-5 bg-light px-4">
     <div class="row">
         <div class="col-lg-8">
             <p class="h6 mb-2 fw-bold text-uppercase">The Margaret Family</p>
@@ -9,3 +9,4 @@
         </div>
     </div>
 </div>
+
