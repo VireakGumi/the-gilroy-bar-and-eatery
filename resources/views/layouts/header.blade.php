@@ -1,5 +1,5 @@
 
-<header class="sticky-top bg-light-creamy border-bottom border-gray-200">
+<header class="sticky-top bg-light-creamy border-bottom mg-footer">
   <div class="container-fluid px-4 py-3 d-flex align-items-center justify-content-between">
 
     <!-- Hamburger Button -->
@@ -9,7 +9,7 @@
 
     <!-- Logo -->
     <div class="position-absolute start-50 translate-middle-x">
-      <a href="/" class="text-center">
+      <a href="/" class="d-block text-center">
         <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
       </a>
     </div>
@@ -31,8 +31,8 @@
       <ul class="list-unstyled mb-0 py-3">
         <li><a href="/" class="d-block py-2 text-dark text-decoration-none">Home</a></li>
         <li><a href="/about" class="d-block py-2 text-dark text-decoration-none">About</a></li>
-        <li><a href="/menu" class="d-block py-2 text-dark text-decoration-none">Menu</a></li>
-        <li><a href="/contact" class="d-block py-2 text-dark text-decoration-none">Contact</a></li>
+        <li><a href="/events" class="d-block py-2 text-dark text-decoration-none">Events</a></li>
+        <li><a href="/what-on" class="d-block py-2 text-dark text-decoration-none">What's On</a></li>
         <!-- BOOK BUTTON for Mobile & Tablet - Now styled as regular link -->
         <li class="d-lg-none">
           <a href="https://www.nowbookit.com/"
