@@ -21,7 +21,7 @@
                 BOOK A TABLE
             </a>
 
-            <a href="" class="far fa-calendar-plus d-lg-none d-md-block pe-3 fs-2"></a>
+            <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00" target="_blank" class="text-decoration-none text-dark"><i class="far fa-calendar-plus d-lg-none d-md-block pe-3 fs-2"></i></a>
         </div>
 
     </div>
