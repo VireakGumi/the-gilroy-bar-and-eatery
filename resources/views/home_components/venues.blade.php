@@ -425,6 +425,9 @@
                 height: 300px;
             }
 
+            .venue-description {
+                padding-right: 0 !important;
+            }
             .venue-description p {
                 line-height: 1.1;
                 width: 100%;
