@@ -47,7 +47,7 @@
 
                     {{-- Accordion Header Item --}}
                     <div class="event-list-item-wrapper">
-                        <div class="bb1 event-list-item pl40 pr40 m-pl20 m-pr20" id="heading-{{ $loop->iteration }}">
+                        <div class="bb1 event-list-item pl40 pr40 m-pl20 m-pr20 py15" id="heading-{{ $loop->iteration }}">
                             <div class="max-1700 ma whatson-grid sm-copy h7 sm">
                                 <button class="btn p-0 text-start text-inherit collapsed event-title" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#{{ $collapseId }}" aria-expanded="false"

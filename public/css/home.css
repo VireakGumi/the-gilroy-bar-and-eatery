@@ -51,8 +51,12 @@
 .venue-item:hover .venue-image {
     transform: scale(1.05);
 }
-a:hover{
+/* a:hover{
     background-color: white !important;
+} */
+
+.accordion-body a:hover {
+    border-bottom: 1px solid black;
 }
 
 .venue-name {
@@ -117,7 +121,7 @@ a:hover{
     .d-none.d-md-flex {
         display: none !important;
     }
-    
+
     .position-absolute.start-50.translate-middle-x {
         position: static !important;
         transform: none !important;
@@ -128,23 +132,23 @@ a:hover{
     .custom-logo-img {
         max-width: 180px !important;
     }
-    
+
     /* MOBILE: Full width menu */
     .slide-down-menu {
         left: 0;
         right: 0;
     }
-    
+
     /* Better mobile menu spacing */
     /* .slide-down-menu ul {
         padding: 1.5rem 0;
     } */
-    
+
     .slide-down-menu a {
         font-size: 1.1rem;
         padding: 1rem 1.5rem !important;
     }
-    
+
     /* .slide-down-menu .custom-book-btn {
         margin: 1rem 1.5rem;
         padding: 1rem !important;
@@ -167,9 +171,9 @@ a:hover{
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
         /* Crucial for the snapping effect */
-        scroll-snap-type: x mandatory; 
+        scroll-snap-type: x mandatory;
     }
-    
+
     .venue-slider-content::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
     }
@@ -180,7 +184,7 @@ a:hover{
         max-width: 900px; /* Cap the max size */
         margin-right: 20px; /* Space between slides */
         /* Ensures the slide aligns to the start of the scroll container */
-        scroll-snap-align: start; 
+        scroll-snap-align: start;
         padding: 0;
     }
 
@@ -194,11 +198,11 @@ a:hover{
         /* Add equivalent margin on the right for the last slide to scroll into center view */
         margin-right: 7.5vw;
     }
-    
+
     /* SLIDER NAVIGATION BUTTONS */
     .slider-nav-btn {
         position: absolute;
-        top: 35%; 
+        top: 35%;
         transform: translateY(-50%);
         background: transparent;
         color: white;
@@ -210,15 +214,15 @@ a:hover{
         z-index: 10;
         opacity: 0; /* JS controls visibility, starting hidden */
         transition: opacity 0.3s;
-        display: block !important; 
+        display: block !important;
     }
     .slider-nav-btn:disabled {
         cursor: default;
     }
-    
+
     /* Style the arrow glyphs themselves to provide a visible background */
     .slider-nav-btn::before {
-        content: attr(data-arrow); 
+        content: attr(data-arrow);
         display: inline-block;
         border-radius: 50%;
         padding: 8px 12px;
@@ -231,7 +235,7 @@ a:hover{
     .next-btn {
         right: 10px;
     }
-    
+
     /* Ensure desktop grid is hidden on tablet/mobile */
     .desktop-venues-grid {
         display: none !important;
@@ -249,7 +253,7 @@ a:hover{
 /* ==================== BANNERS ==================== */
 .about-banner {
     position: relative;
-    height: 70vh;
+    height: 550px;
     min-height: 500px;
     overflow: hidden;
 }
@@ -427,7 +431,7 @@ a:hover{
 }
 
 .event-details-content.active {
-    max-height: 500px; 
+    max-height: 500px;
     opacity: 1;
     line-height: normal;
 }

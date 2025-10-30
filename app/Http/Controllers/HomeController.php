@@ -64,47 +64,58 @@ class HomeController extends Controller
         ];
 
         // In HomeController - enhanced events data
+        // $events = [
+        //     [
+        //         'name' => 'MARGARET X DON JALO',
+        //         'date' => '12TH FEBRUARY',
+        //         'location' => 'MARGARET',
+        //         'menu_link' => '/menu/margaret',
+        //         'description' => 'On 10th and 12th February 2026 Margaret Double Bay (No. 2 World\'s Best Steak Restaurant) and Don Julio Buenos Aires (No. 1 World\'s Best Steak Restaurant) will come together in a once in a lifetime collaboration! Tickets will be released on 1st December. Subscribe to receive all the exciting updates.',
+        //         'booking_url' => '/booking/margaret'
+        //     ],
+        //     [
+        //         'name' => 'AUSTRALIA\'S BEST BURGER',
+        //         'date' => '-',
+        //         'location' => 'NEXT DOOR',
+        //         'menu_link' => '/menu/next-door',
+        //         'description' => 'Experience Australia\'s most acclaimed burger at Next Door. Our chefs have perfected the art of burger craftsmanship using premium local ingredients and innovative flavor combinations. Available every weekend from 12 PM.',
+        //         'booking_url' => '/booking/next-door'
+        //     ],
+        //     [
+        //         'name' => 'WINE DINNER SERIES',
+        //         'date' => 'UPCOMING',
+        //         'location' => 'MARGARET',
+        //         'menu_link' => '/menu/margaret',
+        //         'description' => 'Join us for an exclusive wine pairing dinner featuring premium Australian wines carefully selected to complement Chef Neil Perry\'s signature dishes.',
+        //         'booking_url' => '/booking/margaret'
+        //     ],
+        //     [
+        //         'name' => 'COCKTAIL MASTERCLASS',
+        //         'date' => 'UPCOMING',
+        //         'location' => 'BAR TORINO',
+        //         'menu_link' => '/menu/bar-torino',
+        //         'description' => 'Learn the art of cocktail making from our expert mixologists. Includes hands-on training and tasting of signature Bar Torino cocktails.',
+        //         'booking_url' => '/booking/bar-torino'
+        //     ],
+        //     [
+        //         'name' => 'ITALIAN WINE TASTING',
+        //         'date' => '15TH NOVEMBER',
+        //         'location' => 'GRAN TORINO',
+        //         'menu_link' => '/menu/gran-torino',
+        //         'description' => 'Explore the finest Italian wines with our sommelier. Perfect for wine enthusiasts looking to expand their knowledge of Italian varietals.',
+        //         'booking_url' => '/booking/gran-torino'
+        //     ],
+        // ];
+
         $events = [
             [
-                'name' => 'MARGARET X DON JALO',
-                'date' => '12TH FEBRUARY',
-                'location' => 'MARGARET',
-                'menu_link' => '/menu/margaret',
-                'description' => 'On 10th and 12th February 2026 Margaret Double Bay (No. 2 World\'s Best Steak Restaurant) and Don Julio Buenos Aires (No. 1 World\'s Best Steak Restaurant) will come together in a once in a lifetime collaboration! Tickets will be released on 1st December. Subscribe to receive all the exciting updates.',
-                'booking_url' => '/booking/margaret'
-            ],
-            [
-                'name' => 'AUSTRALIA\'S BEST BURGER',
+                'name' => '-',
                 'date' => '-',
-                'location' => 'NEXT DOOR',
-                'menu_link' => '/menu/next-door',
-                'description' => 'Experience Australia\'s most acclaimed burger at Next Door. Our chefs have perfected the art of burger craftsmanship using premium local ingredients and innovative flavor combinations. Available every weekend from 12 PM.',
-                'booking_url' => '/booking/next-door'
-            ],
-            [
-                'name' => 'WINE DINNER SERIES',
-                'date' => 'UPCOMING',
-                'location' => 'MARGARET',
-                'menu_link' => '/menu/margaret',
-                'description' => 'Join us for an exclusive wine pairing dinner featuring premium Australian wines carefully selected to complement Chef Neil Perry\'s signature dishes.',
-                'booking_url' => '/booking/margaret'
-            ],
-            [
-                'name' => 'COCKTAIL MASTERCLASS',
-                'date' => 'UPCOMING',
-                'location' => 'BAR TORINO',
-                'menu_link' => '/menu/bar-torino',
-                'description' => 'Learn the art of cocktail making from our expert mixologists. Includes hands-on training and tasting of signature Bar Torino cocktails.',
-                'booking_url' => '/booking/bar-torino'
-            ],
-            [
-                'name' => 'ITALIAN WINE TASTING',
-                'date' => '15TH NOVEMBER',
-                'location' => 'GRAN TORINO',
-                'menu_link' => '/menu/gran-torino',
-                'description' => 'Explore the finest Italian wines with our sommelier. Perfect for wine enthusiasts looking to expand their knowledge of Italian varietals.',
-                'booking_url' => '/booking/gran-torino'
-            ],
+                'location' => '-',
+                'menu_link' => '-',
+                'description' => '-',
+                'booking_url' => '-'
+            ]
         ];
 
         // FIX: Pass all required variables

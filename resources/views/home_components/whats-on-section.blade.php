@@ -1,11 +1,11 @@
 <div class="bg-warm">
     <section class="whats-on m-mb20">
-        <div class="p40 m-p20">
+        <div class="p40 m-p20 d-flex justify-content-start container">
             <p class="max-1700 ma m-mb0 h1">What's On</p>
         </div>
         <div class="bb1 pl40 pr40 m-pl20 m-pr20">
             <div class="whatson-grid max-1700 ma">
-                <div class="filter-btn flex align-center gap-5 h6 small py10"><span>Event</span></div>
+                <div class="filter-btn flex align-center gap-5 h6 small py10 pl-lg-1930"><span>Event</span></div>
                 <div class="filter-btn flex align-center gap-5 h6 small py10 m-hide"><span>Date</span></div>
                 <div class="filter-btn flex align-center gap-5 h6 small py10 m-hide"><span>Location</span></div>
                 <div class="filter-btn flex align-center gap-5 h6 small py10 m-hide"><span></span></div>
@@ -14,7 +14,7 @@
 
         {{-- Accordion Container --}}
         <div class="accordion" id="whatsOnAccordion">
-            
+
             @foreach ($events as $event)
                 @php
                     $collapseId = 'collapse-event-' . $loop->iteration;
@@ -25,30 +25,30 @@
                     $eventLocationSlug = $event['locationSlug'] ?? '#';
                     $eventTicketsUrl = $event['ticketsUrl'] ?? '';
                     $eventDescription = $event['description'] ?? 'Event description...';
-                    $eventImageUrl = $event['imageUrl'] ?? 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                    $eventImageUrl = $event['imageUrl'] ?? '-';
                 @endphp
 
                 {{-- Accordion Header Item --}}
                 <div class="event-list-item-wrapper">
-                    <div class="bb1 event-list-item pl40 pr40 m-pl20 m-pr20 py15" id="heading-{{ $loop->iteration }}">
-                        <div class="max-1700 ma whatson-grid sm-copy h6 sm">
-                            <button class="btn p-0 text-start text-inherit collapsed event-title" 
-                                    type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#{{ $collapseId }}" 
-                                    aria-expanded="false" 
+                    <div class="bb1 event-list-item pl40 pr40 m-pl20 m-pr20 " id="heading-{{ $loop->iteration }}">
+                        <div class="max-1700 ma whatson-grid sm-copy h6 sm pl-lg-1930">
+                            <button class="btn p-0 text-start text-inherit collapsed event-title"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#{{ $collapseId }}"
+                                    aria-expanded="false"
                                     aria-controls="{{ $collapseId }}">
                                 <p class="h6 sm">{{ $eventName }}</p>
                             </button>
-                            
+
                             <p class="m-hide event-date">{{ $eventDate }}</p>
                             <div class="m-hide"><a class="location-link" href="/venue/{{ $eventLocationSlug }}">{{ $eventLocation }}</a></div>
-                            
+
                             <button class="flex align-center justify-center m-justify-end toggle-icon-wrapper p-0 border-0 bg-transparent"
                                     type="button"
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#{{ $collapseId }}" 
-                                    aria-expanded="false" 
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#{{ $collapseId }}"
+                                    aria-expanded="false"
                                     aria-controls="{{ $collapseId }}">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="plus--icon" >
                                     <path d="M7 1V15M1 7H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div id="{{ $collapseId }}" class="accordion-collapse collapse" data-bs-parent="{{ $parentId }}">
+                {{-- <div id="{{ $collapseId }}" class="accordion-collapse collapse" data-bs-parent="{{ $parentId }}">
                     <div class="inner overflow">
                         <div class="max-1700 ma">
                             <div class="mobile-info m-show m-p20">
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="event-content pt30 pb40 pl40 pr40 m-pt20 m-pb20 m-pl20 m-pr20">
                                 <div class="flex gap-40 m-flex-col m-gap-20">
                                     <div class="event-image w-40 m-w-100">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             @endforeach
         </div>
     </section>
@@ -168,8 +168,8 @@
     font-weight: 400;
     display: flex;
     align-items: center;
-    margin: 0; 
-    line-height: 1; 
+    margin: 0;
+    line-height: 1;
 }
 
 .location-link {
@@ -293,43 +293,48 @@
 /* =========================================================
    RESPONSIVE DESIGN
 ========================================================= */
+@media(min-width: 1930px) {
+    .pl-lg-1930{
+        padding-left: 25px;
+    }
+}
 @media (max-width: 768px) {
     .h1 {
         font-size: 2rem;
     }
-    
+
     .whatson-grid {
         grid-template-columns: 1fr 40px;
         gap: 15px;
     }
-    
+
     .m-hide { display: none !important; }
     .m-show { display: block !important; }
-    
+
     .event-content {
         padding: 20px !important;
     }
-    
+
     .w-40.m-w-100,
     .w-60.m-w-100 {
         width: 100% !important;
     }
-    
+
     .m-flex-col {
         flex-direction: column !important;
     }
-    
+
     .m-gap-20 {
         gap: 20px !important;
     }
-    
+
     .mobile-info {
         padding: 20px !important;
     }
         .m-show {
         display: block !important;
     }
-    
+
     .flex.gap-30 {
         gap: 20px !important;
         flex-direction: column;
@@ -467,14 +472,14 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const accordion = document.getElementById('whatsOnAccordion');
-    
+
     if (accordion) {
         // Add smooth transition for accordion
         accordion.addEventListener('show.bs.collapse', function(e) {
             const target = e.target;
             target.style.transition = 'all 0.3s ease';
         });
-        
+
         accordion.addEventListener('hide.bs.collapse', function(e) {
             const target = e.target;
             target.style.transition = 'all 0.3s ease';

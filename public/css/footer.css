@@ -58,7 +58,7 @@
     visibility: hidden;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.2s ease-in-out; 
+    transition: all 0.2s ease-in-out;
     border: 1px solid var(--mg-text-color);
     background-color: var(--mg-bg);
     margin-top: -1px;

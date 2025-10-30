@@ -1,9 +1,9 @@
 .venues-section {
-    background-color: #fbf9f4;
+    background-color:#fbf9f4 !important;
 }
 
 .venue-img {
-    width: 80%;
+    width: 100%;
     height: 470px;
     object-fit: cover;
 }

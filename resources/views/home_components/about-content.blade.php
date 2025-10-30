@@ -1,5 +1,5 @@
 <div class="py-5 bg-light px-4">
-    <div class="row">
+    <div class="row container">
         <div class="col-lg-8">
             <p class="h6 mb-2 fw-bold text-uppercase">The Margaret Family</p>
             <h2 class="h2 mb-4">

@@ -1,20 +1,20 @@
-<footer class="mg-footer bg-light text-dark py-5">
-    <div class="container-fluid mg-max-width px-4">
+<footer class="mg-footer bg-light text-dark py-5 p40 m-p20 ">
+    <div class="container mg-max-width px-4">
         <div class="row g-4 g-md-5 mg-footer-top">
             <div class="col-lg-4 col-12">
                 <h5 class="mg-footer-title mb-3">Contact</h5>
 
                 <p class="mg-footer-text mb-2">
-                    <i class="fas fa-map-marker-alt me-2"></i> 427 Chapel St, South Yarra 3141
+                    <i class="fas fa-map-marker-alt me-2"></i> <a style="color: #383838" class="text-decoration-none " href="https://www.google.com/maps/place/317+Bay+St,+Port+Melbourne+VIC+3207,+Australia/@-37.8362099,144.9414356,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667edd20b0c25:0x9f0a4a7b72a9a641!8m2!3d-37.8362099!4d144.9440105!16s%2Fg%2F11bw3zjsxc?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D">317
+                                   Bay Street Port Melbourne Vic 3207</a>
+
                 </p>
                 <p class="mg-footer-text mb-2">
-                    <i class="fas fa-parking me-2"></i> Public Parking - Jam Factory
-                </p>
-                <p class="mg-footer-text mb-2">
-                    <i class="fas fa-envelope me-2"></i> info@stellarestaurantbar.com.au
+                    <i class="fas fa-envelope me-2"></i><a style="color: #383838" class="text-decoration-none " href="mailto:hello@thegilroy.au">
+                                    hello@thegilroy.au</a>
                 </p>
                 <p class="mg-footer-text mb-0">
-                    <i class="fas fa-phone-alt me-2"></i> 03 8820 0028
+                    <i class="fas fa-phone-alt me-2"></i> (03) 9810 1222
                 </p>
             </div>
 
@@ -26,17 +26,8 @@
                 </p>
 
                 <div class="d-flex gap-3">
-                    <a href="https://www.facebook.com/" target="_blank" class="mg-social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="mg-social-link" aria-label="Instagram">
+                    <a href="https://www.instagram.com/the.gilroy?igsh=eWxhZTIxZjd3enZu" target="_blank" class="mg-social-link" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="mg-social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/" target="_blank" class="mg-social-link" aria-label="TikTok">
-                        <i class="fab fa-tiktok"></i>
                     </a>
                 </div>
             </div>
@@ -68,7 +59,7 @@
         <div
             class="d-flex flex-column flex-md-row justify-content-between align-items-center mg-copyright-section pt-4 mt-5 border-top mg-border-light">
             <p class="small mb-2 mb-md-0 mg-copyright-text">
-                Copyright © 2025 Margaret Group. All Rights Reserved.
+                Copyright © 2025 The Gilroy Bar & Eatery. All Rights Reserved.
             </p>
             <a href="{{ asset('pdf/gilroy-policy.pdf') }}"
                 target="_blank" rel="noopener noreferrer" class="mg-privacy small">

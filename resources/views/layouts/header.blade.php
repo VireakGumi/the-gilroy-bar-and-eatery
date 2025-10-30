@@ -1,31 +1,32 @@
-
 <header class="sticky-top bg-light-creamy border-bottom mg-footer">
-  <div class="container-fluid px-4 py-3 d-flex align-items-center justify-content-between">
+    <div class="container-fluid px-4 py-1 d-flex align-items-center justify-content-between">
 
-    <!-- Hamburger Button -->
+        {{-- <!-- Hamburger Button -->
     <button class="btn p-0 border-0 bg-transparent" type="button" id="menuToggle">
       <i class="bi bi-list custom-hamburger-size"></i>
-    </button>
+    </button> --}}
 
-    <!-- Logo -->
-    <div class="position-absolute start-50 translate-middle-x">
-      <a href="/" class="d-block text-center">
-        <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
-      </a>
+        <!-- Logo -->
+        <div class="">
+            <a href="/" class="d-block text-center">
+                <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
+            </a>
+        </div>
+
+        <!-- Book Button (Desktop only) -->
+        <div class="d-lg-flex">
+            <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
+                class="btn custom-book-btn text-uppercase fw-bold d-none d-lg-block" target="_blank"
+                rel="noopener noreferrer">
+                BOOK A TABLE
+            </a>
+
+            <a href="" class="far fa-calendar-plus d-lg-none d-md-block pe-3 fs-2"></a>
+        </div>
+
     </div>
 
-    <!-- Book Button (Desktop only) -->
-    <div class="d-none d-lg-flex">
-      <a href="https://www.nowbookit.com/"
-         class="btn custom-book-btn text-uppercase fw-bold"
-         target="_blank" rel="noopener noreferrer">
-        BOOK A TABLE
-      </a>
-    </div>
-
-  </div>
-
-  <!-- Slide Down Menu -->
+    {{-- <!-- Slide Down Menu -->
   <div class="slide-down-menu px-4" id="slideDownMenu">
     <div class="container-fluid">
       <ul class="list-unstyled mb-0 py-3">
@@ -43,32 +44,32 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> --}}
 </header>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const slideDownMenu = document.getElementById('slideDownMenu');
-    if (menuToggle && slideDownMenu) {
-        menuToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            slideDownMenu.classList.toggle('active');
-        });
-
-        const menuLinks = slideDownMenu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                slideDownMenu.classList.remove('active');
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menuToggle');
+        const slideDownMenu = document.getElementById('slideDownMenu');
+        if (menuToggle && slideDownMenu) {
+            menuToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                slideDownMenu.classList.toggle('active');
             });
-        });
 
-        document.addEventListener('click', function(e) {
-            if (!slideDownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-                slideDownMenu.classList.remove('active');
-            }
-        });
-    }
-});
+            const menuLinks = slideDownMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    slideDownMenu.classList.remove('active');
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!slideDownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                    slideDownMenu.classList.remove('active');
+                }
+            });
+        }
+    });
 </script>
