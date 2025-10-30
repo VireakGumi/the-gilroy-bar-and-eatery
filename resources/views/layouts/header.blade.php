@@ -34,11 +34,12 @@
         <li><a href="/about" class="d-block py-2 text-dark text-decoration-none">About</a></li>
         <li><a href="/events" class="d-block py-2 text-dark text-decoration-none">Events</a></li>
         <li><a href="/what-on" class="d-block py-2 text-dark text-decoration-none">What's On</a></li>
+        <li><a href="/gift_voucher" class="d-block py-2 text-dark text-decoration-none">Gift Vouchers</a></li>
         <!-- BOOK BUTTON for Mobile & Tablet - Now styled as regular link -->
         <li class="d-lg-none">
-          <a href="https://www.nowbookit.com/"
-             class="d-block py-2 text-dark text-decoration-none custom-book-btn"
-             target="_blank" rel="noopener noreferrer">
+          <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
+            class="d-block py-2 text-dark text-decoration-none custom-book-btn"
+            target="_blank" rel="noopener noreferrer">
             Book A Table
           </a>
         </li>

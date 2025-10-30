@@ -27,37 +27,37 @@ class HomeController extends Controller
 
         $venues = [
             [
-                'name' => 'Margaret',
-                'venue_url' => '/venue/margaret/',
-                'booking_url' => '/booking/margaret/',
+                'name' => 'The Gilroy Bar & Eatery',
+                'venue_url' => '#gilroy-bar-eatery',
+                'booking_url' => 'https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00',
                 'image_url' => 'https://www.datocms-assets.com/127859/1754626386-pt_20240814_margaret0757.jpg?auto=format&w=1227',
                 'menu_link' => '/menu/margaret', // ADDED for event section
             ],
             [
                 'name' => 'Next Door',
-                'venue_url' => '/venue/next-door/',
-                'booking_url' => '/booking/next-door/',
+                'venue_url' => '#next-door',
+                'booking_url' => 'https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00',
                 'image_url' => 'https://www.datocms-assets.com/127859/1724481569-next-door-interior3.jpg?auto=format&w=1440',
                 'menu_link' => '/menu/next-door', // ADDED for event section
             ],
             [
                 'name' => 'Gran Torino',
-                'venue_url' => '/venue/gran-torino/',
-                'booking_url' => '/booking/gran-torino/',
+                'venue_url' => '#gran-torino',
+                'booking_url' => 'https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00',
                 'image_url' => 'https://www.datocms-assets.com/127859/1754533308-73.png?auto=format&w=1440',
                 'menu_link' => '/menu/gran-torino', // ADDED for event section
             ],
             [
                 'name' => 'Bar Torino',
-                'venue_url' => '/venue/bar-torino/',
-                'booking_url' => '/booking/bar-torino/',
+                'venue_url' => '#bar-torino',
+                'booking_url' => 'https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00',
                 'image_url' => 'https://www.datocms-assets.com/127859/1754030444-bt.jpg?auto=format&w=678',
                 'menu_link' => '/menu/bar-torino', // ADDED for event section
             ],
             [
                 'name' => 'Events by Neil Perry',
-                'venue_url' => '/venue/events-by-neil-perry/',
-                'booking_url' => 'https://eventsbyneilperry.com', // External link example
+                'venue_url' => '#events-by-neil-perry',
+                'booking_url' => 'https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00', // External link example
                 'image_url' => 'https://www.datocms-assets.com/127859/1754461672-aci_tourismcalifornia_2025sydney-36.jpg?auto=format&w=1600',
                 'menu_link' => '/menu/events', // ADDED for event section
             ],

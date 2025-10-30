@@ -9,9 +9,12 @@
                                    Bay Street Port Melbourne Vic 3207</a>
 
                 </p>
+
                 <p class="mg-footer-text mb-2">
-                    <i class="fas fa-envelope me-2"></i><a style="color: #383838" class="text-decoration-none " href="mailto:hello@thegilroy.au">
-                                    hello@thegilroy.au</a>
+                    <i class="fas fa-parking me-2"></i> Public Parking - Jam Factory
+                </p>
+                <p class="mg-footer-text mb-2">
+                    <i class="fas fa-envelope me-2"></i> info@stellarestaurantbar.com.au
                 </p>
                 <p class="mg-footer-text mb-0">
                     <i class="fas fa-phone-alt me-2"></i> (03) 9810 1222
@@ -59,11 +62,11 @@
         <div
             class="d-flex flex-column flex-md-row justify-content-between align-items-center mg-copyright-section pt-4 mt-5 border-top mg-border-light">
             <p class="small mb-2 mb-md-0 mg-copyright-text">
-                Copyright © 2025 The Gilroy Bar & Eatery. All Rights Reserved.
+                Copyright © 2025 Margaret Group. All Rights Reserved.
             </p>
             <a href="{{ asset('pdf/gilroy-policy.pdf') }}"
                 target="_blank" rel="noopener noreferrer" class="mg-privacy small">
-                Policy
+                Our Policy
             </a>
         </div>
     </div>
