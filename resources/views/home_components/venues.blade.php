@@ -43,14 +43,14 @@
         </div>
         <div class="col-lg-6 col-md-12">
             <div class="venue-description pe-5 pt-2">
-                <p>Welcome to <strong>The Gilroy, Bar & Eatery</strong>, your neighbourhood haven in the heart of Port Melbourne.
+                <p>Welcome to The Gilroy, Bar & Eatery, your neighbourhood haven in the heart of Port Melbourne.
                     Everything we do begins with connection to our people, our produce and our community.</p>
 
                 <p>At our heart, we’re about relationships. From the farmers, fishermen, and producers we know by name,
                     to the guests we welcome through our doors each day. The Gilroy is built on trust, care and shared
                     passion. </p>
 
-                <p>Led by one of Australia’s most exciting young chefs, <strong>Derek</strong>, our menu is a heartfelt
+                <p>Led by one of Australia’s most exciting young chefs, Derek, our menu is a heartfelt
                     celebration of
                     the seasons and the incredible produce our beautiful country offers. From the freshest seafood to
                     sustainable meats all sourced locally, every dish is thoughtfully prepared to honour the ingredients
@@ -59,7 +59,7 @@
                 <p>Our menu changes weekly, shaped by what’s in season and at its absolute best. It’s always fresh, full
                     of flavour but with a little extra magic. </p>
 
-                <p><strong>The Gilroy</strong> is our love letter to food, wine, and the simple pleasure of sharing a
+                <p>The Gilroy is our love letter to food, wine, and the simple pleasure of sharing a
                     meal.
                     It’s where quality meets comfort and every detail from your first sip to your last bite is crafted
                     with passion.
@@ -71,8 +71,7 @@
                     is refined.</p>
 
                 <p>Whether it’s a spontaneous weeknight dinner, a long-overdue catch-up, or a special celebration,
-                    <strong>The
-                        Gilroy</strong> is your place. We’re here to make every visit full of joyful memories and those
+                    The Gilroy is your place. We’re here to make every visit full of joyful memories and those
                     moments
                     you’ll want to return to again and again.
                 </p>
@@ -113,7 +112,7 @@
                     <div id="collapseLocation" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <a
-                                href="https://www.google.com/maps/place/317+Bay+St,+Port+Melbourne+VIC+3207,+Australia/@-37.8362099,144.9414356,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667edd20b0c25:0x9f0a4a7b72a9a641!8m2!3d-37.8362099!4d144.9440105!16s%2Fg%2F11bw3zjsxc?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D">317
+                                href="https://www.google.com/maps/place/317+Bay+St,+Port+Melbourne+VIC+3207,+Australia/@-37.8362099,144.9414356,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667edd20b0c25:0x9f0a4a7b72a9a641!8m2!3d-37.8362099!4d144.9440105!16s%2Fg%2F11bw3zjsxc?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">317
                                 Bay Street Port Melbourne Vic 3207</a>
                         </div>
                     </div>
@@ -152,7 +151,7 @@
                             Thursday 6 – 10pm <br>
                             Friday 12 – 3pm <br>
                             Friday 6 – 10pm <br>
-                            Saturday 6 – 10pm
+                            Saturday 5:30 – 10pm
                         </div>
                     </div>
                 </div>
@@ -166,7 +165,7 @@
                     </h2>
                     <div id="collapseEvents" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <b>Available for exclusive events or upto:</b><br>
+                            Available for exclusive events or up to:<br>
                             Whole venue 125 canapé <br>
                             Whole venue 70 set menu
                         </div>
@@ -197,7 +196,7 @@
                     </h2>
                     <div id="collapseSocials" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <a href="https://www.instagram.com/the.gilroy?igsh=eWxhZTIxZjd3enZu">Instagram</a>
+                            <a href="https://www.instagram.com/the.gilroy?igsh=eWxhZTIxZjd3enZu" target="_blank">Instagram</a>
                         </div>
                     </div>
                 </div>
@@ -364,7 +363,6 @@
         opacity: 1;
         transform: translateY(0) scale(1);
         filter: blur(0);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
 
     /* Closing */

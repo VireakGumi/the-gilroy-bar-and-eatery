@@ -5,13 +5,13 @@
                 <h5 class="mg-footer-title mb-3">Contact</h5>
 
                 <p class="mg-footer-text mb-2">
-                    <i class="fas fa-map-marker-alt me-2"></i> <a style="color: #383838" class="text-decoration-none " href="https://www.google.com/maps/place/317+Bay+St,+Port+Melbourne+VIC+3207,+Australia/@-37.8362099,144.9414356,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667edd20b0c25:0x9f0a4a7b72a9a641!8m2!3d-37.8362099!4d144.9440105!16s%2Fg%2F11bw3zjsxc?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D">317
+                    <i class="fas fa-map-marker-alt me-2"></i> <a style="color: #383838" class="text-decoration-none " target="_blank" href="https://www.google.com/maps/place/317+Bay+St,+Port+Melbourne+VIC+3207,+Australia/@-37.8362099,144.9414356,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667edd20b0c25:0x9f0a4a7b72a9a641!8m2!3d-37.8362099!4d144.9440105!16s%2Fg%2F11bw3zjsxc?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D">317
                                    Bay Street Port Melbourne Vic 3207</a>
 
                 </p>
 
                 <p class="mg-footer-text mb-2">
-                    <i class="fas fa-envelope me-2"></i><a style="color: #383838" class="text-decoration-none " href="mailto:hello@thegilroy.au">
+                    <i class="fas fa-envelope me-2"></i><a style="color: #383838" class="text-decoration-none " href="mailto:hello@thegilroy.au" >
                                     hello@thegilroy.au</a>
                 </p>
                 <p class="mg-footer-text mb-0">
