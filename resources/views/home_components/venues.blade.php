@@ -36,40 +36,48 @@
     <div class="row align-items-start justify-content-between px-4 w-100 container">
         <!-- Left column -->
         <div class="col-lg-12">
-            <h1 class="venue-title">The Gilroy Bar & Eatery</h1>
-            {{-- <div class="venue-about-section-img">
+            {{-- <h1 class="venue-title">The Gilroy Bar & Eatery</h1> --}}
+            <div class="venue-about-section-img">
                 <img src="{{ asset('images/logo-no-bg.png') }}" alt="" class="w-100 d-flex overflow-hidden">
-            </div> --}}
+            </div>
         </div>
         <div class="col-lg-6 col-md-12">
             <div class="venue-description pe-5 pt-2">
-                <p>Welcome to <strong>The Gilroy Bar & Eatery</strong>, your neighborhood sanctuary in the heart of
-                    Port Melbourne — a place where connection, craft, and community come together.</p>
+                <p>Welcome to <strong>The Gilroy, Bar & Eatery</strong>, your neighbourhood haven in the heart of Port Melbourne.
+                    Everything we do begins with connection to our people, our produce and our community.</p>
 
-                <p>At The Gilroy, everything begins with relationships — from the farmers, fishermen, and local
-                    producers we know by name to the guests we welcome each day. Built on trust, care, and passion,
-                    our restaurant is a celebration of genuine hospitality and exceptional produce.</p>
+                <p>At our heart, we’re about relationships. From the farmers, fishermen, and producers we know by name,
+                    to the guests we welcome through our doors each day. The Gilroy is built on trust, care and shared
+                    passion. </p>
 
-                <p>Led by one of Australia’s most talented young chefs, <strong>Derek</strong>, our menu honors the
-                    rhythm of the seasons. Each dish is crafted from the freshest local seafood, sustainably sourced
-                    meats, and vibrant ingredients — all prepared with intention and creativity to bring joy to your
-                    table.</p>
+                <p>Led by one of Australia’s most exciting young chefs, <strong>Derek</strong>, our menu is a heartfelt
+                    celebration of
+                    the seasons and the incredible produce our beautiful country offers. From the freshest seafood to
+                    sustainable meats all sourced locally, every dish is thoughtfully prepared to honour the ingredients
+                    and to bring joy to your table.</p>
 
-                <p>Our menu evolves weekly, inspired by what’s in season and at its absolute best. Expect fresh
-                    flavors, elegant simplicity, and a touch of magic in every plate.</p>
+                <p>Our menu changes weekly, shaped by what’s in season and at its absolute best. It’s always fresh, full
+                    of flavour but with a little extra magic. </p>
 
                 <p><strong>The Gilroy</strong> is our love letter to food, wine, and the simple pleasure of sharing a
-                    meal. Here, quality meets comfort — from the first sip to the last bite, every detail is guided
-                    by passion and care.</p>
-
-                <p>Step inside and you’ll feel the warmth, the relaxed sophistication, and the kind of welcome that
-                    invites you to linger. Our cuisine blends the romance of French dining with the soulful flavors
-                    of Italy, served in a setting that’s both refined and inviting.</p>
-
-                <p>Whether it’s a casual weeknight dinner, a long-awaited catch-up, or a special celebration,
-                    <strong>The Gilroy</strong> is your place — where every visit feels like coming home. Come as you
-                    are, stay as long as you wish, and let us take care of the rest.
+                    meal.
+                    It’s where quality meets comfort and every detail from your first sip to your last bite is crafted
+                    with passion.
                 </p>
+
+                <p>Step into our space and you’ll feel the warmth, the easy elegance, the kind of welcome that makes you
+                    want to settle in. Once settled you will see our menu has the romance of French cuisine and the
+                    soulful flavours of Italy, all served with genuine hospitality in a setting that’s as relaxed as it
+                    is refined.</p>
+
+                <p>Whether it’s a spontaneous weeknight dinner, a long-overdue catch-up, or a special celebration,
+                    <strong>The
+                        Gilroy</strong> is your place. We’re here to make every visit full of joyful memories and those
+                    moments
+                    you’ll want to return to again and again.
+                </p>
+
+                <p>Come as you are. Stay a while. And let us take care of the rest.</p>
             </div>
             <div class="mt-4 row">
                 <div class="col-12">
@@ -120,10 +128,11 @@
                     </h2>
                     <div id="collapseHoursBar" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            Closed Sunday/Monday <br>
-                            Daily 4pm to late <br>
-                            Friday all day late <br>
-
+                            Closed Sunday Monday <br>
+                            Tuesday- Thursday 4 - late <br>
+                            Friday 12- 3pm <br>
+                            Friday 4 - late<br>
+                            Saturday - 4 - late <br>
                         </div>
                     </div>
                 </div>
@@ -157,8 +166,9 @@
                     </h2>
                     <div id="collapseEvents" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            Available for exclusive events for up to 110 guests. A semi-private dining room is
-                            available for 18 guests.
+                            <b>Available for exclusive events or upto:</b><br>
+                            Whole venue 125 canapé <br>
+                            Whole venue 70 set menu
                         </div>
                     </div>
                 </div>
@@ -173,7 +183,7 @@
                     <div id="collapseEnquiries" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             Email: <a href="mailto:hello@thegilroy.au">hello@thegilroy.au</a><br>
-                            Phone: (03) 9810 1222
+                            Phone: 03 9108 1222
                         </div>
                     </div>
                 </div>
@@ -216,7 +226,7 @@
 
     .venue-about-section-img {
         margin-left: -20px !important;
-        width: 30rem;
+        width: 18.5rem;
     }
 
     .carousel-control-next,
@@ -417,8 +427,7 @@
 
         @media (max-width: 768px) {
             .venue-about-section-img {
-                /* margin-left: -20px !important; */
-                width: 25rem;
+                width: 15.5rem;
             }
 
             .carousel-img {
@@ -428,16 +437,25 @@
             .venue-description {
                 padding-right: 0 !important;
             }
+
             .venue-description p {
                 line-height: 1.1;
                 width: 100%;
+            }
+
+            .custom-book-btn{
+                font-size: 10px;
+            }
+
+            .accordion-button {
+                font-size: 0.7rem;
             }
         }
 
         @media (max-width: 450px) {
             .venue-about-section-img {
                 /* margin-left: -20px !important; */
-                width: 20rem;
+                width: 13.5rem;
             }
 
             .venue-about-section .venue-title {
@@ -458,7 +476,7 @@
         @media (max-width: 400px) {
             .venue-about-section-img {
                 /* margin-left: -20px !important; */
-                width: 15rem;
+                width: 11.5rem;
             }
         }
     </style>

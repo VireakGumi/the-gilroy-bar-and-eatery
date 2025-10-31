@@ -15,7 +15,7 @@
                                     hello@thegilroy.au</a>
                 </p>
                 <p class="mg-footer-text mb-0">
-                    <i class="fas fa-phone-alt me-2"></i> (03) 9810 1222
+                    <i class="fas fa-phone-alt me-2"></i> 03 9108 1222
                 </p>
             </div>
 
