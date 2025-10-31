@@ -36,10 +36,10 @@
     <div class="row align-items-start justify-content-between px-4 w-100 container">
         <!-- Left column -->
         <div class="col-lg-12">
-            {{-- <h1 class="venue-title">The Gilroy Bar & Eatery</h1> --}}
-            <div class="venue-about-section-img">
+            <h1 class="venue-title">The Gilroy Bar & Eatery</h1>
+            {{-- <div class="venue-about-section-img">
                 <img src="{{ asset('images/logo-no-bg.png') }}" alt="" class="w-100 d-flex overflow-hidden">
-            </div>
+            </div> --}}
         </div>
         <div class="col-lg-6 col-md-12">
             <div class="venue-description pe-5 pt-2">

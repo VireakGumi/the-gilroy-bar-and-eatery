@@ -1,27 +1,27 @@
 <header class="sticky-top bg-light-creamy border-bottom mg-footer">
-    <div class="container-fluid px-4 py-1 d-flex align-items-center justify-content-between">
+    <div class="container px-4 py-3 d-flex align-items-center">
 
         {{-- <!-- Hamburger Button -->
     <button class="btn p-0 border-0 bg-transparent" type="button" id="menuToggle">
       <i class="bi bi-list custom-hamburger-size"></i>
     </button> --}}
-
-        <!-- Logo -->
-        <div class="">
-            <a href="/" class="d-block text-center">
-                <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
-            </a>
-        </div>
-
         <!-- Book Button (Desktop only) -->
-        <div class="d-lg-flex">
+        <div class="d-lg-flex ">
             <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
                 class="btn custom-book-btn text-uppercase fw-bold d-none d-lg-block" target="_blank"
                 rel="noopener noreferrer">
                 BOOK A TABLE
             </a>
 
-            <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00" target="_blank" class="text-decoration-none text-dark"><i class="far fa-calendar-plus d-lg-none d-md-block pe-3 fs-2"></i></a>
+            <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
+                target="_blank" class="text-decoration-none text-dark"><i
+                    class="far fa-calendar-plus d-lg-none d-md-block pe-3 pl-5 fs-2"></i></a>
+        </div>
+        <!-- Logo -->
+        <div class="position-absolute start-50 translate-middle-x">
+            <a href="/" class="d-block text-center">
+                <img src="{{ asset('images/logo-no-bg.png') }}" alt="Margaret Logo" class="custom-logo-img">
+            </a>
         </div>
 
     </div>
