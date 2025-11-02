@@ -128,9 +128,9 @@
                     </h2>
                     <div id="collapseHoursBar" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            Closed Sun & Mon <br>
-                            Daily 4pm to late <br>
-                            Fri - all day late<br>
+                            Closed Sun & Mon<br>
+                            Tues - Thurs 4pm to late<br>
+                            Fri & Sat - all day late<br>
                         </div>
                     </div>
                 </div>
@@ -148,8 +148,8 @@
                             Tue 6 – 10pm <br>
                             Wed 6 – 10pm<br>
                             Thu 6 – 10pm <br>
-                            Fri 12 – 3pm / 6 – 10pm <br>
-                            Sat 6 – 10pm
+                            Fri 5.30 - 10pm<br>
+                            Sat 5.30 - 10pm
                         </div>
                     </div>
                 </div>
