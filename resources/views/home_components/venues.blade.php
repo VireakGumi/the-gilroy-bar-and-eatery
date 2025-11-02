@@ -5,6 +5,7 @@
         'images/venues3.png',
         'images/venues4.png',
         'images/venues5.png',
+        'images/venues6.jpeg',
     ];
 @endphp
 <!-- ===== Venues Slideshow Section ===== -->
@@ -56,8 +57,8 @@
                     sustainable meats all sourced locally, every dish is thoughtfully prepared to honour the ingredients
                     and to bring joy to your table.</p>
 
-                <p>Our menu changes weekly, shaped by what’s in season and at its absolute best. It’s always fresh, full
-                    of flavour but with a little extra magic. </p>
+                <p>Our menu is curated by our incredible kitchen team, by what’s in season and at its absolute best.
+                    It’s always fresh, full of flavour but with a little extra magic. </p>
 
                 <p>The Gilroy is our love letter to food, wine, and the simple pleasure of sharing a
                     meal.
@@ -111,8 +112,8 @@
                     </h2>
                     <div id="collapseLocation" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <a
-                                href="https://www.google.com/maps/place/317+Bay+St,+Port+Melbourne+VIC+3207,+Australia/@-37.8362099,144.9414356,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667edd20b0c25:0x9f0a4a7b72a9a641!8m2!3d-37.8362099!4d144.9440105!16s%2Fg%2F11bw3zjsxc?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">317
+                            <a href="https://www.google.com/maps/place/317+Bay+St,+Port+Melbourne+VIC+3207,+Australia/@-37.8362099,144.9414356,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667edd20b0c25:0x9f0a4a7b72a9a641!8m2!3d-37.8362099!4d144.9440105!16s%2Fg%2F11bw3zjsxc?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank">317
                                 Bay Street Port Melbourne Vic 3207</a>
                         </div>
                     </div>
@@ -127,11 +128,9 @@
                     </h2>
                     <div id="collapseHoursBar" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            Closed Sunday Monday <br>
-                            Tuesday- Thursday 4 - late <br>
-                            Friday 12- 3pm <br>
-                            Friday 4 - late<br>
-                            Saturday - 4 - late <br>
+                            Closed Sun & Mon <br>
+                            Daily 4pm to late <br>
+                            Fri - all day late<br>
                         </div>
                     </div>
                 </div>
@@ -144,14 +143,13 @@
                     </h2>
                     <div id="collapseHours" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            Sunday Closed​ <br>
-                            Monday Closed <br>
-                            Tuesday 6 – 10pm <br>
-                            Wednesday 6 – 10pm<br>
-                            Thursday 6 – 10pm <br>
-                            Friday 12 – 3pm <br>
-                            Friday 6 – 10pm <br>
-                            Saturday 5:30 – 10pm
+                            Sun - Closed <br>
+                            Mon - Closed <br>
+                            Tue 6 – 10pm <br>
+                            Wed 6 – 10pm<br>
+                            Thu 6 – 10pm <br>
+                            Fri 12 – 3pm / 6 – 10pm <br>
+                            Sat 6 – 10pm
                         </div>
                     </div>
                 </div>
@@ -196,7 +194,8 @@
                     </h2>
                     <div id="collapseSocials" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <a href="https://www.instagram.com/the.gilroy?igsh=eWxhZTIxZjd3enZu" target="_blank">Instagram</a>
+                            <a href="https://www.instagram.com/the.gilroy?igsh=eWxhZTIxZjd3enZu"
+                                target="_blank">Instagram</a>
                         </div>
                     </div>
                 </div>
@@ -441,7 +440,7 @@
                 width: 100%;
             }
 
-            .custom-book-btn{
+            .custom-book-btn {
                 font-size: 10px;
             }
 
