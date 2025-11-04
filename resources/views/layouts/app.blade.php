@@ -5,6 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✅ Open Graph for SEO & Social -->
+    <meta property="og:title" content="The Gilroy Bar Restaurant Bay St Port Melbourne">
+    <meta property="og:description"
+        content="At The Gilroy, we invite you to savour exquisite dishes crafted with passion, from Italian pastas, all served in an ambience that whispers elegance.">
+    <meta property="og:image" content="https://www.thegilroy.au/images/logo-no-bg.png">
+    <meta property="og:url" content="https://www.thegilroy.au">
+    <meta property="og:type" content="website">
+
     <title>@yield('title', 'Gilroy Bar')</title>
 
     <!-- Favicon -->
@@ -28,23 +36,15 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @yield('style')
 
-    <!-- ✅ Open Graph for SEO & Social -->
-    <meta property="og:title" content="The Gilroy Bar Restaurant Bay St Port Melbourne">
-    <meta property="og:description"
-        content="At The Gilroy, we invite you to savour exquisite dishes crafted with passion, from Italian pastas, all served in an ambience that whispers elegance.">
-    <meta property="og:image" content="https://www.thegilroy.au/images/logo-no-bg.png">
-    <meta property="og:url" content="https://www.thegilroy.au">
-    <meta property="og:type" content="website">
 
-    <!-- ✅ Structured Data (Logo Schema) -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "The Gilroy Bar",
-            "url": "https://www.thegilroy.au",
-            "logo": "https://www.thegilroy.au/images/logo-no-bg.png"
-        }
+        {!! json_encode([
+        "@context" => "https://schema.org",
+        "@type" => "Organization",
+        "name" => "The Gilroy Bar",
+        "url" => "https://www.thegilroy.au",
+        "logo" => asset('images/logo-no-bg.png'),
+        ], JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT) !!}
     </script>
 </head>
 
@@ -71,6 +71,7 @@
             behavior: 'smooth' // still smooth, but customizable if combined with animation
         });
     </script>
+
     <!-- JS Content -->
     @yield('js')
 </body>
