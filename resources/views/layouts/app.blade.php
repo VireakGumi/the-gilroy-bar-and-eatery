@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ✅ Open Graph for SEO & Social -->
     <meta property="og:title" content="The Gilroy Bar Restaurant Bay St Port Melbourne">
-    <meta property="og:description" content="At The Gilroy, we invite you to savour exquisite dishes crafted with passion, from Italian pastas, all served in an ambience that whispers elegance.">
+    <meta property="og:description"
+        content="At The Gilroy, we invite you to savour exquisite dishes crafted with passion, from Italian pastas, all served in an ambience that whispers elegance.">
     <meta property="og:image" content="https://www.thegilroy.au/images/logo-no-bg.png">
     <meta property="og:url" content="https://www.thegilroy.au">
     <meta property="og:type" content="website">
@@ -18,7 +20,8 @@
     <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/x-icon">
 
     <!-- ✅ Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
@@ -33,16 +36,16 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @yield('style')
 
-    <!-- ✅ Structured Data (Logo Schema) -->
     <script type="application/ld+json">
         {!! json_encode([
-            "@context" => "https://schema.org",
-            "@type" => "Organization",
-            "name" => "The Gilroy Bar",
-            "url" => "https://www.thegilroy.au",
-            "logo" => asset('images/logo-no-bg.png')
+            '@context' => 'https://schema.org',
+            '@type' => 'Organization',
+            'name' => 'The Gilroy Bar',
+            'url' => 'https://www.thegilroy.au',
+            'logo' => asset('images/logo-no-bg.png')
         ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
     </script>
+
 </head>
 
 <body>
@@ -70,4 +73,5 @@
 
     @yield('js')
 </body>
+
 </html>
