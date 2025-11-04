@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Home Page')
+@section('title', 'The Gilroy')
 
 @section('content')
     <div style="background-color:#f1ede5;">
