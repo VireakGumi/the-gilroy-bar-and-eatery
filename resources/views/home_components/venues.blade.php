@@ -81,13 +81,13 @@
             </div>
             <div class="mt-4 row">
                 <div class="col-12">
-                    <a href="#" class="text-decoration-none venue-link text-dark" style="font-size: 0.7rem">
+                    <a href="{{ asset('pdf/MENU 2 THE GILROY NOV 7.pdf') }}" class="text-decoration-none venue-link text-dark" style="font-size: 0.7rem" target="_blank">
                         → View À La Carte Menu
                     </a>
                 </div>
                 <div class="col-12">
 
-                    <a href="#" class="text-decoration-none venue-link text-dark" style="font-size: 0.7rem">
+                    <a href="{{ asset('pdf/Dessert NOV 7.pdf') }}" class="text-decoration-none venue-link text-dark" style="font-size: 0.7rem" target="_blank">
                         → View Dessert Menu
                     </a>
                 </div>
