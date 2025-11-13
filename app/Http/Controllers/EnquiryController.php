@@ -31,7 +31,7 @@ class EnquiryController extends Controller
         try {
             Mail::send('emails.enquiry', $data, function ($message) use ($data) {
                 $message->from($data['email'], $data['first_name'].' '.$data['last_name'])
-                        ->to(['hello@thegilroy.au', 'events@thegilroy.au'], 'The Gilroy Events')
+                        ->to(['events@thegilroy.au'], 'The Gilroy Events')
                         ->replyTo($data['email'], $data['first_name'].' '.$data['last_name'])
                         ->subject('📩 New Event Enquiry from '.$data['first_name'].' '.$data['last_name']);
             });
