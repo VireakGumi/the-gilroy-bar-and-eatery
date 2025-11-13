@@ -109,7 +109,7 @@ class HomeController extends Controller
 
         $events = [
             [
-                'name' => 'Oyster night - All you can eat!',
+                'name' => 'Tuesday oyster night - All you can eat',
                 'date' => '-',
                 'location' => '-',
                 'menu_link' => '-',
