@@ -96,7 +96,8 @@
             <div class="mt-4 d-flex flex-wrap gap-3">
                 <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
                     target="_blank" class="btn custom-book-btn rounded-0 px-4 py-2">BOOK A TABLE</a>
-                <a href="" class="btn custom-book-btn rounded-0 px-4 py-2">GIFT VOUCHERS</a>
+
+                <a href="https://giftcards.nowbookit.com/cards?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&accent=75,174,79" class="btn custom-book-btn rounded-0 px-4 py-2" target="_blank">GIFT VOUCHERS</a>
             </div>
         </div>
 

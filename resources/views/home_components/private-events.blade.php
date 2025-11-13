@@ -6,7 +6,7 @@
                 type="button"
                 class="btn btn-outline-light"
                 data-bs-toggle="modal"
-                {{-- data-bs-target="#enquiryModal" --}}
+                data-bs-target="#enquiryModal"
                 >
             ENQUIRE
         </button>

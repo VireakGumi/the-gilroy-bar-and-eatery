@@ -109,13 +109,21 @@ class HomeController extends Controller
 
         $events = [
             [
-                'name' => '-',
+                'name' => 'Oyster night - All you can eat!',
                 'date' => '-',
                 'location' => '-',
                 'menu_link' => '-',
                 'description' => '-',
                 'booking_url' => '-'
-            ]
+            ],
+            [
+                'name' => "New year's Eve",
+                'date' => '-',
+                'location' => '-',
+                'menu_link' => '-',
+                'description' => '-',
+                'booking_url' => '-'
+            ],
         ];
 
         // FIX: Pass all required variables
