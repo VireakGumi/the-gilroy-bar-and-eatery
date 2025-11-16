@@ -109,19 +109,19 @@ class HomeController extends Controller
 
         $events = [
             [
-                'name' => 'Tuesday oyster night - All you can eat',
-                'date' => '-',
-                'location' => '-',
+                'name' => 'Oyster Night',
+                'date' => 'Every Tuesday',
+                'location' => '',
                 'menu_link' => '-',
-                'description' => '-',
+                'description' => 'Every Tuesday night $2.50 Sydney Rock & St Helen Oysters',
                 'booking_url' => '-'
             ],
             [
-                'name' => "New year's Eve",
-                'date' => '-',
-                'location' => '-',
-                'menu_link' => '-',
-                'description' => '-',
+                'name' => "New Year’s Eve",
+                'date' => '31st Dec',
+                'location' => '',
+                'menu_link' => '',
+                'description' => 'We are working on a very special menu please check back by on Nov 21st for our menu',
                 'booking_url' => '-'
             ],
         ];
