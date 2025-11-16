@@ -7,7 +7,7 @@
             <div class="whatson-grid max-1700 ma">
                 <div class="filter-btn flex align-center gap-5 h6 small py10 pl-lg-1930"><span>Event</span></div>
                 <div class="filter-btn flex align-center gap-5 h6 small py10 m-hide"><span>Date</span></div>
-                <div class="filter-btn flex align-center gap-5 h6 small py10 m-hide"><span>Location</span></div>
+                <div class="filter-btn flex align-center gap-5 h6 small py10 m-hide"><span></span></div>
                 <div class="filter-btn flex align-center gap-5 h6 small py10 m-hide"><span></span></div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                {{-- <div id="{{ $collapseId }}" class="accordion-collapse collapse" data-bs-parent="{{ $parentId }}">
+                <div id="{{ $collapseId }}" class="accordion-collapse collapse" data-bs-parent="{{ $parentId }}">
                     <div class="inner overflow">
                         <div class="max-1700 ma">
                             <div class="mobile-info m-show m-p20">
@@ -67,37 +67,37 @@
                                         <p class="small bold text-muted">DATE</p>
                                         <p class="small">{{ $eventDate }}</p>
                                     </div>
-                                    <div class="flex flex-col gap-5">
+                                    {{-- <div class="flex flex-col gap-5">
                                         <p class="small bold text-muted">LOCATION</p>
                                         <a href="/venue/{{ $eventLocationSlug }}" class="small location-link">{{ $eventLocation }}</a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
 
                             <div class="event-content pt30 pb40 pl40 pr40 m-pt20 m-pb20 m-pl20 m-pr20">
                                 <div class="flex gap-40 m-flex-col m-gap-20">
-                                    <div class="event-image w-40 m-w-100">
+                                    {{-- <div class="event-image w-40 m-w-100">
                                         <div class="image-container ratio-4-3 overflow-hidden">
                                             <img src="{{ $eventImageUrl }}" alt="{{ $eventName }}" class="w-100 h-100 object-fit-cover">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="event-details w-60 m-w-100 flex flex-col">
-                                        <div class="description small text-dark mb20">
+                                        <div class="description small text-dark mb20 small">
                                             {!! nl2br(e($eventDescription)) !!}
                                         </div>
-                                        <div class="mt-auto">
+                                        {{-- <div class="mt-auto">
                                             @if($eventTicketsUrl)
                                                 <a href="{{ $eventTicketsUrl }}" target="_blank" rel="noopener noreferrer" class="btn-book-now">
                                                     Book Now
                                                 </a>
                                             @endif
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> --}}
+                </div>
             @endforeach
         </div>
     </section>
