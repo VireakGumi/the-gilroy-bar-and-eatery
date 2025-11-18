@@ -124,6 +124,14 @@ class HomeController extends Controller
                 'description' => 'We are working on a very special menu please check back by on Nov 21st for our menu',
                 'booking_url' => '-'
             ],
+            [
+                'name' => "Happy Hours",
+                'date' => 'Everyday',
+                'location' => '',
+                'menu_link' => '',
+                'description' => '4 - 6pm Enjoy Our Happy hours! All Table $9',
+                'booking_url' => '-'
+            ],
         ];
 
         // FIX: Pass all required variables

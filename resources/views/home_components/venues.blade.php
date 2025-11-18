@@ -81,13 +81,15 @@
             </div>
             <div class="mt-4 row">
                 <div class="col-12">
-                    <a href="{{ asset('pdf/MENU 2 THE GILROY NOV 7.pdf') }}" class="text-decoration-none venue-link text-dark" style="font-size: 0.7rem" target="_blank">
+                    <a href="{{ asset('pdf/MENU 2 THE GILROY NOV 7.pdf') }}"
+                        class="text-decoration-none venue-link text-dark" style="font-size: 0.7rem" target="_blank">
                         → View À La Carte Menu
                     </a>
                 </div>
                 <div class="col-12">
 
-                    <a href="{{ asset('pdf/Dessert NOV 7.pdf') }}" class="text-decoration-none venue-link text-dark" style="font-size: 0.7rem" target="_blank">
+                    <a href="{{ asset('pdf/Dessert NOV 7.pdf') }}" class="text-decoration-none venue-link text-dark"
+                        style="font-size: 0.7rem" target="_blank">
                         → View Dessert Menu
                     </a>
                 </div>
@@ -97,7 +99,8 @@
                 <a href="https://bookings.nowbookit.com/?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&colors=hex,33691e,ffea00"
                     target="_blank" class="btn custom-book-btn rounded-0 px-4 py-2">BOOK A TABLE</a>
 
-                <a href="https://giftcards.nowbookit.com/cards?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&accent=75,174,79" class="btn custom-book-btn rounded-0 px-4 py-2" target="_blank">GIFT VOUCHERS</a>
+                <a href="https://giftcards.nowbookit.com/cards?accountid=6b8a8752-7eb2-49d7-8095-168dc2fdddc3&venueid=14008&theme=light&accent=75,174,79"
+                    class="btn custom-book-btn rounded-0 px-4 py-2" target="_blank">GIFT VOUCHERS</a>
             </div>
         </div>
 
@@ -130,8 +133,8 @@
                     <div id="collapseHoursBar" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             Closed Sun & Mon<br>
-                            Tues - Thurs 4pm to late<br>
-                            Fri & Sat - all day late<br>
+                            Tue - Thur 4pm to late<br>
+                            Fri/Sat 12pm to late<br>
                         </div>
                     </div>
                 </div>
@@ -144,13 +147,33 @@
                     </h2>
                     <div id="collapseHours" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            Sun - Closed <br>
+                            {{-- Sun - Closed <br>
                             Mon - Closed <br>
                             Tue 6 – 10pm <br>
                             Wed 6 – 10pm<br>
                             Thu 6 – 10pm <br>
                             Fri 5.30 - 10pm<br>
-                            Sat 5.30 - 10pm
+                            Sat 5.30 - 10pm --}}
+                            <div class="row d-flex justify-content-between">
+                                <div class="col-3">
+                                    Dinner<br>
+                                    Tue 6 – 9:30pm <br>
+                                    Wed 6 – 9:30pm<br>
+                                    Thu 6 – 9:30pm <br>
+                                    Fri 5:30 - 10pm<br>
+                                    Sat 5:30 - 10pm
+                                </div>
+                                <div class="col-3">
+                                    Lunch <br>
+                                    Fri 12 - 4pm<br>
+                                    Sat 12 - 4pm
+                                </div>
+                                <div class="col-3">
+                                    Closed <br>
+                                    Sun - Closed <br>
+                                    Mon - Closed <br>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
